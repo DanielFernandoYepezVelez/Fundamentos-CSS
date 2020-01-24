@@ -1,0 +1,53 @@
+DIMENSIONES:
+Aquí vamos a ver como el navegador calcula las dimensiones
+de un elemento.
+
+DECLARADAS:
+Es cuando se define el ancho y el alto del elemento, recordar
+que si no se tiene el "box-sizing en border-box", a las
+dimensiones de un elemento asignadas con anterioridad se le
+van a sumar el padding y el margin que se le asigne a dicho
+elemento.
+
+TAMAÑO FIJO:
+Ancho y Alto definido a un elemento en PIXELES, no existe
+ninguna recomendación para tener encuenta.
+
+PORCENTAJES(%):
+Con esta unidad de medida el "ALTO" de cualquier elemento
+declarado en PORCENTAJE no va a funcionar, por que el body
+termina donde termina el alto del contenido que existe 
+dentro de un elemento o nodo, por ende, el "ALTO" de ese
+elemento no se puede expandir más.No aplica para los colores,
+porque estos se expande en toda la pantalla.
+
+El "ALTO" de un elemento funciona con las unidades de medida
+del "VIEWPORT":
+view-width(vw => Es el 1% del ancho del viewport).
+view-height(vh => Es el 1% del alto del viewport).
+Porque le estoy diciendo a mi elemento que tome la altura
+con respecto a la pantalla del dispositivo, no a la del body,
+porque la ALTURA del body termina donde termina el contenido
+interno del elemento.
+(Se utiliza el "min-height" por la compatibilidad de 
+navegadores).
+min-height: 100vh => es un tamaño automático para un elemento
+o un elemento padre(No funciona el Height para un elemento
+hijo).
+height: 500vh => es un tamaño definido para un elemento o un
+elemento padre (Funciona el Height para un elemento hijo).
+Con las unidades de medida anteriormente mencionadas y 
+aplicadas a un elemento PADRE, se le puede aplicar una 
+"ALTURA" en PORCENTAJE a un elemento "HIJO" y con el width
+no existe ningun inconveniente.
+
+AUTOMATICAS:
+Es cuando no se define el ancho y el alto de un elemento,
+sino que el navegador lo asigna y generalmente es por el
+contenido que hay al interior de ese elemento y en estos
+casos, no se le puede aplicar un "ALTO" con PORCENTAJES(%)
+a un elemento hijo ni al mismo elemento.
+
+NOTA => Desde que llego flexbox y CSS Grid, ya todo es más
+sencillo con los elementos de forma vertical.
+----------------------------------------------------------

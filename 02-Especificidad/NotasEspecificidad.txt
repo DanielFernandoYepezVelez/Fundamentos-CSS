@@ -1,0 +1,28 @@
+ESPECIFICIDAD: 
+este concepto esta basado en los selectores y nos dice que el
+navegador hace una suma interna de los selectores más
+especificos y entre más grande sea la suma, va prevalecer
+sobre otros selectores dicha especificidad y el valor de cada
+selector se presenta acontinuación:
+tag = 1. (Elements and pseudo-elements).
+clases = 10. (Classes, attributes and pseudo-classes).
+id = 100.
+inline = 1000.
+!important = es el mas poderoso de todos(mala practica
+utilizarlos).
+
+LINK PARA CALCULAR LA ESPICIFICIDAD: 
+https://specificity.keegan.st/
+PICOS DE ESPECIFICIDAD: 
+https://jonassebastianohlsson.com/specificity-graph/
+ARQUITECTURA ENFOCADA EN ESPECIFICIDAD: 
+https://speakerdeck.com/dafed/managing-css-projects-with-itcss 
+(ARQUITECTURA ENFOCADA EN ESPECIFICIDAD TEMA AVANZADO).
+
+NOTA IMPORTANTE POR LA ESPECIFICIDAD: 
+se recomienda selectores de un solo nivel, es decir, clases 
+que esten al mismo nivel de la etiqueta, pero si te toca 
+utilizar selectores descendientes no bajar más de dos 
+niveles(etiquetas) por que lo mas seguro es que algo se rompa
+algo en el codigo por el concepto de la especificidad.
+-------------------------------------------------------------

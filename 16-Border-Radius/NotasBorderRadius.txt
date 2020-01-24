@@ -1,0 +1,26 @@
+BODER RADIUS:
+El border-radius se calcula en relación a la figura a la
+cual se le esta aplicando esta propiedad.Además, se pueden
+aplicar medidas fijas o en porcentajes.
+
+PROPIEDADES COMPLETAS=>
+boder-top-left-radius:x y;
+boder-top-right-radius:x y;
+boder-bottom-right-radius:x y;
+boder-bottom-left-radius:x y;
+
+SHORTHAND=>
+boder-radius: X X X X / Y Y Y Y;
+boder-radius: X / Y ;
+
+SHORTHAND=>
+boder-radius: 50px;
+-----------------------------------------------------------
+
+OUTLINE:
+Outline es como el borde pero va por fuera y no se incluye en
+el modelo de caja, por ende no afecta el layout de un sitio
+web. Se utiliza principalmente para buscar donde esta un 
+elemento y el border que se aplique del Outline no
+afecta el tamaño de ese elemento, solo es para identificarlo.
+----------------------------------------------------------

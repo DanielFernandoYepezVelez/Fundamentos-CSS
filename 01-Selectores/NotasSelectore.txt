@@ -1,0 +1,175 @@
+VARIABLES CSS:
+ES UN ESPACIO QUE SE RESERVA EN LA MEMORIA RAM DEL ORDENADOR,
+DONDE POSTERIORMENTE SE VA A ALMACENAR UN VALOR.
+
+PARA ENTENDER CSS SE DEBEN COMPRENDER 4 PILARES:
+1.SELECTORES.
+2.ESPECIFICIDAD.
+3.HERENCIA.
+4.CASCADA.
+-------------------------------------------------------------
+
+SELECTORES SIMPLES, COMPUESTOS, ATRIBUTOS:
+SELECTORES SIMPLES(únicos):
+ETIQUETA: 
+son los de etiqueta HTML o de tipo, que NO estan 
+separados por coma o NO esta uno dentro de otro, es decir,
+estan solos y unicos.(ESTOS SELECTORES SOLO SE RECOMIENDA
+UTILIZARLOS, PARA NORMALIZAR, ESTANDARIZAR O INICIALIZAR 
+ESTILOS, SE CONSIDERA MUY MALA PRACTICA UTILIZAR LOS
+SELECTORES DE ETIQUETA O DE TIPO PARA DAR ESTILOS CSS).
+
+CLASES: 
+no pueden iniciar con números, pero si con guión
+bajo o medio, además, se pueden aplicar emojis como clases,
+ya que los emojis son caracteres unicode.
+TABLA DE EMOJIS UNICODE: 
+https://apps.timwhitlock.info/emoji/tables/unicode
+
+ID:
+identificador unico, que no se va a repetir nunca,
+por ende solo se puede aplicar para un solo elemento,
+tambien se puede aplicar emojis con los ID.
+(ES CONSIDERADO UNA MUY MALA PRACTICA UTILIZAR ID EN CSS,
+SOLO SE UTILIZA PARA JAVASCRIPT).
+
+UNIVERSAL(*):
+este selector va a seleccionar todo, absolutamente
+todo.(*).(NO SE RECOMIENDA POR QUE PUEDE TENER 
+COMPORTAMIENTOS INESPERADOS).
+
+UNIVERSAL EJEMPLO: aqui estamos advirtiendo, que
+absolutamente todo lo que este dentro de ul incluido 
+otros selectores, se le aplique toda la regla.
+ul *
+{
+  color: red;
+}
+-------------------------------------------------------------
+
+SELECTORES COMPUESTOS(NO EXISTEN ASI, SOLO SON FINES
+DIDACTICOS):
+AGRUPADOS: 
+puedo tener varios selectores y de cualquier
+tipo, pero deben estar separados por una "," además, se
+recomienda que cada selector este en una sola linea.
+EJEMPLO:
+.title,
+.parrafo
+{
+  color: red;
+}
+
+DESCENDIENTES: 
+Quiere decir que un selector esta dentro
+de otro selector o es su hijo o nieto o bisnieto, la clave es
+que este dentro y que tenga el espacio para sea considerado
+un selector descendiente y además, no se recomienda
+utilizarlos, si los utilizas es por que no tienes opción,
+pero no es una buena PRACTICA por el concepto de 
+ESPECIFICIDAD.
+EJEMPLO: A todos los .list-item que sean hijos de li y este a
+su vez sea hijo de ul, aplicale rojo al texto.(sea hijo o
+este dentro).
+ul li .list-item
+{
+  color: red;
+}
+
+NOTA IMPORTANTE #1: Aqui no hay descendencia, solo estoy
+diciendo que al elemento que le voy aplicar el color rojo
+debe tener las dos clases.
+.lis.tag
+{
+  color: red;
+}
+
+NOTA IMPORTANTE #2: Aqui estoy diciendo que el div que tiene
+el id main y tiene un elemento descendiente con una clase
+post se le aplique color rojo.
+div#main .post
+{
+  color: red;
+}
+
+HIJOS DIRECTOS: 
+Se refiere al selector que esta en el interior de otro de
+forma directa.
+EJEMPLO: A todo ul que sea hijo directo de li aplicale color
+rojo al texto.
+li > ul
+{
+  color: red;
+}
+
+HERMANO SIGUIENTE: 
+Selecciona al selector que esta justo despues de otro, es
+decir, de forma contigua. 
+EJEMPLO: Aplicale al titulo y al subtitulo rojo al texto.
+.title + .subtitle
+{
+  color: red;
+}
+
+HERMANOS SIGUIENTES: 
+selecciona a todos, absolutamente a todos los hermanos
+siguientes y no necesariamente tiene que estar al lado
+para que funcione, solo se debe tener encuenta que tiene 
+que ser hermano para que funcione, si no son hermanos no se
+va a obtener el resultado esperado.
+EJEMPLO: ~ (se llama virgulilla en linguistica, pero
+si estamos hablando en el contexto de la computación se llama
+"tilde").
+.hermanoMayor ~ .hermano
+{
+  color: red;
+}
+-------------------------------------------------------------
+
+SELECTORES DE ATRIBUTO: 
+selecciona por cualquier atributo además de la "CLASE" 
+y el "ID" a un selector."SE UTILIZA MUCHO EN LOS FORMULARIOS"
+
+SENCILLOS:
+1.ATRIBUTO Y VALOR:
+[attr="value"]
+2.SOLO ATRIBUTO:
+[attr]
+
+EJEMPLO:
+input[type="email"]
+{
+  background-color: black;
+}
+
+[required]
+{
+  color: red;
+  background-color: blue;
+}
+
+COMODIN EMPEZANDO CON: Este selector de atributo
+detecta cuando empiezas con algo en particular.
+
+EJEMPLO: [attr^="value"]
+[href^="/"],
+[href^="https://ed.team"]
+{
+  color: red;
+}
+
+COMODIN TERMINANDO CON: Este selector de atributo
+detecta cuando terminas con algo en particular.
+
+EJEMPLO: [attr$="value"]
+[href$=".pdf"]
+{
+  color: red;
+}
+
+COMODIN CONTIENE QUE: Significa que esta en cualquier
+lugar del codigo.
+
+EJEMPLO:[attr*="value"]
+[class*="button-"]
+-------------------------------------------------------------

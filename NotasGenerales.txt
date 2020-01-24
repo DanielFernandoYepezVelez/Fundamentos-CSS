@@ -1,0 +1,87 @@
+ESTÁ ES LA PAGINA DE ESTANDARIZACIÓN DE CSS EN LA w3c.org:
+https://www.w3.org/Style/CSS/Overview.en.html
+
+MODULOS DE CSS:
+CSS esta dividido en modulos y estos modulos pasan por 
+distintas etapas hasta ser una recomendación.
+
+1.Borrador de trabajo (Working Draft).
+2.Recomendación Candidata (Candidate Recomendation).
+3.Recomendación (Recomendation). [YA ESTA EN TODOS LOS
+NAVEGADORES].
+
+ESTOS SON LOS MODULOS (TITULOS AZULES):
+https://www.w3.org/Style/CSS/specs.en.html
+AQUI LOS LEVELS, QUIEREN DECIR EN QUE NIVEL ESTA UN MODULO
+EN ESPECIFICO.
+
+ESTADO ACTUAL DE CSS (SNAPSHOT):
+AQUI TAMBIEN PUEDO ENCONTRAR UN GLOSARIO DE PALABRAS CLAVES:
+https://www.w3.org/TR/CSS/
+------------------------------------------------------------
+
+PAGINA DE MOZILLA PARA APRENDER CSS3:
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS
+------------------------------------------------------------
+
+VOCABULARIO Y SINTAXIS CSS PARA APRENDER MEJOR, MUY VALIOSO:
+http://apps.workflower.fi/vocabs/css/es
+------------------------------------------------------------
+
+SELECTORES LEVEL 3: 
+https://www.w3.org/TR/2018/CR-selectors-3-20180130/
+(EN ESTE NIVEL ESTAMOS HABLANDO DE UN ESTANDAR Candidata
+Recomendation).
+
+SELECTORES LEVEL 4: https://www.w3.org/TR/selectors/ 
+(ESTE NIVEL AUN ESTA EN Working Draft, TODAVIA LE FALTA
+PARA SER UN ESTANDAR).
+
+TODOS LOS SELECTORES DE TODOS LOS NIVELES: 
+https://css4-selectors.com/selectors/
+------------------------------------------------------------
+
+GDLWEBCAMP:
+La mejor conferencia de Diseño Weben español(Guadalajara,MX).
+-------------------------------------------------------------
+
+DESCARGAR ICONOS:
+https://www.flaticon.com/
+https://fontawesome.com/icons?d=gallery
+-------------------------------------------------------------
+
+FUENTES:
+TypeKit: https://fonts.adobe.com/fonts
+google fonts: https://fonts.google.com/
+------------------------------------------------------------
+
+HERRAMIENTA DE VIÑETAS COMODA PARA TRABAJAR:
+https://workflowy.com/
+https://picpick.app/en/download/
+
+OBTENER COLORES EN DIFERENTES FORMATOS INCLUIDOS RBG Y RGBA:
+https://www.google.com.co/search?sxsrf=ACYBGNTbZyoevji4sE6ik5IRYjygT5PCZQ%3A1579650785010&ei=4Y4nXowcxarmAviqu5AE&q=color+picker&oq=color+picker&gs_l=psy-ab.3.0.0i67j0j0i67j0l7.4730.7967..11405...0.4..0.228.2155.0j9j3......0....1..gws-wiz.......0i71j35i39i19j35i39j0i20i263._lNDhfZsy-4
+https://www.css3maker.com/css-3-rgba.html
+https://color.adobe.com/es/create
+------------------------------------------------------------
+
+ARQUITECTURA CSS:
+son las diferentes metodologías que se utilizan para aplicar
+CSS en proyectos grandes, las más conocidas son:
+1.SMACSS.
+2.OOCSS.
+3.ITCSS.
+NOTA: Cuando estas manejando Arquitectura CSS, significa que
+estas en un nivel más avanzado en CSS.
+------------------------------------------------------------
+
+LAYOUT: 
+Geometria de los elementos que define como, con que tamaño,
+con que separación respecto a los elementos adyacentes y en
+que posición se van a dibujar en la pantalla.
+1.TAMAÑO(ANCHO-ALTO).
+2.POSICIÓN(UBICACIÓN).
+3.SEPARACIÓN DE LOS ELEMENTOS(DISTRIBUCIÓN).
+FACIL => Es el tamaño, ubicación y distribución de los 
+elementos en la pantalla.
+------------------------------------------------------------

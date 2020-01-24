@@ -1,0 +1,103 @@
+BACKGROUND:
+Debes tener presente que BACKGROUND por si solo es un
+SHORTHAND.
+
+PROPIEDADES COMPLETAS=>
+background-color: blue; color de fondo.
+
+background-image: url('pathImage'); Requiere una imagen.
+
+background-repeat: repeat|no-repeat|repeat-X|repeat-Y; 
+Para que una imagen que tenga un espacio suficiente no se
+repita o se repita, dependiendo de lo que se necesita.
+
+background-clip: border-box|padding-box|content-box;
+Que parte de la caja es cubierta por el fondo.
+
+background-origin: border-box|padding-box|content-box; 
+Desde que caja se empieza a dibujar el fondo.
+
+(APLICA SOLO CON LAS IMAGENES, MÁS NO CON LOS COLORES)
+(FUNCIONA CON PIXELES Y PORCENTAJES)
+background-size: Un solo valor => (width <=> height) 
+                              <=> background-size: 100%;
+
+Valores por separado => width Y height 
+                    <=> background-size: 100% 100%;
+
+Utilizar estas palabras claves |contain|cover|auto| 
+Aplica para el "background-image".
+
+LO MEJOR PARA EL BACKGROUND-SIZE ES APLICAR ALGUNA DE LAS
+PALABRAS CLAVES:
+contain => La imagen sea lo mas grande posible dentro de la
+caja sin salirse y no desformando la imagen, puede dejar
+espacio en blanco de la caja que no se alcance a rellenar
+por parte de la imagen.
+
+cover => Expande la imagen para ocupar el tamaño de la caja
+completamente, no se puede mostrar toda la imagen, solo lo
+que permita la caja.
+
+auto =>  Darle tamaño original a la imagen, es como no
+aplicarle el background-size.
+
+(APLICA SOLO CON LAS IMAGENES, MÁS NO CON LOS COLORES)
+(FUNCIONA CON PIXELES Y PORCENTAJES)
+background-position: Definir donde se va a dibujar el fondo,
+Automaticamente se inicia desde arriba a la izquierda(0,0)
+por que tenemos dos ejes X y Y.
+
+X <=> Y (si se aplica a X center, se le aplica a Y
+Automaticamente). background-position: 100%;
+
+X, Y (Se les puede aplicar de forma INDIVIDUAL). 
+background-position: 100px 230px;
+
+X => left|center|right<unit> Palabras claves para X.
+
+Y => top|center|bottom<unit> Palabras claves para Y.
+
+Las palabras claves se mezclan con sus respectivos unit(20px).
+
+Se utiliza para posicionar el fondo de la imagen y el
+navegador entiende cual palabra clave le corresponde a que
+eje(X,Y).
+
+background-position: top right;
+background-position: top 20px right 20px;
+
+background-attachment: Es como se dibuja el fondo con 
+respecto al viewport, es decir, Esta propiedad me sirve para
+que el contenido del fondo no se no se mueva al ritmo del
+scroll.
+
+background-attachment: fixed; 
+Para fijar una imagen de background(Efecto PARALAX).
+
+background-attachment: scroll; 
+Es el valor que viene por defecto.
+
+background-attachment: local; 
+Es el valor que viene cuando un elemento tenga un scroll de
+forma interna.
+
+backgrounds Multiples: Puedo tener multiples backgrounds en
+el viewport y puedo aplicarle las diferentes propiedades de
+los backgrounds, pero lo interesante, es que puedo darle un
+valor a cada background en una sola propiedad aplicando
+diferentes valores para cada background.
+
+background-image: url('kkfkfkfkf'), url('jhgfdgetdjdk'), 
+                  url('jdjdjdjd');
+El primer background es el que se muestra,
+funciona como una cascada invertida.
+background-size: 20%, 40px, contain;
+
+Shorthand todas las propiedades en una sola.
+background: image position / size repa attachment origin clip;
+(SLASH OBLIGATORIO).
+
+background:url('fhfhffhf') 0 20px / 15% no-repeat opcional opcional,
+           url('jhgthjgj') 0 20px / 15% no-repeat opcional opcional;
+------------------------------------------------------------

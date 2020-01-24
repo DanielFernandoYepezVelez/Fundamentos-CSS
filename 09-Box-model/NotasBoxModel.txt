@@ -1,0 +1,63 @@
+BOX-MODEL(MODELO DE CAJA): 
+Es el algoritmo através del cual el navegador dibuja las
+cajas de los elementos por pantalla. Se debe destacar que
+todos los elementos en html son rectangulos que se puede
+manipular su presentación visual con CSS. Este concepto solo
+se aplica a los elementos que tienen un display de BLOQUE,
+los elementos INLINE no tienen BOX-MODEL.
+
+En el BOX-MODEL tenemos 3 cajas y una especie de 4tha Caja:
+CAJAS INTERNAS:
+1.CONTENT-BOX(Caja de contenido).
+2.PADDING-BOX(Caja de Padding, lo que hace es separar el
+contenido, de la caja del Border, de forma Interna).
+3.BORDER-BOX(Caja de Border).
+
+CAJA EXTERNA:
+4.MARGIN(Es una caja invisible que esta alrededor de un 
+elemento, lo que hace es separar los elementos adyacentes).
+
+NOTA: El objetivo con el BOX-MODEL es sumar el ancho y 
+el alto que esta ocupando mi elemento en el layout de mi
+proyecto, además, de conocer la medida que esta manejando
+cada propiedad del elemento.
+
+NOTA SIN BOX-SIZING: Las propiedades que se le apliquen a los
+elementos se estaran sumando de forma progresiva al elemento
+completo y esto entrega como resultado final una medida
+variable y no especifica, que estara afectando a los elementos
+que estan a su alrededor y a todo el layout.
+---------------------------------------------------------------
+
+LO APLICO CUANDO NO TENGO ESPACIO SUFICIENTE PARA MI CONTENIDO:
+PROPIEDAD BOX-SIZING: esta propiedad cuenta con tres valores
+que son:
+1. box-sizing: content-box;(NO HACE NADA).
+
+2. box-sizing: padding-box;(NO HACE NADA, ADEMÁS, TIENE
+SOPORTE SOLO PARA MOZILLA).
+
+3. box-sizing: border-box;(CON EL ÚNICO QUE FUNCIONA).
+
+NOTA CON BOX-SIZING:
+Con esta propiedad yo le voy a decir al navegador, como va
+a calcular y a distribuir las medidas y el tamaño final de
+las tres cajas internas del elemento, restandole princi-
+palmente al CONTENT-BOX dimensiones, para que el elemento
+conserve su tamaño empaquetado es decir, el tamaño que se
+espera correctamente y no sea un tamaño variable.
+
+--------------------------------------------------------------
+|NOTA BUENAS PRACTICAS: 
+|siempre se debe empezar con la propiedad del                |
+|"box-sizing: border-box" para que las cajas de los elementos|
+|conserven su tamaño indicado y exacto en el viewport, además|
+|de los pseudo-elementos "*, *::before, *::after".           |
+|BOX-SIZING:BORDER-BOX=>                                     |
+|Aquí le estamos diciendo a todos los elementos que calculen |
+|su tamaño apartir del borde hacía adentro, es decir, que    |
+|toda propiedad que se le aplique a un elemento no le sume   |
+|nada a la caja de forma externa, sino que todo se aplique de|
+|forma interna.(TODO ESTO SE LE RESTA AL CONTENT-BOX         |
+|[contenido de la caja]).                                    |
+--------------------------------------------------------------

@@ -1,0 +1,4 @@
+PSEUDOCLASES:
+Estilos especiales dependiendo del contexto, posición o
+estado.
+--------------------------------------------------------

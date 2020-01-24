@@ -1,0 +1,92 @@
+ESPACIO RESERVADO Y FLUJO(DISTRIBUCIÓN):
+Todos los elementos tienen su propio espacio reservado, que
+para ser ocupado por otro elemento se debe utilizar position
+y además, tienen un flujo de distribución, es decir, 
+aparecen en la pantalla de acuerdo al llamado desde el 
+codigo HTML.
+
+POSICIÓN:
+Es un tipo de display y me sirve para ubicar los elementos
+de la pantalla en cualquier lugar que yo necesite y podemos
+manipular el orden de los elementos como se presentan en la
+pantalla indicado desde el codigo HTML.
+
+PROPIEDAD Offset:
+Son las propiedades que mueven un elemento posicionado. Un
+elemento posicionado es un elemento que tenga una propiedad
+de position distinta a static. Lo puede mover por las 
+siguientes propiedades según el borde indicado:
+top: 20px;
+left: 200px;
+right: 200px;
+bottom: 20px;
+
+(POSITION:RELATIVE, funciona para todos los elementos 
+del web-site)
+CARACTERISTICAS:
+1. Su referencia es su posición inicial.
+2. Aplicar esta declaración completa no modifica ningun otro
+elemento del layout, ni a el mismo.
+3. Al moverlo con las propiedades offset , el elemento 
+conserva su espacio, así se desplace.
+4. Esta caracteristica es importante cuando deseo mover un
+elemento, sin modifcar el layout de ningun otro elemento del
+web-site.
+-----------------------
+Es más conveniente indicar un border para ver como se 
+mueve el elemento con respecto a su referencia.
+top: 20px toma como referencia el borde superior y 
+          se mueve hacia abajo.
+left: 200px toma como referencia es la izquierda y 
+          se mueve hacia la derecha.
+right: 200px toma como referencia es la derecha y 
+          se mueve hacia la izquierda.
+bottom: 20px toma como referencia el border inferior y 
+          se mueve hacia arriba.
+
+(POSITION:ABSOLUTE, funciona para todos los elementos del
+web-site)
+Es más complejo que el anterior.
+1. Pierde su posición en el flujo y no mantinene su espacio,
+pasa atras.
+2. Si tiene dimensiones fijas las mantiene, pero si tienen
+dimensiones Automaticas, se vuelve estilo inline, es decir,
+el ancho y alto es de acuerdo a su contenido.
+3. La referencia que tiene esta declaración es su ANCESTRO
+posicionado mas cercano y si no tiene un ANCESTRO posicionado
+se va regir por el body o viewport.
+4. El elemento posicionado puede tener cualquier propiedad 
+desde que no sea estatica y no necesariamente tiene que ser
+RELATIVE.
+.box{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: red;
+}
+span{
+  position: absolute;
+/*   display: block; */
+  right: 0;
+  bottom: 0;
+  width: 99%;
+  height: 45px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 45px;
+}
+
+(POSITION:FIXED, funciona para todos los elementos del 
+web-site)
+1. Es relativo al VIEWPORT, es decir, su referencia es el
+VIEWPORT.
+2. es ignorado en el flujo de los elementos.
+3. las dimensiones Automaticas se restringen a su contenido.
+
+position: static | relative | absolute | fixed | sticky
+Lo complejo de position es que se va a comportar diferente,
+de acuerdo a la propiedad de las mencionadas anteriormente 
+que tenga asignada.
+
+STATIC: Todos los elementos son static de forma 
+predeterminada.

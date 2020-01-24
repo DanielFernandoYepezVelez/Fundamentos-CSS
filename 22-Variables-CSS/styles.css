@@ -1,0 +1,62 @@
+/* TODO PROYECTO DEBE EMPEZAR CON ESTOS
+TRES SELECTORES */
+*,
+*::after,
+*::before
+{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0;
+}
+
+/* VARIABLES GLOBALES EN CSS, YA QUE :ROOT TIENE LA ESPECIFICIDAD DE
+HTML E INCLUSO ES MÁS FUERTE*/
+:root
+{
+  --color: green;
+  --color2: white;
+  --size: 25px;
+  --under: 10px;
+}
+/* -------------- */
+
+body{
+  background: var(--color);
+  color: black;
+}
+
+h1
+{
+  background: var(--color2);
+  color: var(--color);
+}
+
+.header
+{
+  background-color: var(--color2);
+  color: var(--color);
+}
+
+.main
+{
+  background-color: var(--color2);
+  color: var(--color);
+}
+
+.article
+{
+  background-color: var(--color2);
+  color: var(--color);
+  font-size: var(--size);
+  margin-bottom: var(--under);
+}
+
+.uno
+{
+  background-color: blue;
+}
+
+.dos
+{
+  background: red;
+}

@@ -1,0 +1,14 @@
+CASCADA: 
+hermano de la especificidad y nos dice que el navegador va a
+tomar el ultimo estilo que haya leido siempre y cuando 
+tengan la misma especificidad, si el ultimo no tiene más 
+especificidad que el anterior, el navegador va a tomar al de
+mayor especificidad, es decir, al anterior.
+
+COMPUTED: 
+esta propiedad que esta en la herramienta del inspector de
+elementos me ayuda a buscar en que propiedad y por que esta
+fallando dicha propiedad en mi proyecto e incluso me da el
+nombre del archivo y la linea y si doy click sobre el archivo
+me lleva a dicho archivo.(COMPUTED ESTA AL LADO DE STYLE).
+-------------------------------------------------------------
