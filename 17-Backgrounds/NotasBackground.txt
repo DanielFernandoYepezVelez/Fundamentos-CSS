@@ -12,10 +12,10 @@ Para que una imagen que tenga un espacio suficiente no se
 repita o se repita, dependiendo de lo que se necesita.
 
 background-clip: border-box|padding-box|content-box;
-Que parte de la caja es cubierta por el fondo.
+Que parte de la caja del Box-Model es cubierta por el fondo.
 
 background-origin: border-box|padding-box|content-box; 
-Desde que caja se empieza a dibujar el fondo.
+Desde que caja del Box-Model se empieza a dibujar el fondo.
 
 (APLICA SOLO CON LAS IMAGENES, MÁS NO CON LOS COLORES)
 (FUNCIONA CON PIXELES Y PORCENTAJES)
@@ -63,6 +63,10 @@ Las palabras claves se mezclan con sus respectivos unit(20px).
 Se utiliza para posicionar el fondo de la imagen y el
 navegador entiende cual palabra clave le corresponde a que
 eje(X,Y).
+Es decir, esta propiedad lo que hace es dibujar un fragmento
+del fondo, en la posición que le indiquemos, tener encuenta
+si le damos el 100% al eje x y 100% al eje Y, esta propiedad
+ya no funciona.
 
 background-position: top right;
 background-position: top 20px right 20px;

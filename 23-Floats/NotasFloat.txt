@@ -1,0 +1,21 @@
+FLOATS:
+Los floats yo se los puedo aplicar a todos los elementos
+que tengan un display block.
+Y esta propiedad lo que hace es flotarme los elementos y
+los posiciona a las izquierda o a la derecha y además
+los elementos se ponen uno al lado del otro, por 
+ejemplo:
+float: left;
+float: right;
+Pero para continuar con las disptribución de los demás
+elementos en el layout, debo limpiar el float, por que de
+lo contrario me va a flotar todos los elementos que existen
+y me los pondra uno al lado del otro, lo hacemos de la 
+siguiente manera:
+float: none;
+clear: both;
+Pero para que esta ultima parte funcione correctamente debe
+implementar un div con su respectiva clase para que se le
+puedan aplicar dichas declaraciones.
+Y posteriormente elegir los elementos que deseamos que no se
+floten.

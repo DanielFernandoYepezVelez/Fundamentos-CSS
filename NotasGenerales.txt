@@ -48,6 +48,9 @@ La mejor conferencia de Diseño Weben español(Guadalajara,MX).
 DESCARGAR ICONOS:
 https://www.flaticon.com/
 https://fontawesome.com/icons?d=gallery
+CDN FONTAWESOME:
+https://use.fontawesome.com/releases/v5.3.1/js/all.js(funciona)
+https://use.fontawesome.com/releases/v5.7.1/css/all.css(No funciona)
 -------------------------------------------------------------
 
 FUENTES:
@@ -57,12 +60,28 @@ google fonts: https://fonts.google.com/
 
 HERRAMIENTA DE VIÑETAS COMODA PARA TRABAJAR:
 https://workflowy.com/
-https://picpick.app/en/download/
 
 OBTENER COLORES EN DIFERENTES FORMATOS INCLUIDOS RBG Y RGBA:
 https://www.google.com.co/search?sxsrf=ACYBGNTbZyoevji4sE6ik5IRYjygT5PCZQ%3A1579650785010&ei=4Y4nXowcxarmAviqu5AE&q=color+picker&oq=color+picker&gs_l=psy-ab.3.0.0i67j0j0i67j0l7.4730.7967..11405...0.4..0.228.2155.0j9j3......0....1..gws-wiz.......0i71j35i39i19j35i39j0i20i263._lNDhfZsy-4
 https://www.css3maker.com/css-3-rgba.html
 https://color.adobe.com/es/create
+https://picpick.app/en/download/
+------------------------------------------------------------
+
+FRAMEWORKS PARA CSS:
+https://getbootstrap.com/
+Bootstrap(Más popular).
+CDN BOOTSTRAP:
+
+https://bootswatch.com/
+bootswatch(Templates para Bootstrap).
+
+https://bulma.io/
+Bulma(La ventaja de este es que es muy liviano por que
+no utiliza nada de JavaScript sino que solo es css).
+BULMA CDN:
+https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css(funciona)
+https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css(No funciona)
 ------------------------------------------------------------
 
 ARQUITECTURA CSS:

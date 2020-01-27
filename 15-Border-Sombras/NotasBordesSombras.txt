@@ -51,8 +51,8 @@ Recordar que son copias, las sombras son copias.
 EXPLICACIÓN PROPIEDAD:
 box-shadow: h-offset v-offset blur spread color | inset
 
-h-offset v-offset => que tanto se separa del elemento,
-de forma horizontal y de forma vertical.
+h-offset v-offset => que tanto se separa la sombra del
+elemento, de forma horizontal y de forma vertical.
 
 blur => difuminado(Se pone Borroso).
 
@@ -61,7 +61,8 @@ utilizar valores Negativos).
 
 color => color asignado.
 
-| inset => si la sombra es interior o exterior
+inset => si la sombra es interior al nivel
+del elemento.
 (Utilizar valores Negativos(opuesto)).
 
 Puedo hacer multiples sombras:

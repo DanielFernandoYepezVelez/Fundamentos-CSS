@@ -3,7 +3,7 @@ QUE SON LOS EM Y LOS REM:
 EM: 
 Es el tamaño de fuente del contexto, es decir, el tamaño de
 fuente definida por parte de su elemento ANCESTRO(Padre, 
-abuel, bisabuelo, etc) más cercano es su referencia principal
+abuelo, bisabuelo, etc) más cercano es su referencia principal
 y esa referencia principal es variable.
 
 REM: 
@@ -165,7 +165,7 @@ color: white;
 
 COLORES HEXADECIMALES:
 FORMATO HEXADECIMALES(0-F).
-color: #6753ca99;
+color: #6753ca;
 
 COLORES RGB:
 FORMATO RGB(0-255).

@@ -90,3 +90,12 @@ que tenga asignada.
 
 STATIC: Todos los elementos son static de forma 
 predeterminada.
+--------------------------------------------------------------
+
+Z-index:
+Me permite ubicar la capa de un elemento sobre la otra capa
+de otro elemento, el elemento con un mayor z-index va prevalecer
+por encima de otro z-index, en el codigo se representa de la
+siguiente forma:
+z-index: 1;
+--------------------------------------------------------------

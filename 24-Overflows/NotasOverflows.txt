@@ -1,0 +1,15 @@
+OVERFLOW:
+Los overflow tienen diferentes funciones
+y se explican acontinuación:
+
+overflow: hidden; => Sirve para ocultar algo que se desborde
+de un elemento con un alto y ancho definido.
+
+overflow: visible; => Viene por defecto como valor de 
+la propiedad de overflow.
+
+overflow: scroll; => sirve para darle scroll arriba y abajo
+además de la derecha e izquierda a un elemento.
+
+overflow-y: scroll; => sirve para darle scroll solamente 
+arriba y abajo un elemento.
