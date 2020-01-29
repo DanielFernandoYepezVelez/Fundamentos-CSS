@@ -1,4 +1,25 @@
 PSEUDOCLASES:
-Estilos especiales dependiendo del contexto, posición o
-estado.
---------------------------------------------------------
+Estilos especiales dependiendo del contexto, 
+posición, estado o elemento.
+---------------------------------------------
+
+PSEUDOCLASES PARA LISTAS:
+Los estilos solo se le aplicaran al elemento
+de la lista seleccionado, como por ejemplo:
+
+ul li:first-child{}; primer Hijo(elemento)
+ul li:nth-child{}; Hijo del Medio(elemento)
+ul li:last-child{}; Ultimo Hijo(elemento)
+---------------------------------------------
+
+PSEUDOCLASES PARA ENLACES:
+.enlace:link{};
+.enlace:visited{}; Enlace visitado.
+---------------------------------------------
+
+PSEUDOCLASES PARA TODOS LOS ELEMENTOS DEL DOM:
+:hover{}; Para cuando pase por encima.
+:active{}; Cuando le de click pase algo.
+input[type='text']:focus{}; Para los 
+formularios y que se enfoquen.
+---------------------------------------------

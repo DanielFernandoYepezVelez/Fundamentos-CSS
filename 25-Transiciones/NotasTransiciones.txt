@@ -1,0 +1,27 @@
+TRANSICIONES:
+Son importantes cuando vamos a pasar de
+un elemento a otro y por consiguiente
+vamos a pasar de los estilos o eventos
+de estos elementos a unos nuevos estilos o
+eventos de nuevos elementos, y eso debe
+hacerse con suavidad y elegancia.Allí
+entran las transiciones, ejemplo:
+
+transition: todas las propiedades CSS y tarde
+          en ejecutar la transicón 3 segundos.
+transition: All 3s;
+
+transition: todas las propiedades CSS y tarde
+          en ejecutar la transicón 500
+          milisegundos.
+transition: All 500ms; => (milisegundos)
+
+transition: solo a la propiedad border y
+            tarde en ejecutar la transicón
+             500 milisegundos.
+transition: border 500ms; => (milisegundos)
+--------------------------------------------
+
+MULTIPLES TRANSICIONES:
+transition: border 500ms, background 3s; 
+--------------------------------------------
