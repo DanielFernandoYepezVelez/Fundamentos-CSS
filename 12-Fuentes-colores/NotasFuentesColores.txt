@@ -82,7 +82,7 @@ box-shadow, excepto la expansión, recordar que son copias,
 las sombras son copias.
 text-shadow: h-offset v-offset blur color | inset
 
-EXPLICACIÓN DE LAS PROPIEDADES:
+EXPLICACIÓN DE LAS PROPIEDADES text-shadow:
 h-offset v-offset => 
 que tanto se separa del elemento, de forma horizontal y de
 forma vertical.
@@ -90,7 +90,8 @@ forma vertical.
 blur => difuminado(Se pone Borroso).
 
 color => color asignado.
-| inset => si la sombra es interior o exterior(Utilizar
+
+inset => si la sombra es interior o exterior(Utilizar
 valores Negativos(opuesto)).
 
 Puedo hacer multiples sombras:

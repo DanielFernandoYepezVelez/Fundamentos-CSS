@@ -1,4 +1,4 @@
-ELEMENTOS INLINE:
+ELEMENTOS DISPLAY INLINE:
 CARACTERISTICAS NATURALES DE ELEMENTOS INLINE:
 1.No crean nuevas lineas completas horizontalmente para cada
 elemento.

@@ -102,6 +102,24 @@ li > ul
   color: red;
 }
 
+PRIMER HIJO DE UN GRUPO DE ELEMENTOS:
+ul:first-child
+{
+  color: red
+}
+
+HIJO DEL MEDIO DE UN GRUPO DE ELEMENTOS:
+ul:nth-child 
+{
+  color: red
+}
+
+ULTIMO HIJO DE UN GRUPO DE ELEMENTOS:
+ul:last-child
+{
+  color: red
+}
+
 HERMANO SIGUIENTE: 
 Selecciona al selector que esta justo despues de otro, es
 decir, de forma contigua. 
@@ -114,9 +132,10 @@ EJEMPLO: Aplicale al titulo y al subtitulo rojo al texto.
 HERMANOS SIGUIENTES: 
 selecciona a todos, absolutamente a todos los hermanos
 siguientes y no necesariamente tiene que estar al lado
-para que funcione, solo se debe tener encuenta que tiene 
-que ser hermano para que funcione, si no son hermanos no se
-va a obtener el resultado esperado.
+para que funcione, sino que puede estar en todo el codigo,
+solo se debe tener encuenta que tiene que ser hermano para
+que funcione, si no son hermanos no se va a obtener el 
+resultado esperado.
 EJEMPLO: ~ (se llama virgulilla en linguistica, pero
 si estamos hablando en el contexto de la computación se llama
 "tilde").

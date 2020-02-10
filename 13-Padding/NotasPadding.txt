@@ -2,7 +2,7 @@ PADDING(Funciona igual que el margin):
 El margin es la separación de la caja con lo que esta afuera
 del elmento, es decir, con sus elementos adyacentes, PERO el
 padding es la separación de la caja del border hacia adentro,
-su punto de refrencia es el border y hacia adentro.
+su punto de referencia es el border y hacia adentro.
 
 PADDING CON %:
 La diferencia es que el padding de forma vertical(top y 

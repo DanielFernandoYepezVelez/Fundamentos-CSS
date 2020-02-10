@@ -7,7 +7,7 @@ los elementos se ponen uno al lado del otro, por
 ejemplo:
 float: left;
 float: right;
-Pero para continuar con las disptribución de los demás
+Pero para continuar con las distribución de los demás
 elementos en el layout, debo limpiar el float, por que de
 lo contrario me va a flotar todos los elementos que existen
 y me los pondra uno al lado del otro, lo hacemos de la 

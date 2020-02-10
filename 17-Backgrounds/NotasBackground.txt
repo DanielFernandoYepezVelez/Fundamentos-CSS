@@ -16,6 +16,7 @@ Que parte de la caja del Box-Model es cubierta por el fondo.
 
 background-origin: border-box|padding-box|content-box; 
 Desde que caja del Box-Model se empieza a dibujar el fondo.
+-----------------------------------
 
 (APLICA SOLO CON LAS IMAGENES, MÁS NO CON LOS COLORES)
 (FUNCIONA CON PIXELES Y PORCENTAJES)
@@ -41,6 +42,7 @@ que permita la caja.
 
 auto =>  Darle tamaño original a la imagen, es como no
 aplicarle el background-size.
+---------------------------
 
 (APLICA SOLO CON LAS IMAGENES, MÁS NO CON LOS COLORES)
 (FUNCIONA CON PIXELES Y PORCENTAJES)

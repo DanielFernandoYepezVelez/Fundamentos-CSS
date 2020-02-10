@@ -9,10 +9,10 @@ selector superior o tambien los puedo forzar con la palabra
 clave "inherit".
 
 "Key Words"
-initial: 
-este valor funciona para resetear un elemento a su valor 
-inicial.
+initial: este valor funciona para resetear un elemento a 
+su valor inicial.
+
 inherit: este valor funciona para obligar a un elemento a 
 heredar la propiedad de otro elemento superior o etiqueta
- superior(PADRE).
+superior(PADRE).
 ------------------------------------------------------------

@@ -2,15 +2,15 @@ COLAPSADO DE MARGENES VÉRTICALES:
 Esto aplica cuando hay margenes que se tocan, que no tienen
 padding, ni otra propiedad en medio, se deben tocar para
 formar una sola margen y funciona para los elementos
-adyacentes y Anidados.
+adyacentes(Vecinos) y Anidados(Uno Dentro De Otro).
 
 Elementos Adyacentes(Directos):
 Los elementos no suman sus margenes cuando se encuentra de
 forma vértical, sino que se prevalece la margen del elemento
-que tenga una margen mayor y si uno es negativo y otro 
-positivo se hace una resta de ambos, pero si las dos margenes
-son negativas prevalece la margen con el número menor 
-negativo.
+que tenga una margen mayor, en caso tal, que las dos margenes
+sean positivas y si una es negativo y otro positivo se hace una
+resta de ambos, pero si las dos margenes son negativas prevalece
+la margen con el número menor negativo.
 
 Elementos Anidados(Uno dentro de Otro):
 Dentro de un div tengo un h1 y el margen se crea por el h1

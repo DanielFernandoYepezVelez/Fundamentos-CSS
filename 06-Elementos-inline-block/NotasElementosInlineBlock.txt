@@ -1,4 +1,5 @@
-CARACTERISTICAS NATURALES DE ELEMENTOS DE INLINE-BLOQUE:
+ELEMENTOS DISPLAY INLINE-BLOCK:
+CARACTERISTICAS NATURALES DE LOS ELEMENTOS INLINE-BLOQUE:
 Estos elementos tienen las caracteristicas combinadas,
 es decir, pueden ser INLINE ocupando el espacio de su
 contenido interno y pueden ser BLOCK por que se les puede

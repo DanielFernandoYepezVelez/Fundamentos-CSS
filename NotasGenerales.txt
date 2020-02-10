@@ -56,6 +56,14 @@ https://use.fontawesome.com/releases/v5.7.1/css/all.css(No funciona)
 FUENTES:
 TypeKit: https://fonts.adobe.com/fonts
 google fonts: https://fonts.google.com/
+
+WEB SIMBOLS(FUENTEEEEEEEEESSSSSS):
+Cada letra del teclado tiene un logotipo o simbolo diferente
+que la representa y son muy utiles por que son logotipos en .svg
+es decir, son fuentes que se van hacer grandes o pequeñas con
+el font-size como se les especifique, sin perder la calidad.
+https://www.fontsquirrel.com/fonts/web-symbols
+https://fontawesome.com/icons?d=gallery
 ------------------------------------------------------------
 
 HERRAMIENTA DE VIÑETAS COMODA PARA TRABAJAR:
