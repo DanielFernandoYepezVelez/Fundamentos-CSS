@@ -1,0 +1,7 @@
+$contador: 1;
+@for $contador from 1 to 10 {
+    ul li:nth-child(#{$contador}) {
+        color: blue;
+        font-size: $contador * 5px;
+    }
+}

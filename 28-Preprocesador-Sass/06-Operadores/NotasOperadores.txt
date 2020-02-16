@@ -1,0 +1,22 @@
+OPERADORES ARITMETICOS SASS:
+SASS nos va a permitir ejecutar operaciones
+aritmeticas dentro de css.
+
+COMO FUNCIONA:
+Los operadores pueden resultar utiles
+para obtener un medida final de un elemento
+del layout apartir de una operación
+aritmetica.
+Las operaciones aritmeticas pueden ser
+de valores de pixeles, porcentanjes,
+rem, em, o valores con esta propiedad
+combinadas.
+
+PARA QUE ME SIRVE:
+Una forma de utilizar este preprocesador es
+para convertir medidas fijas a medidas 
+porcentuales que me facilitan el response
+web design, veamos un ejemplo de aplicación:
+
+medidaFijaMenor / medidaFijaMayor * 100%;
+200px / 900px * 100%;

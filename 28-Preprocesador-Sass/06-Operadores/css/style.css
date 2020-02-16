@@ -1,0 +1,17 @@
+body {
+  background-color: yellowgreen;
+}
+
+header {
+  border: 2px solid black;
+  background-color: white;
+  /* Aqui estoy convirtiendo medidas fijas a porcentajes */
+  width: 384%;
+  width: 26.0416666667%;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

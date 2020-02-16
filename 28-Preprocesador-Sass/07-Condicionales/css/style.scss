@@ -1,0 +1,9 @@
+$fondo-color: black;
+header {
+    @if $fondo-color==#cccccc {
+        background-color: red;
+    }
+    @else {
+        background-color: green;
+    }
+}

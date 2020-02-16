@@ -1,0 +1,46 @@
+ul li:nth-child(1) {
+  color: blue;
+  font-size: 5px;
+}
+
+ul li:nth-child(2) {
+  color: blue;
+  font-size: 10px;
+}
+
+ul li:nth-child(3) {
+  color: blue;
+  font-size: 15px;
+}
+
+ul li:nth-child(4) {
+  color: blue;
+  font-size: 20px;
+}
+
+ul li:nth-child(5) {
+  color: blue;
+  font-size: 25px;
+}
+
+ul li:nth-child(6) {
+  color: blue;
+  font-size: 30px;
+}
+
+ul li:nth-child(7) {
+  color: blue;
+  font-size: 35px;
+}
+
+ul li:nth-child(8) {
+  color: blue;
+  font-size: 40px;
+}
+
+ul li:nth-child(9) {
+  color: blue;
+  font-size: 45px;
+}
+
+/*# sourceMappingURL=style.css.map */

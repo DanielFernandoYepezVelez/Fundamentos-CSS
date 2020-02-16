@@ -11,8 +11,9 @@ CSS puro, como por ejemplo:
 Variables.
 Mixins(funciones).
 Selectores Anidados.
+Condicionales.
+Bucles.
 Entre otros.
 
 Estas caracteristicas hacen la estructura de
 CSS mas legible y facil de mantener.
-
