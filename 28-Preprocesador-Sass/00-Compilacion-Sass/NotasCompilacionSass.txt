@@ -1,0 +1,10 @@
+COMPILAR SASS CON NPM:
+1.Installar node JS.
+
+2.Installar Sass de forma global con el
+comando: npm i sass -g o npm i -g sass
+
+3.Posteriormente se debe compilar SASS a
+CSS y ver los cambios de forma
+constante con el comando: 
+sass --watch ./css/style.scss ./css/style.css

@@ -1,0 +1,24 @@
+.section-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial;
+  color: red;
+  background-color: aqua;
+}
+.section-wrapper .article-wrapper {
+  border: solid 1px black;
+}
+.section-wrapper h1 {
+  color: white;
+}
+.section-wrapper p {
+  font-size: 40px;
+}
+.section-wrapper p .data {
+  color: yellowgreen;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

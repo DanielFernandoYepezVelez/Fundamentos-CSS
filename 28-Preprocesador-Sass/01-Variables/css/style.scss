@@ -1,0 +1,22 @@
+$fuente-tipica: Arial,
+Helvetica,
+sans-serif;
+$color-fondo: #37bcfa;
+$color-letra: white;
+$color-parrafo: red;
+$tamaño-parrafo: 30px;
+$parrafo-mayuscula: uppercase;
+body {
+    background-color: $color-fondo;
+}
+
+h1 {
+    color: $color-letra;
+}
+
+p {
+    font-family: $fuente-tipica;
+    font-size: $tamaño-parrafo;
+    color: $color-parrafo;
+    text-transform: $parrafo-mayuscula;
+}

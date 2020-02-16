@@ -1,0 +1,18 @@
+QUE ES UN PREPROCESADOR CSS:
+Un preprocesador CSS es un programa que te
+permite generar CSS a partir de la syntax 
+unica del preprocesador.
+
+PARA QUE SIRVEN LOS PREPROCESADORES CSS:
+La mayoria de preprocesadores CSS añadiran
+algunas caracteristicas que no existen en
+CSS puro, como por ejemplo:
+
+Variables.
+Mixins(funciones).
+Selectores Anidados.
+Entre otros.
+
+Estas caracteristicas hacen la estructura de
+CSS mas legible y facil de mantener.
+

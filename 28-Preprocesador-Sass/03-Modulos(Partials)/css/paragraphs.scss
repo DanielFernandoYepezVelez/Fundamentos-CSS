@@ -1,0 +1,9 @@
+$width-letter: 40px;
+$color-letter: blue;
+$space-letter: 2px;
+p {
+    font-size: $width-letter;
+    color: $color-letter;
+    letter-spacing: $space-letter;
+    background-color: darken($color: #000000, $amount: 0);
+}

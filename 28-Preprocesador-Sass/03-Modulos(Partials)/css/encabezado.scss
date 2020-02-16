@@ -1,0 +1,8 @@
+$fondo-encabezado: green;
+$fuente-encabezado: Arial;
+$color-letter: yellow;
+h1 {
+    background-color: $fondo-encabezado;
+    font-family: $fuente-encabezado;
+    color: $color-letter;
+}

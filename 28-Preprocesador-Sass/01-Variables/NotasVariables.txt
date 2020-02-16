@@ -1,0 +1,11 @@
+VARIABLES SASS:
+Funcionan exactamente igual que en un 
+lenguaje de programación y se declaran
+como en el lenguaje de programación
+PHP, es decir, con signo pesos antes
+de iniciar el nombre de la variable,
+como se muestra en el siguiente
+ejemplo:
+
+$variable-color
+$variable-font-weight

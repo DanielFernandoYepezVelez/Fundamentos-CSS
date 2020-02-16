@@ -1,0 +1,6 @@
+MODULOS O PARTIALS:
+Tiene como objetivo funcionar como los
+template engine, por que me permite
+utilizar el codigo en diferentes partes
+del programa uniendo codigo de 
+varios archivos.

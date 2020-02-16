@@ -1,0 +1,30 @@
+$color: red;
+$font-size: 20px;
+$font-family: Arial;
+$layout-center: center;
+%alert-extends {
+    border: 1px solid;
+    border-color: $color;
+    color: black;
+    font-size: $font-size;
+    font-family: $font-family;
+    text-align: $layout-center;
+    margin-bottom: 5vh;
+}
+
+.alert-success {
+    @extend %alert-extends;
+    border-color: green;
+    color: green;
+}
+
+.alert-warning {
+    @extend %alert-extends;
+    border-color: orange;
+    color: orange;
+}
+
+.alert-danger {
+    @extend %alert-extends;
+    color: red;
+}

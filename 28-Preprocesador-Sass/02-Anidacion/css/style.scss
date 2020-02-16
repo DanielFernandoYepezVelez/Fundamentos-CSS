@@ -1,0 +1,26 @@
+$font-size: 30px;
+$font-family: Arial;
+$color: red;
+$background-color: aqua;
+.section-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $color;
+    background-color: $background-color;
+    .article-wrapper {
+        border: solid 1px black;
+    }
+    h1 {
+        color: white; //Cascade Normal
+    }
+    p {
+        font-size: 40px;
+        .data {
+            color: yellowgreen;
+            font-weight: 700;
+            font-size: 20px;
+        }
+    }
+}

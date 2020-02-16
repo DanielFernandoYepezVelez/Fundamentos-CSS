@@ -1,0 +1,25 @@
+.alert-danger, .alert-warning, .alert-success {
+  border: 1px solid;
+  border-color: red;
+  color: black;
+  font-size: 20px;
+  font-family: Arial;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.alert-success {
+  border-color: green;
+  color: green;
+}
+
+.alert-warning {
+  border-color: orange;
+  color: orange;
+}
+
+.alert-danger {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+@mixin crearBordes($color, $size, $shadow, $padding) {
+    border: $color solid $size;
+    border-radius: $size;
+    -webkit-border-radius: $size;
+    -moz-border-radius: $size;
+    -ms-border-radius: $size;
+    -o-border-radius: $size;
+    box-shadow: 0 0 $size $shadow;
+    padding: $padding;
+}
+
+@mixin eliminarLists() {
+    list-style: none;
+}
+
+@mixin fuente($size, $color, $fuente, $grosor) {
+    font-size: $size;
+    font-family: $fuente;
+    font-weight: $grosor;
+    color: $color;
+    text-decoration: none;
+}
+
+.header-wrapper {
+    @include crearBordes(red, 1px, green, 5px);
+    .nav-wrapper {
+        @include crearBordes(black, 1px, yellow, 5px);
+    }
+    .ul-wrapper {
+        @include crearBordes(green, 1px, blue, 5px);
+    }
+    display: flex;
+    justify-content: center;
+}
+
+.ul-wrapper li {
+    @include eliminarLists();
+}
+
+.ul-wrapper {
+    li>a {
+        @include fuente(40px, blue, Helvetica, bold);
+    }
+}
