@@ -1,0 +1,9 @@
+CICLOS EN LESS:
+Los ciclos funcionan iguales que en un 
+lenguaje de programación y tenemos
+el for normal y el forEach, deben
+inicializarsen con la palabra ., como
+todas las estructuras algoritmicas del
+preprocesador LESS.
+Dicen que no se tiene mucha utilidad
+ya que no va a existir interactividad.

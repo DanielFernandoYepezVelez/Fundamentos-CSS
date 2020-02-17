@@ -1,0 +1,22 @@
+@decoration: none;
+@fuente: 40px;
+@color: black;
+
+header {
+  border: solid 1px red;
+  nav {
+    border: solid 1px aqua;
+    ul {
+      border: solid 1px blue;
+      li {
+        border: solid 1px green;
+        text-align: center;
+        .list-item {
+          text-decoration: @decoration;
+          font-size: @fuente;
+          color: @color;
+        }
+      }
+    }
+  }
+}

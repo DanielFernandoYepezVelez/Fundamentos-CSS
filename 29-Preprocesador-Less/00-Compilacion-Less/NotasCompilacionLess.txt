@@ -1,0 +1,14 @@
+COMPILAR LESS CON NPM(CMD):
+1.Installar node JS.
+
+2.Installar Less de forma global con el
+comando: npm i less -g o npm i -g less
+
+3. Ver la versión de less con el comando:
+lessc -v
+lessc 3.11.1 (Less Compiler) [JavaScript]
+
+4.Posteriormente se debe compilar LESS a
+CSS y ver los cambios de forma constante 
+con el comando: 
+lessc ./css/style.less ./css/style.css

@@ -1,0 +1,6 @@
+MIXINS(FUNCTIONS) LESS:
+Son funciones y se ejecutan como en un 
+lenguaje de programación, reciben
+parametros tambien y el principal
+objetivo es la reutilización de codigo
+en diferentes segmentos del programa.

@@ -1,0 +1,10 @@
+.loop(@count) when (@count > 0) {
+  .loop(@count - 1);
+  height: 900px / @count;
+  background-color: burlywood;
+}
+
+header {
+  height: 900px;
+  .loop(5);
+}

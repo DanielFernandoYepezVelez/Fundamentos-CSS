@@ -1,0 +1,25 @@
+VARIABLES LESS:
+Las variables en este preprocesador
+funcionan igual que en un lenguaje 
+de programación, pero son antecedidas
+por un @, como se muestra en el 
+siguiente ejemplo:
+
+@fondo-color: red;
+@tamañoLetra: 20px;
+
+SELECTORES EN VARIABLES:
+Se debe tener encuenta que los
+selectores de cualquier tipo se
+pueden asignar y almacenar en VARIABLES
+por ende, ya no se utilizara el selector
+sino, la variable donde se almaceno dicho
+selector, como lo muestra el siguiente
+ejemplo:
+
+@caja-padre: .header;
+
+@{caja-padre} {
+  background-color: @fondoCajaPadre;
+  color: black;
+}

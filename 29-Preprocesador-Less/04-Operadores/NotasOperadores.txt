@@ -1,5 +1,5 @@
-OPERADORES ARITMETICOS SASS:
-SASS nos va a permitir ejecutar operaciones
+OPERADORES ARITMETICOS LESS:
+LESS nos va a permitir ejecutar operaciones
 aritmeticas dentro de css.
 
 COMO FUNCIONA:

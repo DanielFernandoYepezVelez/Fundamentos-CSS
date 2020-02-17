@@ -1,0 +1,9 @@
+CONDICIONALES LESS:
+Aqui los condicionales funcionan iguales
+que en un lenguaje de programación la unica
+diferencia es que son precedidos con un punto(.)
+Y tambien existen condicionales simples,
+compuestos, anidados, falta por confirmar el
+ternario.
+Dicen que no se tiene mucha utilidad
+ya que no va a existir interactividad.

@@ -1,0 +1,12 @@
+SELECTORES ANIDADOS:
+Los selectores se pueden
+anidadar o incluir uno dentro
+de otro, el selector puede
+ser de cualquier tipo y se puede
+tambien combinar con variable
+que otorgan los preprocesadores,
+no olvidar que css puro tambien
+permite la funcionalidad de las
+variables y por ultimo, funciona 
+igual la cascade de css sin 
+preprocesadores que con preprocesadores.

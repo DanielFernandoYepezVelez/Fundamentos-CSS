@@ -9,3 +9,11 @@ ejemplo:
 
 $variable-color
 $variable-font-weight
+
+SELECTORES EN VARIABLES:
+Se debe tener encuenta que los
+selectores de cualquier tipo se
+pueden asignar y almacenar en VARIABLES
+por ende, ya no se utilizara el selector
+sino, la variable donde se almaceno dicho
+selector.(BUSCAR SINTAXYS)

@@ -1,0 +1,18 @@
+header {
+  border: solid 1px red;
+}
+header nav {
+  border: solid 1px aqua;
+}
+header nav ul {
+  border: solid 1px blue;
+}
+header nav ul li {
+  border: solid 1px green;
+  text-align: center;
+}
+header nav ul li .list-item {
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+}
