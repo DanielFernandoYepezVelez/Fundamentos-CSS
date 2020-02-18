@@ -1,0 +1,241 @@
+🎈NOTA INICIAL => Los elementos que no utilizan
+alguna propiedad de flex-box, son los elementos
+que se mueven en el momento del responsive web
+design.
+
+🎈DISPLAY FLEXBOX =>
+Es la distribución de los elementos en todo el
+layout de una WebSite de forma mas eficiente y
+más sencilla. Lo más conveniente es olvidar los
+floats.
+🎈NOTA => Buscar y Utilizar Prefijos.
+
+🎨DECLARACIONES DISPLAY FLEXBOX =>
+
+🎨display: flex | inline-flex;
+
+🎨display: flex => para trabajar con una caja o 
+contenedor flexible.
+
+🎨display: inline-flex => Es una caja en linea pero flexible,
+es decir, esta caja solo va abarcar el ancho ocupado por los
+elementos que se encuentren en su interior, como cuando
+a un elemento se le aplica un display inline o inline-block;
+pero en este caso, se pueden ejecutar todas las propiedades
+del display flex.Casi nunca se usa.
+
+🎨flex-direction: row | column | row-reverse | column-reverse;
+
+🎨flex-direction: row; => Es el que viene por defecto
+y poner a los elemento en dirección de fila.
+
+🎨flex-direction: column; => Entrega los elementos
+en dirección de columna, es decir, uno debajo del
+otro.
+
+🎨flex-direction: row-reverse; => Entrega los 
+elementos en orden, pero desde la esquina derecha
+a la esquina izquierda y no es que flote los
+elementos a la derecha, sino que inicia desde
+el punto derecho y poner a los elemento 
+en dirección de fila.
+
+🎨flex-direction: column-reverse; => Entrega los
+elementos en dirección de columna, es decir, 
+uno debajo del otro, pero el orden de los 
+elementos empizan de abajo hacia arriba.
+
+🎨flex-wrap: wrap | no-wrap | wrap-reverse;
+
+🎨flex-wrap: wrap; => Esta propiedad permite
+que los elementos de la caja flexible tengan
+su ancho total y que los elementos no se
+pisen dicho ancho y para eso se pone uno debajo
+del otro. Hay que tener encuenta que el ancho
+de los elementos va alcanzar como maximo el ancho
+de la caja flexible, si lo sobre pasan, no se
+notara.
+
+🎨flex-wrap: no-wrap; => Esta propiedad viene
+por defecto y permite que los elementos de la caja
+flexible NO tengan su ancho total y que los 
+elementos se pisen dicho ancho, por que siempre
+se van a poner en forma de fila. Hay que tener
+encuenta que el ancho de los elementos va alcanzar
+como maximo el ancho de la caja flexible, si l
+sobre pasan, no se notara.
+
+🎨flex-wrap: wrap-reverse; => Funciona exactamen-
+te igual que la propiedad wrap, solo que Entrega
+los elementos en el orden inverso de abajo hacia
+arriba.
+
+🎨flex-flow: row wrap;
+Esta propiedad es un atajo por que recibe el valor
+del flex-direction y el valor del flex-wrap.
+
+🎨justify-content: flex-start | center | flex-end
+                    | space-around | space-between;
+
+🎨justify-content: flex-start; => Esta propiedad
+viene por defecto y entrega los elementos de la 
+caja flexible al inicio de la fila layout.
+
+🎨justify-content: center; => Esta propiedad
+entrega los elementos de la caja flexible al
+centro de la fila layout.
+
+🎨justify-content: flex-end; => Esta propiedad
+entrega los elementos de la caja flexible al
+final de la fila del layout.
+
+🎨justify-content: space-around; => Entrega un
+espaciado al principio de los elementos de la caja
+flexible entre cada uno de ellos y al final, lo 
+hace de forma proporcional, con respecto al ancho
+que tenga el contendor PADRE.
+
+🎨justify-content: space-between; => NO Entrega un
+espaciado al principio de los elementos de la caja
+flexible, PERO SI entre cada uno de ellos y al 
+final tampoco lo entrega, lo hace de forma 
+proporcional, con respecto al ancho que tenga el
+contendor PADRE.
+
+🎨align-items: flex-start | center | flex-end |
+                  stretch | baseline;
+
+🎨align-items: flex-start; => Esta propiedad viene
+por defecto y entrega la ubicación de los elementos
+en la parte superior del layout, por que se debe
+tener un flex-direction de row, para que 
+funcione la propiedad align-items de forma nomal.
+En conclusión, la ubicación de los elementos 
+funcionan de arriba hacia abajo y por ultimo debe
+existir una altura en el contenedor PADRE.
+
+🎨align-items: center; => Entrega la ubicación de
+los elementos en la parte central del layout,
+por que se debe tener un flex-direction de row,
+para que funcione la propiedad align-items de forma
+normal. En conclusión, la ubicación de los elementos
+funcionan de arriba hacia abajo y por ultimo debe
+existir una altura en el contenedor PADRE.
+
+🎨align-items: flex-end; => Entrega la ubicación
+de los elementos en la parte inferior del layout,
+por que se debe tener un flex-direction de row,
+para que funcione la propiedad align-items de forma
+normal. En conclusión, la ubicación de los 
+elementos funcionan de arriba hacia abajo y 
+por ultimo debe existir una altura en el 
+contenedor PADRE.
+
+🎨align-items: stretch; => Entrega el 100% de la
+altura de los elementos hijos con respecto al
+elemento padre, para que esto funcione se debe
+tener una altura automatica en el elemento PADRE.
+
+🎨align-items: baseline; => Tiene que ver con 
+la fuente en los elementos, buscar información.
+
+🎨align-content: flex-start | center | flex-end |
+                  stretch | space-between | 
+                       space-around
+🎨Esta propiedad funciona exactamente igual que
+align-items, pero cuando tengo mas de una linea
+de contenido y necesito agruparlo, es decir,
+cuando tenemos el contenedor con la propiedad
+wrap, entonces se Utiliza align-content y 
+align-items es cuando solo tengo una linea de
+contenido. Recordar que funciona de arriba hacia
+abajo, es decir, de forma vertical.
+
+🧨SUPER NOTA => Todas las propiedades de 
+justify-content y align-items también funcionan
+para cuando la flex-direction es igual a column,
+solo que los roles de justify-content y 
+align-items se vuelven inversos. Es decir
+justify-content ubica los elementos de arriba hacia
+abajo, por que estamos en la dirección de columna
+y align-items ubica los elementos de derecha a 
+izquierda por que estamos en la dirección de 
+columna.
+
+🎨PROPIEDADES PARA LOS HIJOS DEL ELEMENTO PADRE =>
+🎨flex-basis: 50px; => Esta propiedad es equivalente
+al ancho(width) y alto(height) de los elementos, todo
+depende de la dirección que este asignado al contenedor
+PADRE, row o column.
+Esta propiedad es importante para cuando se aplique
+las media-querys, por que entre mas pequeña sea
+la pantalla vamos a pasar de filas a columnas y gracias
+a esta propiedad podemos mantener la 
+proporcionalidad en los tamaños de filas a columnas
+o de columnas a filas.
+IMPORTANT! => Otro concepto es el de un ancho minimo,
+es decir, un ancho base, del cual no se va a reducir más
+y ese ancho base se le asigna a un determinado elemento.
+
+🎨flex-grow: 1; => Esta propiedad sirve de dos
+formas, LA PRIMERA para que todos los elementos
+tomen el espacio necesario y abarquen el 100% 
+del ancho del contenedor PADRE.
+Y LA SEGUNDA es que a los elementos de forma individual
+se les puede asignar mas o menos espacio del contenedor
+PADRE que esta compartiendo con los otros elementos hermanos
+por medio de incrementar el valor del flex-grow: 4, 
+es decir, agregar un valor con el que le indicamos 
+el crecimiento que va a tener un elemento, con respecto
+a los demas elementos Hermanos de forma proporcional.
+En conclusión, le da a los elementos un tamaño
+flexible.
+
+🎨flex-shrink: 1 => Esta propiedad funciona igual
+que flex-grow solo que el proceso es inverso, es
+decir, no aumenta sino que disminuye. Pero debes
+especificar al elemento que tenga un flex-grow de
+CERO(0).
+
+🎨flex: 1 1 50px; => Esta propiedad recibe el
+grow, shrink, basis; en una sola y su PRINCIPAL
+Objetivo es que los elementos que existen dentro
+del contenedor PADRE, sean totalmente responsivos
+y se adapten entre ellos mismos de forma interna
+al ancho disponible del contenedor PADRE.
+
+LOGICA DEL flex: 1; 
+FORMA COMÚN ES => flex: 0 0 70% y/ó flex: 0 0 30%;
+LAS DOS FORMAS DE ESCRIBIRLO ES LO MISMO, PORQUE
+GROW Y BASIS SON INTERCAMBIABLES, EN CONCLUSIÓN ES LO MISMO.
+Lo que hay detras es que se va a tener en cuenta el
+ancho maximo del contenedor PADRE, y ese valor se va
+a dividir entre todos los elementos con un valor de flex-grow.
+Unos elementos pueden tener un valor de grow más grande que otros
+y todos ellos se suman y se dividen entre el ancho total del
+contenedor PADRE y cada uno se le asigna un ancho proporcional
+a su grow, es decir, el ancho resultante se va a multiplicar 
+por el valor del grow que cada elemento tiene.
+
+🎨order: 1 | 2 | 3 | 4; => Esta propiedad me ayuda
+a cambiar el orden de los elementos hijos, no me
+modifica el DOM, solo cambia el orden en el layout(CSS)
+y es muy eficiente cuando los combinas con @media 
+Querys, es decir, cuando el ancho de los pixeles
+sean de un tamaño especifico, los elementos
+pueden ir cambiando su orden de visualización.
+🎨Cuando solo quiero ordenar un elemento hijo
+y los demas no, debe aplicar el order con
+un valor de -1.
+🎨Una forma valida de ver esta funcionalidad es
+en un eje x completo y entre el valor sea
+mucho mayor con un signo negativo, el elemento
+se ubicara en primera posición.
+
+🎨align-self: flex-start | center | flex-end | 
+                stretch | baseline
+alinear un elemento independientemente de los demás
+Este es un alineamiento vertical si el 
+flex-direction del contenedor PADRE esta en filas,
+pero si lo tienes en column se va alinear de forma
+horizontal.
