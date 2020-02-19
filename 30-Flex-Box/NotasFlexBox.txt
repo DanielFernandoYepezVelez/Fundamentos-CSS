@@ -37,7 +37,7 @@ otro.
 elementos en orden, pero desde la esquina derecha
 a la esquina izquierda y no es que flote los
 elementos a la derecha, sino que inicia desde
-el punto derecho y poner a los elemento 
+el punto derecho y pone a los elemento 
 en dirección de fila.
 
 🎨flex-direction: column-reverse; => Entrega los
@@ -62,7 +62,7 @@ flexible NO tengan su ancho total y que los
 elementos se pisen dicho ancho, por que siempre
 se van a poner en forma de fila. Hay que tener
 encuenta que el ancho de los elementos va alcanzar
-como maximo el ancho de la caja flexible, si l
+como maximo el ancho de la caja flexible, si la
 sobre pasan, no se notara.
 
 🎨flex-wrap: wrap-reverse; => Funciona exactamen-
@@ -75,7 +75,8 @@ Esta propiedad es un atajo por que recibe el valor
 del flex-direction y el valor del flex-wrap.
 
 🎨justify-content: flex-start | center | flex-end
-                    | space-around | space-between;
+                    | space-around | space-between
+                          | space-evenly;
 
 🎨justify-content: flex-start; => Esta propiedad
 viene por defecto y entrega los elementos de la 
@@ -94,6 +95,9 @@ espaciado al principio de los elementos de la caja
 flexible entre cada uno de ellos y al final, lo 
 hace de forma proporcional, con respecto al ancho
 que tenga el contendor PADRE.
+
+🎨justify-content: space-evenly; => Funciona muy
+similar al space-around.
 
 🎨justify-content: space-between; => NO Entrega un
 espaciado al principio de los elementos de la caja
