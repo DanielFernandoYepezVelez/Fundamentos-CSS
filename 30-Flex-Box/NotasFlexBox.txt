@@ -163,20 +163,6 @@ izquierda por que estamos en la dirección de
 columna.
 
 🎨PROPIEDADES PARA LOS HIJOS DEL ELEMENTO PADRE =>
-🎨flex-basis: 50px; => Esta propiedad es equivalente
-al ancho(width) y alto(height) de los elementos, todo
-depende de la dirección que este asignado al contenedor
-PADRE, row o column.
-Esta propiedad es importante para cuando se aplique
-las media-querys, por que entre mas pequeña sea
-la pantalla vamos a pasar de filas a columnas y gracias
-a esta propiedad podemos mantener la 
-proporcionalidad en los tamaños de filas a columnas
-o de columnas a filas.
-IMPORTANT! => Otro concepto es el de un ancho minimo,
-es decir, un ancho base, del cual no se va a reducir más
-y ese ancho base se le asigna a un determinado elemento.
-
 🎨flex-grow: 1; => Esta propiedad sirve de dos
 formas, LA PRIMERA para que todos los elementos
 tomen el espacio necesario y abarquen el 100% 
@@ -194,20 +180,39 @@ flexible.
 🎨flex-shrink: 1 => Esta propiedad funciona igual
 que flex-grow solo que el proceso es inverso, es
 decir, no aumenta sino que disminuye. Pero debes
-especificar al elemento que tenga un flex-grow de
+especificar al elemento que deseas disminuir
+que tenga un flex-grow:0 de
 CERO(0).
 
-🎨flex: 1 1 50px; => Esta propiedad recibe el
+🎨flex-basis: 50px; => Esta propiedad es equivalente
+al ancho(width) y alto(height) de los elementos, todo
+depende de la dirección que este asignado al contenedor
+PADRE, row o column.
+Esta propiedad es importante para cuando se aplique
+las media-querys, por que entre mas pequeña sea
+la pantalla vamos a pasar de filas a columnas y gracias
+a esta propiedad podemos mantener la 
+proporcionalidad en los tamaños de filas a columnas
+o de columnas a filas.
+IMPORTANT! => Otro concepto es el de un ancho minimo,
+es decir, un ancho base, del cual no se va a reducir más
+y ese ancho base se le asigna a un determinado elemento.
+
+🎨flex: 1 0 300px;
+🎨flex: 1 0 auto; => Esta propiedad recibe el
 grow, shrink, basis; en una sola y su PRINCIPAL
 Objetivo es que los elementos que existen dentro
 del contenedor PADRE, sean totalmente responsivos
 y se adapten entre ellos mismos de forma interna
 al ancho disponible del contenedor PADRE.
 
-LOGICA DEL flex: 1; 
-FORMA COMÚN ES => flex: 0 0 70% y/ó flex: 0 0 30%;
-LAS DOS FORMAS DE ESCRIBIRLO ES LO MISMO, PORQUE
-GROW Y BASIS SON INTERCAMBIABLES, EN CONCLUSIÓN ES LO MISMO.
+🎨flex: 1 <=> FORMA COMÚN ES => flex: 0 0 70% y/ó flex: 0 0 30%;:
+La diferencia entre estas dos formas de declaración
+es que solo con el 1 el basis va a ser auto y con la otra
+el basis va tener un tamaño minimo, y eso en ocasiones ayuda
+a que los elementos se ponga en forma de columnas.
+
+🎨LOGICA DE LA PROPIEDAD flex: 1; 
 Lo que hay detras es que se va a tener en cuenta el
 ancho maximo del contenedor PADRE, y ese valor se va
 a dividir entre todos los elementos con un valor de flex-grow.

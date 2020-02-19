@@ -10,6 +10,14 @@ de la lista seleccionado, como por ejemplo:
 ul li:first-child{}; primer Hijo(elemento)
 ul li:nth-child{}; Hijo del Medio(elemento)
 ul li:last-child{}; Ultimo Hijo(elemento)
+
+Ademas, Puedo agregar la posición del 
+elemento hijo que quiero alterar, como se 
+muestra en el siguiente ejemplo:
+
+ul li:nth-child(2){};
+ul li:nth-child(1){};
+ul li:nth-child(3){};
 ---------------------------------------------
 
 PSEUDOCLASES PARA ENLACES:
