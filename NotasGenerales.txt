@@ -48,9 +48,6 @@ La mejor conferencia de Diseño Weben español(Guadalajara,MX).
 DESCARGAR ICONOS:
 https://www.flaticon.com/
 https://fontawesome.com/icons?d=gallery
-CDN FONTAWESOME:
-https://use.fontawesome.com/releases/v5.3.1/js/all.js(funciona)
-https://use.fontawesome.com/releases/v5.7.1/css/all.css(No funciona)
 -------------------------------------------------------------
 
 FUENTES:

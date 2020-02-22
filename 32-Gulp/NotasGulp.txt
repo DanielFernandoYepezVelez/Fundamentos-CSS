@@ -1,0 +1,106 @@
+QUE ES GULP:
+Es un administrador de tareas construido
+en c o c++ y nos ayuda en la automatizacion
+de tareas repetitivas, y así, agilizar el 
+desarrollo.
+-------------------------------------------------
+
+COMO FUNCIONA GULP:
+GULP es el nucleo principal al cual, se le suman
+diferentes piezas, modulos, dependencias o plugins,
+que van a ejecutar una tarea en especifico o para
+la tarea para lo cual fueron requeridos.
+Esto mismo se puede realizar con npm o con
+webpack.
+-------------------------------------------------
+
+PIEZAS, MODULOS, DEPENDENCIAS O PLUGINS DE GULP:
+Todas estas piezas, modulos, dependencias o plugins
+inician con la palabra gulp, como se muestra 
+a continuación:
+"gulp": "^4.0.2",
+"gulp-autoprefixer": "^7.0.1",
+"gulp-sass": "^4.0.2"
+-------------------------------------------------
+
+IMPORTANTE PARA TRABAJAR CON GULP:
+Debe existir un archivo que se llama
+gulpfile.js, por que GULP va a buscar este
+archivo, lo identifica con ese nombre y
+va saber que ese archivo es para GULP.
+-------------------------------------------------
+
+INSTALAR GULP:
+Podemos instalar esta herramienta con npm,
+pero recordar que para utilizar npm se debe
+instalar nodeJS. GULP se instala con el 
+siguiente comando:
+npm install -g gulp ó npm i gulp -g
+
+Además vamos a installar el cli de gulp
+con el siguiente comando:
+npm install -g gulp-cli ó npm i gulp-cli -g
+
+NOTA: En la documentacion solo dicen que
+con este segundo comando es suficiente.
+-------------------------------------------------
+
+GENERAR EL PACKAGE.json:
+Este archivo se genera gracias a npm con el
+siguiente comando:
+npm init ó npm init -y ó npm init --yes
+
+AGREGAR ESTO EN EL PACKAGE.json:
+"browsersList": [
+  "> 1%",
+  "last 2 versions"
+]
+Aqui estamos diciendo que agregue
+autoprefixers a la lista de los
+navegadores que lo requieran.
+al menos ese 1% de la población
+que utilice ese navegador hay que
+agregarle autoprefixers.
+-------------------------------------------------
+
+CINCO COMANDOS PRINCIPALES PARA INICIAR CON GULP:
+CREAR UNA TAREA:
+gulp.task('Nombre Tarea', () => { Lo Que Va Hacer
+La Tarea
+});
+
+EJECUTAR GULP CON SU RESPECTIVA TAREA:
+gulp NombreTarea
+---------------------------
+
+gulp.task('default', () => { Lo Que Va Hacer
+La Tarea
+});
+
+EJECUTAR GULP CON SU RESPECTIVA TAREA:
+gulp
+
+NOTA TAREAS: Gulp ejecuta una tarea primaria o
+por defecto, cuando a la tarea se le asigna
+el nombre default solo se ejecuta gulp.
+-------------------------------------------------
+
+ORIGEN DEL DOCUMENTO:
+gulp.src('Ruta Del Origen')
+-------------------------------------------------
+
+TAREAS(PLUGINS):
+Unión De Las Diferentes Secciones De La Tarea
+gulp.pipe()
+.pipe(seccion)
+-------------------------------------------------
+
+DESTINO DEL ARCHIVO:
+gulp.dest('Ruta De Destino Del Archivo')
+-------------------------------------------------
+
+CAMBIOS DE FORMA AUTOMATICA:
+Ejecuta los cambios en la ruta que le
+especifiquemos.
+gulp.watch('ruta a vigilar', ['tarea'])
+-------------------------------------------------

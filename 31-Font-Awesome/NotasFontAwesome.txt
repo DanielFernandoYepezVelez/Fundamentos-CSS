@@ -1,0 +1,16 @@
+IMPORTAR AL PROYECTO FONT-AWESOME:
+1.Entro a su web: https://fontawesome.com/
+2.Inicio Sesion.
+3.Click Start For Free.
+4.Click en Download.
+5.Click en el boton Azul Download Font
+                         Awesome For Free.
+6.Descomprimir el Archivo .zip.
+7.Obtener Dos Carpetas WebFonts y css.
+8.Pegar las carpetas en el proyecto.
+9.Linkiar en el html los siguiente:
+<link rel="stylesheet" href="./css/all.min.css" />
+
+UTLIZAR EL CDN DE FONT-AWESOME:
+https://use.fontawesome.com/releases/v5.3.1/js/all.js(funciona)
+https://use.fontawesome.com/releases/v5.7.1/css/all.css(No funciona)
