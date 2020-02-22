@@ -1,0 +1,10 @@
+body {
+  background-color: #cccccc;
+  background-color: blue; }
+
+h1 {
+  font-size: 70px;
+  color: red;
+  border: red solid 1px;
+  background-color: aqua;
+  text-align: center; }
