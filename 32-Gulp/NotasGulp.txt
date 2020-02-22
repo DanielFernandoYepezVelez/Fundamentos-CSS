@@ -45,6 +45,15 @@ NOTA: En la documentacion solo dicen que
 con este segundo comando es suficiente.
 -------------------------------------------------
 
+QUE SE PUEDE HACER CON GULP:
+Con este administrador de tareas se pueden hacer 
+muchas cosas como por ejemplo:
+
+Compilar SASS.
+Compilar ECMASCript 6 a ECMASCript 5.
+Compilar Pug.
+-------------------------------------------------
+
 GENERAR EL PACKAGE.json:
 Este archivo se genera gracias a npm con el
 siguiente comando:
@@ -77,7 +86,7 @@ gulp.task('default', () => { Lo Que Va Hacer
 La Tarea
 });
 
-EJECUTAR GULP CON SU RESPECTIVA TAREA:
+EJECUTAR GULP CON SU RESPECTIVA TAREA(default):
 gulp
 
 NOTA TAREAS: Gulp ejecuta una tarea primaria o
@@ -90,8 +99,10 @@ gulp.src('Ruta Del Origen')
 -------------------------------------------------
 
 TAREAS(PLUGINS):
-Unión De Las Diferentes Secciones De La Tarea
-gulp.pipe()
+Unión De Las Diferentes Secciones De La Tarea.
+Une o concatena los diferentes pasos o herramientas
+para que la tarea que yo quiero completar, se haga
+de forma exitosa.
 .pipe(seccion)
 -------------------------------------------------
 
@@ -102,5 +113,39 @@ gulp.dest('Ruta De Destino Del Archivo')
 CAMBIOS DE FORMA AUTOMATICA:
 Ejecuta los cambios en la ruta que le
 especifiquemos.
-gulp.watch('ruta a vigilar', ['tarea'])
+gulp.watch('ruta a vigilar', gulp.series('tarea'))
+
+REFRESCA LOS CAMBIOS DE TODOS LOS ARCHIVOS
+QUE TERMINEN EN .scss:
+gulp.watch('.dev/scss/*.scss')
+
+REFRESCA LOS CAMBIOS DE TODOS LOS ARCHIVOS
+QUE ESTEN EN LA CARPETA DONDE ESTAMOS
+TRABAJANDO:
+gulp.watch('.dev/scss/*.*')
 -------------------------------------------------
+
+SALIDA U OUTPUT DE LOS ARCHIVOS COMPILADOS
+POR SASS:
+Existen 4 formas como podemos obtener los
+de archivos .scss a .css, que son las siguientes:
+
+OUPUTSTYLE: NESTED =>
+Es la que se le asigna a SASS por defecto y
+devuelve el .css de forma normal, como si se
+hubiese escrito .css sin la necesidad de SASS.
+
+OUPUTSTYLE: COMPACT =>
+Obtenemos el archivo .css de salida en una sola
+linea por cada propiedad compilada.
+
+OUPUTSTYLE: EXPANDED =>
+devuelve el .css de forma normal, como si se
+hubiese escrito .css sin la necesidad de SASS,
+es decir, sin la necesidad del archivo .scss.
+
+OUPUTSTYLE: COMPRESSED =>
+Entrega el archivo .css de forma comprimida
+totalmente para dejarlo lo mas
+minificado posible y elimina los comentarios.
+-----------------------------------------------
