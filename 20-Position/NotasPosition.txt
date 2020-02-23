@@ -8,30 +8,42 @@ codigo HTML.
 POSICIÓN:
 Es un tipo de display y me sirve para ubicar los elementos
 de la pantalla en cualquier lugar que yo necesite y podemos
-manipular el orden de los elementos como se presentan en la
-pantalla indicado desde el codigo HTML.
+manipular el orden de los elementos diferente al como se
+presentan en la pantalla especificado desde el codigo HTML.
 
 PROPIEDAD Offset:
-Son las propiedades que mueven un elemento posicionado. Un
-elemento posicionado es un elemento que tenga una propiedad
-de position distinta a static. Lo puede mover por las 
-siguientes propiedades según el borde indicado:
+Son las propiedades que mueven a un elemento posicionado. 
+POSICIONADO es un elemento que tenga una propiedad de
+relative, absolute, fixed o stiky, es decir, de position distinta a
+static. Los puede mover por las siguientes propiedades según
+el borde indicado:
+
 top: 20px;
 left: 200px;
 right: 200px;
 bottom: 20px;
+pero este borde es el que rodea al propio elemento POSICIONADO.
+------------------------------------------------------------------------------------------------
 
-(POSITION:RELATIVE, funciona para todos los elementos 
-del web-site)
-CARACTERISTICAS:
+POSITION:RELATIVE: Me dice desde donde empiezo a mover el
+elemento POSICIONADO y tengo como referencia los bordes de los
+diferentes lados del elemento.
+
+CARACTERISTICAS DE ESTA PROPIEDAD:
 1. Su referencia es su posición inicial.
 2. Aplicar esta declaración completa no modifica ningun otro
-elemento del layout, ni a el mismo.
+elemento del layout(GEOMETRIA), ni a el mismo.
 3. Al moverlo con las propiedades offset , el elemento 
 conserva su espacio, así se desplace.
 4. Esta caracteristica es importante cuando deseo mover un
-elemento, sin modifcar el layout de ningun otro elemento del
-web-site.
+elemento, sin modifcar el layout(GEOMETRIA) de ningun otro 
+elemento del web-site.
+
+CUANDO IMPLEMENTARLA:
+Es importante para cuando quiero mover un elemento del layot y no
+quiero que se modifique el layout de otro elemento, es decir solo
+quiero mover ese elemento en particular y que se conserve el
+espacio en el layout(GEOMETRIA).
 -----------------------
 Es más conveniente indicar un border para ver como se 
 mueve el elemento con respecto a su referencia.
@@ -43,17 +55,21 @@ right: 200px toma como referencia es la derecha y
           se mueve hacia la izquierda.
 bottom: 20px toma como referencia el border inferior y 
           se mueve hacia arriba.
+-----------------------------------------------------------------------------------------------------
 
-(POSITION:ABSOLUTE, funciona para todos los elementos del
-web-site)
-Es más complejo que el anterior.
-1. Pierde su posición en el flujo y no mantinene su espacio,
-pasa atras.
+POSITION:ABSOLUTE: Es más complejo que el anterior, pero tambien
+me dice desde donde empiezo a mover el elemento POSICIONADO y 
+tengo como referencia los bordes de los diferentes lados del mismo 
+elemento con respecto a los borde de referencia de su ancestro o 
+elemento padre.
+
+CARACTERISTICAS DE ESTA PROPIEDAD:
+1. Pierde su posición en el flujo y no mantinene su espacio, pasa atras.
 2. Si tiene dimensiones fijas las mantiene, pero si tienen
 dimensiones Automaticas, se vuelve estilo inline, es decir,
 el ancho y alto es de acuerdo a su contenido.
 3. La referencia que tiene esta declaración es su ANCESTRO
-posicionado mas cercano y si no tiene un ANCESTRO posicionado
+POSICIONADO mas cercano y si no tiene un ANCESTRO posicionado
 se va regir por el body o viewport.
 4. El elemento posicionado puede tener cualquier propiedad 
 desde que no sea estatica y no necesariamente tiene que ser
@@ -75,6 +91,15 @@ span{
   text-align: center;
   line-height: 45px;
 }
+
+NOTA IMPORTANTE RELATIVE Y ABSOLUTE:
+Los dos se mueven igual lo que cambia es que uno conserva su
+espacio y el otro no y el otro se recomienda que tenga una referencia
+de un elemento POSICIONADO como referencia que generalmente
+es relative, pero obligatoriamente no debe ser relative.Ademas a 
+absolute hay que darle un ancho por que sino toma el ancho de tipo 
+inline.
+------------------------------------------------------------------------------------------------------
 
 (POSITION:FIXED, funciona para todos los elementos del 
 web-site)

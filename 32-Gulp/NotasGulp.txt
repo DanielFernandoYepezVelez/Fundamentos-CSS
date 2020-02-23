@@ -123,6 +123,20 @@ REFRESCA LOS CAMBIOS DE TODOS LOS ARCHIVOS
 QUE ESTEN EN LA CARPETA DONDE ESTAMOS
 TRABAJANDO:
 gulp.watch('.dev/scss/*.*')
+
+TAREAS EN PARALELO O ASYNCRONAS:
+Cuando hablamos de tareas asyncronas es que van a
+empezar al mismo tiempo y van hacer vigiladas por
+gulp y no mi live server. para que esto pase
+debe indicarle que necesito esas tareas en paralelo
+y eso se hace de la siguiente manera:
+
+function watchFiles() {
+    gulp.watch('./dev/scss/*.scss', css);
+    gulp.watch('./public/index.html');
+}
+
+gulp.task('watch', gulp.parallel(watchFiles));
 -------------------------------------------------
 
 SALIDA U OUTPUT DE LOS ARCHIVOS COMPILADOS

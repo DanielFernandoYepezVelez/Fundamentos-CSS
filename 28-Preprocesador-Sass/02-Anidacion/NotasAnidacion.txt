@@ -10,3 +10,18 @@ permite la funcionalidad de las
 variables y por ultimo, funciona 
 igual la cascade de css sin 
 preprocesadores que con preprocesadores.
+
+APLICANDO PSEUDOCLASES CON SELECTORES
+ANIDADOS:
+Cuando anidamos un elemento al cual
+se le va aplicar una pseudoclase, debemos
+anteceder el selector con un ampersan para que
+evite ese espacio, como se muestra en el 
+siguiente ejemplo:
+
+// Ampersan para evitar espacios en blanco
+.carrito-compras {
+    &:hover .contenido.oculto {
+        display: block;
+    }
+}
