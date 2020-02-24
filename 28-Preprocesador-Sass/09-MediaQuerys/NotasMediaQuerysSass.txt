@@ -1,0 +1,23 @@
+MEDIA QUERYS SASS:
+En SASS las media QUERYS tienen la siguiente SYNTAX:
+
+/* Telefono */
+@mixin telefono {
+    @media only screen and (min-width: #{$telefono}) {
+        @content;
+    }
+}
+
+Lo que pasa arriba es que estoy implementando
+un media query en SASS y aqui no se agregan
+los bloques de codigo de forma directa, sino
+que se reemplazan con la palabra @content.
+Pero antes observar que el mixin no lleva
+parentesis por que las variables se inyectan
+de forma directa #{$telefono}.
+
+@include tablet() {
+       width: 40%;           
+ }
+Asi se invoca y se ejecuta el media query,
+muy similar a un mixin.

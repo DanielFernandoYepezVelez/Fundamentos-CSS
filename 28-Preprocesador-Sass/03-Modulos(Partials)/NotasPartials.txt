@@ -4,3 +4,23 @@ template engine, por que me permite
 utilizar el codigo en diferentes partes
 del programa uniendo codigo de 
 varios archivos.
+
+SINTAXYS PARTIALS:
+@use 'NombreArchivo';
+
+TRABAJANDO CON GULP:
+Al trabajar con GULP es diferente
+y funciona de la siguinete manera, 
+los archivos que se quiera incluir
+en el archivo principal, deben
+iniciar su nombre con el _ para que
+SASS entienda que ese archivo es 
+secundario o es un estilo de partial.
+Y las sintaxys es de la siguiente 
+manera:
+
+@import 'NombreArchivo';
+Aqui se utiliza el @import y no el @use
+y ademas no se escribe el _ como se
+escribio al principio para darle el 
+nombre al archivo.
