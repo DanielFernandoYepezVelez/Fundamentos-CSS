@@ -107,3 +107,13 @@ background: image position / size repa attachment origin clip;
 background:url('fhfhffhf') 0 20px / 15% no-repeat opcional opcional,
            url('jhgthjgj') 0 20px / 15% no-repeat opcional opcional;
 ------------------------------------------------------------
+
+REEMPLAZAR UN BACKGROUND POR OTRO TOTALMENTE:
+Aqui estamos hablando de que tenemos un fondo de algun color
+en particular y queremos cambiarlo por una imagen o viceversa
+tenemos que hacer lo siguiente:
+
+background-color: unset; //Me quita el color de fondo
+background-image: url("../img/bg.jpg") unset; //Me quita la imagen
+de fondo.
+------------------------------------------------------------

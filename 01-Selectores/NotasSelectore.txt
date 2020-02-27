@@ -192,3 +192,20 @@ lugar del codigo.
 EJEMPLO:[attr*="value"]
 [class*="button-"]
 -------------------------------------------------------------
+
+SELECTOR +label:
+lo que hace este selector es que se le van a aplicar las
+propiedades al elemento posterior del elemento seleccionado
+como se muestra en el siguiente ejemplo:
+
+&:focus {
+                background-color: $color_gris_claro;
+                outline: none;
+                +label {
+                    font-size: .6rem;
+                }
+            }
+
+para que esto funcione en el HTML deben estar de forma contraria
+es decir, primero el input y luego el label, no como generalmente
+se hace de que primero el label y posteriormente el input.

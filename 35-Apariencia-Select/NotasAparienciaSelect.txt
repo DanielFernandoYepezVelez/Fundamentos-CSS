@@ -1,0 +1,11 @@
+APARIENCIA SELECT:
+Para dar apariencia a un select se debe agrega la siguiente
+propiedad y posteriormente se agrega todas las
+propiedades de forma normal:
+
+appearance:none;
+select {
+        appearance: none;
+        margin-top: 2rem;
+        padding: 1rem 3rem;
+    }

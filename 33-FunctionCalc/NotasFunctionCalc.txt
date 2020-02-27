@@ -1,0 +1,6 @@
+FUNCTION CALC:
+Hasta momento me sirve para indicarle a varios
+elementos cuanto PORCENTAJE van a tomar u ocupar 
+del contener padre, por medio de operaciones
+aritmeticas y con medidas relativas y absolutas o
+combinando dichas medidas.
