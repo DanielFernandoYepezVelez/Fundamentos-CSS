@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    /* PARA QUE FUNCIONE EL FOOTER FIJO */
+    min-height: 100vh;
+}
+
+.pagina>* {
+    padding: .5rem;
+}

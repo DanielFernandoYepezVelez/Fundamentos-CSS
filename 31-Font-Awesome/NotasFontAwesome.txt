@@ -14,3 +14,11 @@ IMPORTAR AL PROYECTO FONT-AWESOME:
 UTLIZAR EL CDN DE FONT-AWESOME:
 https://use.fontawesome.com/releases/v5.3.1/js/all.js(funciona)
 https://use.fontawesome.com/releases/v5.7.1/css/all.css(No funciona)
+
+OTRA  FORMA DE USAR:
+Aplico los pasos anteriores con los siguientes cambios:
+1.No pego la carpeta css.
+2.Solo pego el archivo con el siguiente nombre:
+fontawesome.min.css
+3.linkiar el archivo anteriormente mencionado en el HTML.
+4.Copiar y pegar la carpeta WebFonts.

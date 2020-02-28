@@ -1,0 +1,20 @@
+.pagina .contenido-principal {
+    background-color: #d2dfdb;
+}
+
+.contenido-principal {
+    max-width: 60%;
+    margin: 0 auto;
+    /* CONTENIDO PRINCIPAL TOMA TODO EL ESPACIO
+    DISPONIBLE */
+    flex: 1;
+}
+
+.contenido-principal h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contenido-principal p {
+    margin-bottom: 1rem;
+}
