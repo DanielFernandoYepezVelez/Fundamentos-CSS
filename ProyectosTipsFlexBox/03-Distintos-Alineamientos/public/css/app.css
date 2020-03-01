@@ -1,0 +1,69 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.centrado {
+    background-image: url('../assets/img/hamburguesa.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrado>div {
+    flex: 0 0 calc(33.3% - 3rem);
+}
+
+.contenido-centrado {
+    color: white;
+}
+
+.contenido-centrado h1 {
+    color: #e0ab10;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.contenido-centrado p {
+    margin: 0;
+    text-align: center;
+}
+
+.contenido-centrado .ubicacion {
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.aviso {
+    background-color: #e0ab10;
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.aviso span {
+    font-size: 3rem;
+    display: block;
+}
+
+.aviso.arriba {
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.aviso.abajo {
+    align-self: flex-end;
+    margin-bottom: 1rem;
+}

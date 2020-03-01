@@ -1,0 +1,102 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f3f3f3;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+
+/* Imagenes Responsivas */
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*TIP DEL PROYECTO GENERAR UNA ALTURA FIJA EN PIXELES, PARA QUE FUNCIONE EL EFECTO MASONRY*/
+    max-height: 4600px;
+}
+
+.entrada {
+    width: calc(33.3% - 0.5rem);
+    -webkit-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 4px 5px -1px rgba(0, 0, 0, 0.75);
+    margin-bottom: 0.5rem;
+}
+
+.contenido {
+    padding: 1rem;
+}
+
+
+/* MEDIDAD MEDIA QUERYS */
+
+@media only screen and (min-width: 320px) {
+    .blog {
+        max-height: 6040px;
+    }
+    .entrada {
+        width: calc(50% - 0.5rem);
+    }
+}
+
+@media only screen and (min-width: 343px) {
+    .blog {
+        max-height: 5540px;
+    }
+    .entrada {
+        width: calc(50% - 0.5rem);
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .blog {
+        max-height: 5100px;
+    }
+    .entrada {
+        width: calc(50% - 0.5rem);
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .blog {
+        max-height: 4200px;
+    }
+    .entrada {
+        width: calc(50% - 0.5rem);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .blog {
+        max-height: 2800px;
+    }
+    .entrada {
+        width: calc(33.3% - 0.5rem);
+    }
+}

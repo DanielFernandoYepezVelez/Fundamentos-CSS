@@ -1,0 +1,7 @@
+Distintos Alineamientos:
+Aqui se juega con el align-self, tambien
+se debe tener en cuenta la funcion calc(),
+esta funcion realmente es muy valiosa,
+por que me ayuda a ubicar los elementos
+de forma estrategica en todo el layout
+sin la necesidad de margin o cosas asi.

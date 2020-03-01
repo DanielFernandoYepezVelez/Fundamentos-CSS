@@ -1,0 +1,5 @@
+EFECTO MASONRY:
+El tip principal es definir un alto
+con una medida fija al contenedor PADRE,
+ademas de definir en el ancho de cada 
+elemento con una function calc.
