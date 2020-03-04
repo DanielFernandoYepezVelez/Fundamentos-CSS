@@ -1,0 +1,20 @@
+.contenedor {
+    display: grid;
+    grid-gap: 10px;
+    height: 500px;
+    /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+    grid-template-rows: repeat(auto-fit, minmax(2px, 50px));
+    /* auto-fill */
+    /* Esta Propiedad pone en el contenedor padre
+    todas las columnas que tenga especificadas  y si en 
+    su ancho disponible le caben mas, ps ese espacio quedara
+    en blanco, pero cuando el ancho se acabe, se van
+     a poner de forma vertical, que esto se ve en
+     dispositivos pequeños.*/
+    /* auto-fit */
+    /* Esta propiedad tiene el mismo resultado que
+    auto-fill cuando trabajamos con dispositivos
+    moviles, la diferencia la notamos con dispositvos
+    grandes, por que esta propiedad se va a distribuir 
+    en todo el ancho disponible de su contenedor PADRE    */
+}

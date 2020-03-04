@@ -262,86 +262,63 @@ VERTICAL.
 💎Son los elementos que se agregan o distribuyen 
 en el layout despues de definir la GRID EXPLICITA.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+💎PROPIEDADES CONTENEDOR PADRE:
+💎Filas Automaticas(Implicitas) van a tener un alto de 400pixeles:
+grid-auto-rows: 50px;
+
+💎Columnas Automaticas(Implicitas) van a tener un ancho de 600pixeles:
+grid-auto-columns: 600px;
+
+💎grid-auto-flow: row; => Esta Propiedad me cambia la 
+dirección de mi GRID, por defecto viene para row,
+es decir, para filas, en conclusión, los
+elementos de la grid implicita se van a ir
+agregando de forma vertical, hacia abajo.
+
+💎grid-auto-flow: column; => Esta Propiedad me define
+la direccion de la GRID a column, es decir, ya se
+van a ir agregando los elementos de forma horizontal,
+en conclusión, de lado a lado los elementos de la GRID
+implicta.
+
+💎grid-auto-flow: row dense; => Esta Propiedad Agrega una
+distribucion equitativa a los elementos donde exista
+un espacio en blanco y contengan las mismas
+medidas entre el elemento y la grid. Funciona para
+la direccion de row, es decir, de forma VERTICAL.
+
+💎grid-auto-flow: column dense; => Esta Propiedad Agrega una
+distribucion equitativa a los elementos donde exista
+un espacio en blanco y contengan las mismas
+medidas entre el elemento y la grid. Funciona para
+la direccion de column, es decir, de forma 
+Horizontal.
+
+💎SE LE APLICA A LAS PROPIEDADES HIJOS:
+💎Aqui estamos expandiendo las columnas y las filas,
+y esto nos ayuda con los elementos de la GRID
+IMPLICITA.
+
+💎grid-column: span 2; Este se aplica solo cuando es row dense.
+💎grid-row: span 2; Este se aplica solo cuando es column dense.
+
+                🥊AUTO-FIT AND AUTO-FILL=>
+🥊grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+🥊AUTO-FILL:
+Esta Propiedad pone en el contenedor padre
+todas las columnas que tenga especificadas  y si en
+su ancho disponible le caben mas, ps ese espacio quedara
+en blanco, pero cuando el ancho se acabe, se van
+a poner de forma vertical, que esto se ve en
+dispositivos pequeños.
+
+🥊AUTO-FIT:
+Esta propiedad tiene el mismo resultado que
+auto-fill cuando trabajamos con dispositivos
+moviles, la diferencia la notamos con dispositvos
+grandes, por que esta propiedad se va a distribuir
+en todo el ancho disponible de su contenedor PADRE,
+con el numero de columnas que especifiquemos.
+
+🥊NOTA => No Esta Funcionando Para Filas.
