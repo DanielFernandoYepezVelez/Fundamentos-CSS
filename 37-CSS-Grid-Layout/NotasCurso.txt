@@ -1,0 +1,347 @@
+PROPIEDADES CONTENEDOR PADRE DIRECTAMENTE =>
+        🎉FILAS Y COLUMNAS EN GRID
+🎉display: grid; => Esta propiedad aplica el
+concepto de grillas en todo el layout.
+Cuando hablo de grillas, me refiero a filas y a
+columnas.
+
+🎉FRACCIÓN(1fr) => De todo el espacio que tenga
+disponible, lo va a distribuir entre todos los
+elementos que existan.
+
+🎉grid-template-columns: 100px 1fr 100px; => Esta 
+propiedad dice el número de columnas que quiero
+establecer.
+
+🎉grid-template-rows: 80px 1fr 150px; => Esta 
+propiedad dice el número de filas que quiero
+establecer.
+
+🎉grid-gap: 15px; => Esta propiedad aplica un 
+espaciado entre cada uno de los elementos.
+
+             🎉AYUDA DE FIREFOX =>
+🎉LINEA CONTINUA => Contiene la grid explicita,
+es decir, el numero de filas Y/O columnas que
+le indicamos que tenga nuestro Layout.
+
+🎉LINEA DESCONTINUA => Contiene los elementos
+que se acomodan de forma implicita, posterior
+a las medidas explicitas indicadas. es decir,
+estos elementos grid los acomoda, de acuerdo
+al espaciado disponible del contenedor PADRE.
+
+🎉LINEA PUNTEADA => ?
+
+🎨TAMAÑOS MINIMOS Y MÁXIMOS PARA LOS ELEMENTOS
+🎨grid-template-columns: minmax(300px, 1fr) 1fr; =>
+Digo a las columnas que tenga un ancho minimo y
+ancho maximo, si el cuenta con el espacio necesario
+del elemento padre, el va a tomar el ancho maximo
+por defecto, pero el ancho minimo no se disminuye 
+menos de lo especificado.
+
+🎨grid-template-rows: minmax(50px, auto) 100px; =>
+Digo a las filas que tenga un alto minimo y
+alto maximo, si el cuenta con el espacio necesario
+del elemento padre, el va a tomar el alto maximo
+por defecto, pero el alto minimo no se disminuye 
+menos de los especificado.
+
+🎨minmax(); => Esta propiedad me ayuda mucho para
+realizar sitios responsive combinados con media
+querys.
+
+🎨NOTA => Tener en cuenta que la función minmax();
+funciona para las columnas afectando su ancho y
+para las filas afectando su alto.
+
+                🎄FUNCIÓN repeat();
+🎄grid-template-columns: repeat(6, 1fr); => se la puedo
+aplicar tanto a las columnas como a las filas y me
+ayuda a no tener que repetir los valores cuando sean
+iguales, además de por derla combinar con otras
+medidas como piexeles. El primer argumento es el numero
+de veces que se debe repetir un valor, y el segundo
+argumento es el valor que se debe repetir.
+
+                🎊POSICIONAMIENTO
+🎊grid-column-start: 1; | 🎊grid-column-start: 2;
+🎊grid-column-end: -1;  | 🎊grid-column-end: 4;
+                🎊grid-column: 2 / 4;
+Los elementos empiezan a posicionarse desde una columna
+inicial y una columna final, por ende, también pueden
+cambiar su tamaño, al hacerse más grandes o más pequeños.
+Esta propiedad funciona con números negativos de 
+izquierda a derecha y con números positivos de derecha
+a izquierda, en este caso para las columnas.
+
+🎊grid-row-start: 1; | 🎊grid-row-start: 2;
+🎊grid-row-end: -1;  | 🎊grid-row-end: 4;
+                🎊grid-row: 1 / 3;
+Los elementos empiezan a posicionarse desde una fila
+inicial y una fila final, por ende, también pueden
+cambiar su tamaño, al hacerse más grandes o más pequeños.
+Esta propiedad funciona con números negativos de 
+izquierda a derecha y con números positivos de derecha
+a izquierda, en este caso para las filas.
+
+🎊grid-area: 1 / 2 / 4 / 4; => Esta propiedad alberga
+las filas y las columnas en una sola linea y con el 
+siguiente orden:
+🎊grid-area: grid-row-start / grid-column-start /
+                grid-row-end / grid-column-end;
+
+                🎊ESTIRAR LOS ELEMENTOS =>
+🎊grid-column: 2 / span 2; 
+🎊grid-column: span 2; 
+🎊grid-row: 2 / span 2;
+🎊grid-row: span 3;
+Estas propiedades le dan un inicio y un fin a un elemento
+para que ocupe un espacio en el layout, eso pasa
+gracias a la palabra SPAN que indica cuantas columnas o
+filas va a tomar un elemento.
+Cuando no se tiene un numero inicial se entiende que 
+se empieza desde la grid explicita numero UNO.
+
+                🥽GRID AREA =>
+Nos sirven para asignar una sección determinada
+a un o varios elementos que hacen parte del layout
+por medio, de la asignación de clases que ayuden
+a identificar la sección del layout.
+
+NOTAS = Los elementos se pueden intercambiar de
+lugar en todas las areas que existen en todo el
+Layout.
+
+            🏈ALINEACIÓN DE ELEMENTOS =>
+🏈PROPIEDADES CONTENEDOR PADRE:
+🏈Alineando Los Elementos Horizontalmente:
+🏈justify-items: start; => Esta propiedad me ayuda
+alinear el elemento al inicio del contenedor.
+
+🏈justify-items: center; => Esta propiedad me ayuda
+alinear el elemento al centro del contenedor.
+
+🏈justify-items: end; => Esta propiedad me ayuda
+alinear el elemento al final del contenedor.
+
+🏈justify-items: stretch; => Esta propiedad me ayuda
+a que el elemento ocupe todo el ancho disponible
+del contenedor padre.
+
+Alineando Los Elementos Verticalmente:
+🏈align-items: start; => Esta propiedad me ayuda
+alinear el elemento al inicio del contenedor,
+pero de forma VERTICAL.
+
+🏈align-items: center; => Esta propiedad me ayuda
+alinear el elemento al centro del contenedor,
+pero de forma VERTICAL.
+
+🏈align-items: end; => Esta propiedad me ayuda
+alinear el elemento al final del contenedor,
+pero de forma VERTICAL.
+
+🏈align-items: stretch; => Esta propiedad me ayuda
+a que el elemento ocupe todo el ancho disponible
+del contenedor padre, pero de forma VERTICAL.
+
+----------------------------------------
+🏈PROPIEDAD PARA LOS ELEMENTOS HIJOS: 
+🏈Alineando Los Elementos HIJOS Horizontalmente:
+🏈justify-self: start; => Esta propiedad me ayuda
+alineando el elemento al inicio del contenedor
+PADRE.
+
+🏈justify-self: center; => Esta propiedad me ayuda
+alineando el elemento al centro del contenedor
+PADRE.
+
+🏈justify-self: end; => Esta propiedad me ayuda
+alineando el elemento al final del contenedor
+PADRE.
+
+🏈justify-self: stretch; => Esta propiedad me ayuda
+a ocupar todo el ancho disponible del contenedor
+PADRE.
+
+🏈Alineando Los Elementos HIJOS Verticalmente:
+🏈align-self: start; => Esta propiedad me ayuda
+alineando el elemento al inicio del contenedor
+PADRE, pero de forma VERTICAL.
+
+🏈align-self: center; => Esta propiedad me ayuda
+alineando el elemento al centro del contenedor
+PADRE, pero de forma VERTICAL.
+
+🏈align-self: end; => Esta propiedad me ayuda
+alineando el elemento al final del contenedor
+PADRE, pero de forma VERTICAL.
+
+🏈align-self: stretch; => Esta propiedad me ayuda
+a ocupar todo el ancho disponible del contenedor
+PADRE, pero de forma VERTICAL.
+
+                🎲ALINEACION TRACKS =>
+🎲Esta propiedad me sirve para alinear todo un bloque
+de elementos, tantos de forma de vertical Y
+Horizontal de forma interna del contenedor PADRE.
+
+🎲Alinear Contenido Horizontalmente:
+🎲justify-content: normal; => Esta propiedad me
+ayuda a mantener el bloque de los elementos en su
+forma normal, que es la que se aplica por defecto.
+
+🎲justify-content: start; => Esta propiedad me
+ayuda a mantener el bloque de los elementos en su
+forma inicial del contenedor PADRE.
+
+🎲justify-content: center; => Esta propiedad me
+ayuda a mantener el bloque de los elementos en su
+forma central del contenedor PADRE.
+
+🎲justify-content: end; => Esta propiedad me
+ayuda a mantener el bloque de los elementos en su
+forma final del contenedor PADRE.
+
+🎲justify-content: space-around; => Esta propiedad
+me ayuda a mantener el bloque de los elementos con
+una separición entre los mismos e incluyendo los
+bordes.
+
+🎲justify-content: space-evenly; => Esta propiedad
+me ayuda a mantener el bloque de los elementos con
+una separición entre los mismos e incluyendo los
+bordes con una medidad igual.
+
+🎲justify-content: space-between; => Esta propiedad
+me ayuda a mantener el bloque de los elementos con
+una separición entre los mismos sin incluir el
+espacio de los bordes.
+
+Alinear Contenido Verticalmente:
+🎲align-content: normal; => Esta propiedad me
+ayuda a mantener el bloque de los elementos en su
+forma normal, que es la que se aplica por defecto
+pero se debe tener encuenta que es de forma
+VERTICAL.
+
+🎲align-content: start; => Esta propiedad me
+ayuda a mantener el bloque de los elementos en su
+forma inicial del contenedor PADRE, pero de forma
+VERTICAL.
+
+🎲align-content: center; => Esta propiedad me
+ayuda a mantener el bloque de los elementos en su
+forma central del contenedor PADRE, pero de forma
+VERTICAL.
+
+🎲align-content: end; => Esta propiedad me
+ayuda a mantener el bloque de los elementos en su
+forma fina del contenedor PADRE, pero de forma
+VERTICAL.
+
+🎲align-content: space-around; => Esta propiedad
+me ayuda a mantener el bloque de los elementos con
+una separición entre los mismos e incluyendo los
+bordes, pero de formar VERTICAL.
+
+🎲align-content: space-between; => Esta propiedad
+me ayuda a mantener el bloque de los elementos con
+una separición entre los mismos sin incluir el
+espacio de los bordes, pero de forma VERTICAL.
+
+🎲align-content: space-evenly; => Esta propiedad
+me ayuda a mantener el bloque de los elementos con
+una separición entre los mismos e incluyendo los
+bordes con una medidad igual, pero de forma 
+VERTICAL.
+
+                💎GRID IMPLICITA
+💎Son los elementos que se agregan o distribuyen 
+en el layout despues de definir la GRID EXPLICITA.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

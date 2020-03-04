@@ -1,0 +1,65 @@
+.contenedor {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    /* --------------------------------- */
+    /* --------------------------------- */
+    /* Propiedades Elemento PADRE */
+    /* --------------------------------- */
+    /* --------------------------------- */
+    /* Alineando Los Elementos Horizontalmente */
+    /* Inicio */
+    /* justify-items: start; */
+    /* centro */
+    /* justify-items: center; */
+    /* final */
+    justify-items: end;
+    /* Ocupar Todo El Ancho Disponible */
+    /* justify-items: auto; DUDAS SI FUNCIONA*/
+    /* justify-items: stretch; */
+    /* --------------------------------- */
+    /* --------------------------------- */
+    /* --------------------------------- */
+    /* --------------------------------- */
+    /* Alineando Los Elementos Verticalmente */
+    /* Inicio */
+    /* align-items: start; */
+    /* centro */
+    /* align-items: center; */
+    /* final */
+    align-items: end;
+    /* Ocupar Todo El Ancho Disponible */
+    /* justify-items: auto; DUDAS SI FUNCIONA*/
+    align-items: stretch;
+}
+
+.contenedor .item {
+    background-color: #ff8000;
+    /* --------------------------------- */
+    /* Propiedades Elementos HIJOS */
+    /* --------------------------------- */
+    /* --------------------------------- */
+    /* Alineando Los Elementos HIJOS Horizontalmente */
+    /* Inicio */
+    /* justify-self: start; */
+    /* centro */
+    /* justify-self: center; */
+    /* final */
+    justify-self: end;
+    /* Ocupar Todo El Ancho Disponible */
+    justify-self: stretch;
+    /* --------------------------------- */
+    /* --------------------------------- */
+    /* --------------------------------- */
+    /* --------------------------------- */
+    /* Alineando Los Elementos HIJOS Verticalmente */
+    /* Inicio */
+    /* align-self: start; */
+    /* centro */
+    /* align-self: center; */
+    /* final */
+    /* align-self: end; */
+    /* Ocupar Todo El Ancho Disponible */
+    align-items: stretch;
+}
