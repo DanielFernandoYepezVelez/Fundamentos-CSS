@@ -17,8 +17,18 @@ establecer.
 propiedad dice el número de filas que quiero
 establecer.
 
-🎉grid-gap: 15px; => Esta propiedad aplica un 
+🎉grid: 50% 50% / 1fr 1fr 100px; => Este es un
+shortHand, que toma primero el numero de filas
+y posteriormente el numero de columnas.
+
+🎉grid-gap: 15px; => Esta propiedad aplica un
 espaciado entre cada uno de los elementos.
+
+🎉grip-column-gap: 10px; => Esta propiedad aplica un
+espaciado entre las columnas del layout.
+
+🎉grip-row-gap: 10px; => Esta propiedad aplica un
+espaciado entre las filas del layout.
 
              🎉AYUDA DE FIREFOX =>
 🎉LINEA CONTINUA => Contiene la grid explicita,
@@ -109,6 +119,8 @@ Nos sirven para asignar una sección determinada
 a un o varios elementos que hacen parte del layout
 por medio, de la asignación de clases que ayuden
 a identificar la sección del layout.
+Para dejar un espacio en blanco en la definición
+del area agrego un punto(.).
 
 NOTAS = Los elementos se pueden intercambiar de
 lugar en todas las areas que existen en todo el
