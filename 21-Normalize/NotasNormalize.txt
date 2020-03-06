@@ -1,3 +1,13 @@
 ME AYUDA A NORMALIZAR LOS ESTILOS EN TODOS LOS
 NAVEGADORES, PARA CREAR UNA ESTANDARIZACIÓN O
-UNA INCIALIZACIÓN DE MIS ESTILOS EN TODOS LOS NAVEGADORES
+UNA INCIALIZACIÓN DE MIS ESTILOS EN TODOS LOS 
+NAVEGADORES.
+
+MEJORES SITIOS PARA ENCONTRAR NORMALIZE:
+Pasos para linkear Normalize =>
+
+1.Ir al sitio https://cdnjs.com.
+2.Escribir Normalize en el Buscador.
+2.Para copiar la opción minificada selecciono
+Copy Link Tag.
+3.Agregarlo antes de los archivos de estilos.
