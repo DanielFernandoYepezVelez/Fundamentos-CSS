@@ -1,3 +1,11 @@
+        👍COMO SABER CUANTAS FILAS O CUANTAS COLUMNAS
+                VA A TENER UN LAYOUT A SIMPLE VISTA:
+Esta regla funciona tanto para las filas como
+para las columnas; SIEMPRE se debe tomar como
+referencia el elemento con el tamaño mas
+pequeño y apartir de ahi, definir cuantas filas
+Y/O columnas puede tener dicho LAYOUT.
+
 PROPIEDADES CONTENEDOR PADRE DIRECTAMENTE =>
         🎉FILAS Y COLUMNAS EN GRID
 🎉display: grid; => Esta propiedad aplica el
@@ -17,9 +25,13 @@ establecer.
 propiedad dice el número de filas que quiero
 establecer.
 
+🎉grid-template: 50% 50% / 1fr 1fr 100px; => Este
+es un primer shortHand, que toma primero el numero
+de filas y posteriormente el numero de columnas.
+
 🎉grid: 50% 50% / 1fr 1fr 100px; => Este es un
-shortHand, que toma primero el numero de filas
-y posteriormente el numero de columnas.
+segundo shortHand, que toma primero el numero de
+filas y posteriormente el numero de columnas.
 
 🎉grid-gap: 15px; => Esta propiedad aplica un
 espaciado entre cada uno de los elementos.
@@ -29,6 +41,23 @@ espaciado entre las columnas del layout.
 
 🎉grip-row-gap: 10px; => Esta propiedad aplica un
 espaciado entre las filas del layout.
+
+        🧨SE PUEDEN TENER GRIDS DENTRO DE OTROS GRIDS:
+🧨display: inline-grid; => Crea un grid de una sola
+linea(Unidimensional).
+
+🧨display: subgrid; => Herada las caracteristicas grid
+de su elemento PADRE.
+
+🧨🧨NOTA => Estas propiedades todavia no estan disponibles.
+
+        🏆NOMBRES A LAS FILAS Y A LAS COLUMNAS:
+🏆Darle nombres a las lineas de las filas y de las columnas, nos
+ayuda en el momento de hacerlas mas grandes o mas pequeñas,
+lo hacemos de la siguiente forma:
+
+🏆grid-template-columns: [lineaColumnaInicio1] 1fr [ColumnaLinea1] 1fr [ColumnaLinea2] 1fr [ColumnaLineaFinal];
+🏆grid-template-rows: [lineaInicio1] 1fr [linea1] 1fr [linea2] 1fr [lineaFinal];
 
              🎉AYUDA DE FIREFOX =>
 🎉LINEA CONTINUA => Contiene la grid explicita,
@@ -44,6 +73,10 @@ al espaciado disponible del contenedor PADRE.
 🎉LINEA PUNTEADA => ?
 
 🎨TAMAÑOS MINIMOS Y MÁXIMOS PARA LOS ELEMENTOS
+🎨minmax(); => Esta propiedad me ayuda mucho para
+realizar sitios responsive combinados con media
+querys.
+
 🎨grid-template-columns: minmax(300px, 1fr) 1fr; =>
 Digo a las columnas que tenga un ancho minimo y
 ancho maximo, si el cuenta con el espacio necesario
@@ -58,19 +91,25 @@ del elemento padre, el va a tomar el alto maximo
 por defecto, pero el alto minimo no se disminuye 
 menos de los especificado.
 
-🎨minmax(); => Esta propiedad me ayuda mucho para
-realizar sitios responsive combinados con media
-querys.
+🎨QUE ES auto =>
+🎨AUTO: Cuando le doy un valor a un elemento de auto,
+este elemento va a tomar su ancho o alto en layout
+dependiendo solamente del tamaño que abarque su 
+contenido interno.
+
+🎨QUE ES maxcontent =>
+MAXCONTENT: El contenedor PADRE va a tener un ancho
+o un alto maximo del tamaño de su contenido interno.
 
 🎨NOTA => Tener en cuenta que la función minmax();
 funciona para las columnas afectando su ancho y
 para las filas afectando su alto.
 
                 🎄FUNCIÓN repeat();
-🎄grid-template-columns: repeat(6, 1fr); => se la puedo
-aplicar tanto a las columnas como a las filas y me
-ayuda a no tener que repetir los valores cuando sean
-iguales, además de por derla combinar con otras
+🎄grid-template-columns: repeat(6, minmax(200px, 1fr)); =>
+se la puedo aplicar tanto a las columnas como a las 
+filas y me ayuda a no tener que repetir los valores
+cuando sean iguales, además de por derla combinar con otras
 medidas como piexeles. El primer argumento es el numero
 de veces que se debe repetir un valor, y el segundo
 argumento es el valor que se debe repetir.
@@ -115,16 +154,19 @@ Cuando no se tiene un numero inicial se entiende que
 se empieza desde la grid explicita numero UNO.
 
                 🥽GRID AREA =>
-Nos sirven para asignar una sección determinada
+🥽Nos sirven para asignar una sección determinada
 a un o varios elementos que hacen parte del layout
 por medio, de la asignación de clases que ayuden
 a identificar la sección del layout.
 Para dejar un espacio en blanco en la definición
 del area agrego un punto(.).
 
-NOTAS = Los elementos se pueden intercambiar de
+🥽NOTA #1 = Los elementos se pueden intercambiar de
 lugar en todas las areas que existen en todo el
 Layout.
+
+🥽NOTA #2 = Cuando trabajo con areas no necesariamente
+dejo de definir las filas y columnas de mi LAYOUT.
 
             🏈ALINEACIÓN DE ELEMENTOS =>
 🏈PROPIEDADES CONTENEDOR PADRE:
@@ -275,23 +317,27 @@ VERTICAL.
 en el layout despues de definir la GRID EXPLICITA.
 
 💎PROPIEDADES CONTENEDOR PADRE:
-💎Filas Automaticas(Implicitas) van a tener un alto de 400pixeles:
-grid-auto-rows: 50px;
-
-💎Columnas Automaticas(Implicitas) van a tener un ancho de 600pixeles:
-grid-auto-columns: 600px;
-
 💎grid-auto-flow: row; => Esta Propiedad me cambia la 
 dirección de mi GRID, por defecto viene para row,
 es decir, para filas, en conclusión, los
 elementos de la grid implicita se van a ir
 agregando de forma vertical, hacia abajo.
 
+💎Filas Automaticas(Implicitas) van a tener un alto de:
+grid-auto-rows: 50px 300px 1fr;
+El alto se debe definir para el numero de filas que tenga
+en la grid implicta.
+
 💎grid-auto-flow: column; => Esta Propiedad me define
 la direccion de la GRID a column, es decir, ya se
 van a ir agregando los elementos de forma horizontal,
 en conclusión, de lado a lado los elementos de la GRID
 implicta.
+
+💎Columnas Automaticas(Implicitas) van a tener un ancho de:
+grid-auto-columns: 600px 400px 1fr;
+El ancho se debe definir para el numero de columnas que tenga
+en la grid implicta.
 
 💎grid-auto-flow: row dense; => Esta Propiedad Agrega una
 distribucion equitativa a los elementos donde exista

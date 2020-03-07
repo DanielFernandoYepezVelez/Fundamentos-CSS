@@ -20,6 +20,20 @@ ul li:nth-child(1){};
 ul li:nth-child(3){};
 ---------------------------------------------
 
+PSEUDOCLASES PARA ELEMENTOS DE UN TIPO
+ESPECIFICADO:
+.item:nth-of-type(3) {
+     background: red
+}
+
+Aqui estamos indicando que los
+elemento de typo ".item" van a ser
+seleccionados para tener un fondo 
+de color rojo, especificamente el
+elemento ubicado en la posicón
+numero tres(3).
+---------------------------------------------
+
 PSEUDOCLASES PARA ENLACES:
 .enlace:link{};
 .enlace:visited{}; Enlace visitado.

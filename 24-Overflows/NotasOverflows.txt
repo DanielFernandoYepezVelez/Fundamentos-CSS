@@ -13,3 +13,5 @@ además de la derecha e izquierda a un elemento.
 
 overflow-y: scroll; => sirve para darle scroll solamente 
 arriba y abajo un elemento.
+
+overflow: auto; => sirve para definir un scroll de forma vertical.
