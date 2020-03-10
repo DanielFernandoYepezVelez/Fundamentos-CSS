@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    background: #333333;
+    display: flex;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+.submenu .submenu {
+    top: 0;
+    left: 100%;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item:hover {
+    background: rgba(0, 0, 0, .5)
+}
+
+.menu-item:hover>.submenu {
+    display: block;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #dddddd;
+    display: block;
+    padding: .5em 1em;
+}

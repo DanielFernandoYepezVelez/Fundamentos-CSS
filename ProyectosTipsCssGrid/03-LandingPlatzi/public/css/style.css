@@ -1,0 +1,134 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.hero {
+    background-color: #23475b;
+    color: #ffffff;
+    padding: 32px 15px;
+    display: grid;
+    grid-template-columns: minmax(auto, 1024px);
+    justify-content: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    grid-area: title;
+}
+
+.form {
+    text-align: center;
+    background-color: rgba(255, 255, 255, .9);
+    padding: 1.5em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    grid-area: form;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbe2;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.form p {
+    font-size: 20px;
+    color: #3a3b3f;
+    margin-bottom: 1em;
+}
+
+.form button {
+    background-color: #98ca3f;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 5px solid #6d932b;
+    display: inline-block;
+}
+
+.description {
+    grid-area: description;
+}
+
+.countdown {
+    grid-area: countdown;
+}
+
+.countdown p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.countdown span {
+    font-size: 33px;
+}
+
+.countdown span::after {
+    content: ':';
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.countdown span:last-child::after {
+    display: none;
+}
+
+
+/* GRID */
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 70px, 1fr, 320px;
+    grid-template-areas: "badge title form" ". description form" ".  countdown   form";
+    grid-gap: 10px;
+}
+
+.badge {
+    display: grid;
+    grid-area: badge;
+}
+
+.badge img {
+    max-width: 70px;
+    justify-self: end;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 70px, 1fr;
+        grid-template-areas: "badge title" "description description" "form form" "countdown countdown";
+    }
+}

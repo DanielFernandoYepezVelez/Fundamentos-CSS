@@ -40,6 +40,12 @@ PARA SER UN ESTANDAR).
 TODOS LOS SELECTORES DE TODOS LOS NIVELES: 
 https://css4-selectors.com/selectors/
 ------------------------------------------------------------
+DOCUMENTACION DE REFERENCIA DE HTML:
+https://htmlreference.io/
+
+DOCUMENTACION DE REFERENCIA DE CSS:
+https://cssreference.io/
+------------------------------------------------------------
 
 GDLWEBCAMP:
 La mejor conferencia de Diseño Weben español(Guadalajara,MX).

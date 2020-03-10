@@ -2,3 +2,24 @@ PSEUDO-SELECTORES:
 Existen dos tipos:
 PSEUDO-ELEMENTOS.
 PSEUDO-CLASES.
+
+PSEUDO-ELEMENTOS:
+Estos me van a crear nuevos elementos en el DOM que no estan o
+no existen en el HTML.
+::after.
+::before.
+
+Ejemplo =>
+.countdown span::after {
+    content: ':';
+    display: inline-block;
+    margin: 0 5px;
+}
+
+Todo PSEUDO-ELEMENTO debe tener una propiedad llamada content
+para que el contenido ingresado en esa propiedad aprarezca en el DOM.
+
+COMBINANDO PSEUDOCLASES CON PSEUDO-SELECTORES:
+.countdown span:last-child::after {
+    display: none;
+}
