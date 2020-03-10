@@ -177,4 +177,3 @@ FORMATO RBGA(0-255-alpha).
 Este formato lo que hace es agregar una transparencia
 que va de 0 a 1 y se puede utilizar números con parte decimal.
 color: rgba(90, 76, 233, .9);
--------------------------------------------------------------

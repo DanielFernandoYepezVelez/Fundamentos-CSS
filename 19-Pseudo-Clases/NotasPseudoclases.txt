@@ -1,6 +1,12 @@
+DOCUMENTACIÓN:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+---------------------------------------------
+
 PSEUDOCLASES:
 Estilos especiales dependiendo del contexto, 
 posición, estado o elemento.
+
+Lo elementos no necesariamente estan obligado a estar dentro de una lista, es decir, se puede seleccionar cualquier elemento, por que la etiqueta de body funciona como su ultimo envoltorio.
 ---------------------------------------------
 
 PSEUDOCLASES PARA LISTAS:
@@ -18,6 +24,18 @@ muestra en el siguiente ejemplo:
 ul li:nth-child(2){};
 ul li:nth-child(1){};
 ul li:nth-child(3){};
+
+p:nth-child(2n){ (producto)
+     color:red   
+}
+p:nth-child(2n + 1){ (suma)
+     color: blue
+}
+
+n => Hace referencia a cualquier numero pero inicia desde el cero(0).
+th => Finalización de los numeros ordinarios en ingles, como por ejemplo: 3th, 4th, 5th.
+child => elemento hijo.
+Además se pueden hacer operaciones aritmeticas dentro como argumentos de la PSEUDOCLASES.
 ---------------------------------------------
 
 PSEUDOCLASES PARA ELEMENTOS DE UN TIPO

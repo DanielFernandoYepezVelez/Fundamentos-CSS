@@ -47,6 +47,10 @@ DOCUMENTACION DE REFERENCIA DE CSS:
 https://cssreference.io/
 ------------------------------------------------------------
 
+EMOJIS:
+https://coolsymbol.com/emojis/emoji-for-copy-and-paste.html
+-------------------------------------------------------------
+
 GDLWEBCAMP:
 La mejor conferencia de Diseño Weben español(Guadalajara,MX).
 -------------------------------------------------------------
@@ -54,6 +58,9 @@ La mejor conferencia de Diseño Weben español(Guadalajara,MX).
 DESCARGAR ICONOS:
 https://www.flaticon.com/
 https://fontawesome.com/icons?d=gallery
+
+DESCARGAR GRATIS FOTOS, ICONOS, VIDEOS:
+https://iconos8.es/
 -------------------------------------------------------------
 
 FUENTES:
@@ -71,13 +78,22 @@ https://fontawesome.com/icons?d=gallery
 
 HERRAMIENTA DE VIÑETAS COMODA PARA TRABAJAR:
 https://workflowy.com/
+------------------------------------------------------------
 
 OBTENER COLORES EN DIFERENTES FORMATOS INCLUIDOS RBG Y RGBA:
 https://www.google.com.co/search?sxsrf=ACYBGNTbZyoevji4sE6ik5IRYjygT5PCZQ%3A1579650785010&ei=4Y4nXowcxarmAviqu5AE&q=color+picker&oq=color+picker&gs_l=psy-ab.3.0.0i67j0j0i67j0l7.4730.7967..11405...0.4..0.228.2155.0j9j3......0....1..gws-wiz.......0i71j35i39i19j35i39j0i20i263._lNDhfZsy-4
 https://www.css3maker.com/css-3-rgba.html
 https://color.adobe.com/es/create
 https://picpick.app/en/download/
-------------------------------------------------------------
+
+LUGARES PARA OBTENER COLORES:
+https://colorhunt.co
+https://coolors.co/5e1dfc-ab88ff-8f57fd-21c08b-e6af2e
+PALETA DE COLORES:
+http://paletton.com/#uid=1120u0kllllaFw0g0qFqFg0w0aF
+OTRA PALETA DE COLORES:
+https://picular.co/Video
+-------------------------------------------------------------
 
 FRAMEWORKS PARA CSS:
 https://getbootstrap.com/
@@ -93,16 +109,6 @@ no utiliza nada de JavaScript sino que solo es css).
 BULMA CDN:
 https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css(funciona)
 https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css(No funciona)
-------------------------------------------------------------
-
-ARQUITECTURA CSS:
-son las diferentes metodologías que se utilizan para aplicar
-CSS en proyectos grandes, las más conocidas son:
-1.SMACSS.
-2.OOCSS.
-3.ITCSS.
-NOTA: Cuando estas manejando Arquitectura CSS, significa que
-estas en un nivel más avanzado en CSS.
 ------------------------------------------------------------
 
 LAYOUT: 

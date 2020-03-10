@@ -1,0 +1,81 @@
+¿QUE SON Y PARA QUE SIRVEN LAS ARQUITECTURAS CSS?
+Es una forma más predecible, reutilizable, mantenible y escalable de escribir código CSS que nos permite trabajar de forma colaborativa con otros desarrolladores.
+
+OBJETIVOS:
+PREDECIBLE => Establecer una regla y esta regla se cumpla al transcurso de todo el programa.
+
+REUTILIZABLE => Todo el código debe ser reutilizable para que se pueda implementar diversas parte del sistema de información.
+
+MANTENIBLE => Trabajar con 2000 o mas lineas de codigo, no seria mantenible por que se volveria complicado o engorroso trabajar con tanto codigo.
+
+ESCALABLE => Si tenemos archivos muy grandes con muchas lineas de código es muy complicado que ese proyecto crezca de forma uniforme y eso puede perjudicar el rendimiento de una aplicación.
+
+BUENAS PRACTICAS =>
+1.Establecer reglas antes de empezar un proyecto, es decir, definir la Arquitectura que se va a implementar en el proyecto.
+
+2.Explicar la estructura base del proyecto a las personas nuevas que se incorporen al equipo de trabajo.
+
+3.Establecer estándares de codificación, y que se cumplan en el transcurso de la ejecución del proyecto.
+
+4.Evitar largas hojas de estilo para mantener un codigo mantenible y escalable.
+
+5.Documentación se implementa en las cosas complejas o que no son faciles de comprender para el yo del presente y el futuro.
+------------------------------------------------------
+
+TIPOS DE ARQUITECTURA CSS:
+son las diferentes metodologías que se utilizan para aplicar CSS en proyectos grandes, las más conocidas son:
+1.SMACSS.
+2.OOCSS.
+3.ITCSS.
+4.BEM.
+5.Atomic Design.
+
+NOTA: Cuando estas manejando Arquitectura CSS,significa que estas en un nivel más avanzado en CSS.
+
+DOCUMENTACION: https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/
+1.OOCSS => Esto hace referencia a CSS ORIENTADO A OBJETOS. Esta metodología quiere decir, que se debe separar lo que es el diseño del contenido y así se puede reutilizar mucho mejor nuestro código, como se muestra en el siguiente ejemplo de forma breve:
+
+<header class="header globalWidth">Header</header>
+<footer class="footer globalWidth">Footer</footer>
+
+.globalWidth {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.header {
+  background-color: red;
+}
+
+.footer {
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+La clase en común para los dos nodos es reutilizable y asi se evita la redundancia en el codigo, de esto habla esta Arquitectura.
+
+DOCUMENTACION: http://getbem.com/introduction/
+2.BEM (BLOCK-ELEMENT-MODIFY) => Esta arquitectura separa los bloques, los elementos y los modificadores, lo podemos ver en el siguiente ejemplo:
+
+<header class="header">
+  <button class="header__button--red">RED</button> 
+  <button class="header__button--yellow">YELLOW</button>
+</header>
+
+header => Bloque.
+button => El elemento como tal.
+red => El elemento modificador.
+
+DOCUMENTACION: http://smacss.com/
+3.SMACSS (ARQUITECTURA DE CSS ESCALABLE Y MODULAR) =>
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------
