@@ -1,3 +1,5 @@
+DOCUMENTACIÓN LESS: http://lesscss.org/
+
 QUE ES UN PREPROCESADOR CSS:
 Un preprocesador CSS es un programa que te
 permite generar CSS a partir de la syntax 

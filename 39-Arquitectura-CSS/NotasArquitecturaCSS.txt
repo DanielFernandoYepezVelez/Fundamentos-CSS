@@ -68,14 +68,22 @@ button => El elemento como tal.
 red => El elemento modificador.
 
 DOCUMENTACION: http://smacss.com/
-3.SMACSS (ARQUITECTURA DE CSS ESCALABLE Y MODULAR) =>
+3.SMACSS (ARQUITECTURA DE CSS ESCALABLE Y MODULAR): La persona creadora de esta arquitectura definio 5 pasos:
 
+3.1 BASE => Dividir nuestro css en componentes BASE como por ejemplo los botones.
 
+3.2 LAYOUT => Son los elementos que se utilizan en la página una sola vez, como por ejemplo el header o footer.
 
+3.3 MODULE => Son componentes que se estarian utilizando en la aplicación más de una vez.
 
+3.4 STATE => Hace referencia a los elementos que se les aplican pseudo-clases para que cambien su estado y tengan acciones dichos componentes.
 
+3.5 THEMES => Cambiar los THEMES o colores y se puedan cambiar desde el codigo sin ningun problema.
 
+DOCUMENTACION: https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+4.ITCSS (TRIANGULO INVERTIDO DE CSS) => Nos indica la divisón de todos los archivos de CSS en ciertas partes para que no se combinen entre si.(Me gusta).
 
-
-
+DOCUMENTACION: https://bradfrost.com/blog/post/atomic-web-design/
+5.Atomic Design => Un CSS mas modular, más escalable se baso principalmente en quimica y los separo en atomos.
+desde los más pequeño a lo más grande.
 ------------------------------------------------------------

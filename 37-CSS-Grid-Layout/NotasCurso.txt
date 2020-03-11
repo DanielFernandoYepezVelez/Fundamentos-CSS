@@ -1,3 +1,13 @@
+DOCUMENTACIONES: 
+https://css-tricks.com/snippets/css/complete-guide-grid/
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid
+https://labs.jensimmons.com/     (La chica de Layout Land)
+----------------------------------------------------------------------------------
+
+JUEGO DE CSS GRID LAYOUT:
+https://cssgridgarden.com/#es
+----------------------------------------------------------------------------------
+
         👍COMO SABER CUANTAS FILAS O CUANTAS COLUMNAS
                 VA A TENER UN LAYOUT A SIMPLE VISTA:
 Esta regla funciona tanto para las filas como

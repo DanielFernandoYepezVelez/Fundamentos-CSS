@@ -1,3 +1,11 @@
+DOCUMENTACION FLEXBOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+----------
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+-------------------------------------------------------------------------------------------
+
+JUEGO FLEX-BOX INTERESANTE: https://flexboxfroggy.com/#es
+-------------------------------------------------------------------------------------------
+
 🎈NOTA INICIAL => Los elementos que no utilizan
 alguna propiedad de flex-box, son los elementos
 que se mueven en el momento del responsive web

@@ -8,7 +8,7 @@ PSEUDO-ELEMENTOS.
 PSEUDO-CLASES.
 
 PSEUDO-ELEMENTOS:
-Al igual que las pseudo-classes, los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte concreta del documento. Por ejemplo, el pseudoelemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.
+Al igual que las pseudo-classes, los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte concreta del elemento. Por ejemplo, el pseudoelemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.
 
 OTRA FUNCIONALIDAD:
 Estos me van a crear nuevos elementos en el DOM que no estan o no existen en el HTML.

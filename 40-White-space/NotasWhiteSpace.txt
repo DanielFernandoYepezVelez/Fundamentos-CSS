@@ -1,0 +1,2 @@
+PARA QUE ME SIRVE:
+Esta propiedad me ayuda a que los elementos se pongan en una sola linea de codigo, como por ejemplo en flex, con el valor wrap.
