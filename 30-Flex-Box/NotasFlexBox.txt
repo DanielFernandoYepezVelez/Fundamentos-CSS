@@ -1,5 +1,4 @@
 DOCUMENTACION FLEXBOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-----------
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
 -------------------------------------------------------------------------------------------
 
@@ -223,6 +222,16 @@ La diferencia entre estas dos formas de declaración
 es que solo con el 1 el basis va a ser auto y con la otra
 el basis va tener un tamaño minimo, y eso en ocasiones ayuda
 a que los elementos se ponga en forma de columnas.
+
+🎨QUE ES auto =>
+🎨AUTO: Cuando le doy un valor a un elemento de auto,
+este elemento va a tomar su ancho o alto en layout
+dependiendo solamente del tamaño que abarque su 
+contenido interno.
+
+🎨QUE ES maxcontent =>
+MAXCONTENT: El contenedor PADRE va a tener un ancho
+o un alto maximo del tamaño de su contenido interno.
 
 🎨LOGICA DE LA PROPIEDAD flex: 1; 
 Lo que hay detras es que se va a tener en cuenta el

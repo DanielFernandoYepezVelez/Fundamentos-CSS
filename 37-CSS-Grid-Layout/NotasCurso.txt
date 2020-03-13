@@ -25,7 +25,7 @@ columnas.
 
 🎉FRACCIÓN(1fr) => De todo el espacio que tenga
 disponible, lo va a distribuir entre todos los
-elementos que existan.
+elementos que existan de forma equitativa.
 
 🎉grid-template-columns: 100px 1fr 100px; => Esta 
 propiedad dice el número de columnas que quiero
@@ -57,7 +57,7 @@ espaciado entre las filas del layout.
 linea(Unidimensional).
 
 🧨display: subgrid; => Herada las caracteristicas grid
-de su elemento PADRE.
+que tenga su elemento PADRE.
 
 🧨🧨NOTA => Estas propiedades todavia no estan disponibles.
 
@@ -92,14 +92,14 @@ Digo a las columnas que tenga un ancho minimo y
 ancho maximo, si el cuenta con el espacio necesario
 del elemento padre, el va a tomar el ancho maximo
 por defecto, pero el ancho minimo no se disminuye 
-menos de lo especificado.
+menos de lo especificado cuando haga responsive.
 
 🎨grid-template-rows: minmax(50px, auto) 100px; =>
 Digo a las filas que tenga un alto minimo y
 alto maximo, si el cuenta con el espacio necesario
 del elemento padre, el va a tomar el alto maximo
 por defecto, pero el alto minimo no se disminuye 
-menos de los especificado.
+menos de los especificado cuando haga responsive.
 
 🎨QUE ES auto =>
 🎨AUTO: Cuando le doy un valor a un elemento de auto,
@@ -390,3 +390,6 @@ en todo el ancho disponible de su contenedor PADRE,
 con el numero de columnas que especifiquemos.
 
 🥊NOTA => No Esta Funcionando Para Filas.
+
+BUSCAR INFORMACIÓN SOBRE LA PROPIEDAD
+ORDER.
