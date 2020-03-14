@@ -1,0 +1,2 @@
+TRANSITIONS A MULTIPLES ELEMENTOS, ES DECIR, A MAS DE UNO:
+Para que esto funcione, debo aplicar las TRANSITIONS a un elemento mayor a ellos, es decir, a un elemento PADRE o CONTENEDOR, que le pueda heredar la TRANSITIONS a estos multiples elementos.

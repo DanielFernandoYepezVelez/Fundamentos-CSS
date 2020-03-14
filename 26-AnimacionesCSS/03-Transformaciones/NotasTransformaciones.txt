@@ -1,0 +1,13 @@
+LA PROPIEDAD MAS FAMOSA DE LAS ANIMACIONES SE LLAMA TRANSFORM:
+Esta propiedad nos permite escalar(), mover(), sesgar() y rotar() un elemento.
+
+/* transform: rotar | sesgar | posicion | tamaño */
+transform: rotate(45deg) skew(10deg) translate(100px) scale(1.2);
+
+rotate(45deg) => Aquí rotamos los elementos y su unidad de medida son los grados.
+
+skew(10deg) => Aquí le damos una especie de eje z tipo vector para que el elemento no se ubique totalmente de lado, su unidad de medida tambien son los grados.
+
+translate(100px) => Aqui elemento se esta moviendo en una especia de eje x y se va a mover 100px a la derecha.
+
+scale(1.2) => Aqui se le esta cambiando el tamaño al elemento y recibe argumentos, desde 0 hasta 1, equivalentes a porcentajes, 1 seria el 100% del tamaño de mi elemento 2 seria el 200% ó 0.1 seria solo el 10% del tamaño de mi elemento, esta lógica es la que continua.

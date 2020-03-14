@@ -1,0 +1,18 @@
+PROPIEDADES DE LAS ANIMACIONES:
+transitions: cambiar el estado de un elemento del DOM; El estado se puede considerar las propiedades de CSS3 que tenga dicho elemento del DOM como por ejemplo los colores, ancho, alto, letra, posición, entre un sin fin de caracteristicas de dicho elemento, pero, este estado se va a ejecutar o alterar gracias a las acciones de los usuarios que se pueden representar en css, a traves de los pseudo-selectores, ya sean pseudo-clases o pseudo-elementos, aqui es cuando entran las transitions, por que permiten que ese cambio de estado tenga una cadencia o suavidad que permita un efecto visual agradable para el usuario final.
+Las transitions se le aplican al elemento del DOM que se desea alterar el estado, no al elemento con la pseudo-clase.
+
+PROPIEDADES DE LAS TRANSITIONS:
+transition-property: width, height => Aqui indicamos cual o cuales propiedades quiero alterar de mi elemento del DOM cuando se aplique la transición.
+
+transition-duration: 1s => Aqui indicamos cuanto tiempo va a durar mi transición, el tiempo lo puedo indicar en segundos o milisegundos, ejemplo: 
+Un segundo es = 1s
+Un milisegundo es = 1000ms
+
+transition-delay: 1000ms => Aqui es el tiempo que se va a tardar en reaccionar mi transition despues de posicionarme sobre el elemento que indica el inicio de dicha transition, tambien se pueden especificar el tiempo en segundos o milisegundos.
+
+transition-timing-function: ease => Aqui indicamos la aceleración que va a tener una transición, por defecto bien con el valor de ease.
+
+SHORTHAND TRANSITIONS:
+transition: width 1s 1000ms ease;
+NOTA = No obligatoriamente tiene que estar el delay se puede quitar y todo funciona muy bien.

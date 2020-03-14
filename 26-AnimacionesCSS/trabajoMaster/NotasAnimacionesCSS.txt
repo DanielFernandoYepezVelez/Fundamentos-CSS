@@ -5,7 +5,6 @@ va desde el punto 0 hasta el punto 100 y puede
 tener tantos @keyframes o estados en los
 diferentes puntos o porcenjates del 0 al 100
 como sean necesarios o requeridos.
-
 Con las animaciones podemos realizar acciones 
 mas interesantes y complejas que utilizando
 solo transiciones, pero no podemos dejar de 

@@ -1,0 +1,57 @@
+TRANSLATE:
+Esta Propiedad me sirve para mover un elemento hacia arriba, abajo, derecha e izquierda con valores positivos y valores negativos, además su unidad de medida puede ser pixeles o porcentajes, como se muestra en los siguientes ejemplos:
+
+EJEMPLO EJE X:
+.container:hover .cuadrado {  
+    transform: translateX(100px);
+}
+
+EJEMPLO EJE Y:
+.container:hover .cuadrado {  
+    transform: translateY(-100px);
+}
+
+EJEMPLO EJE Z: ¡OJO! Aqui hay que darle la perspectiva o contexto de 3D, para que su efecto de 3D funcione.
+.container:hover .cuadrado {
+    transform: translateZ(100px);
+}
+
+EJEMPLO EJE X,Y:
+.container:hover .cuadrado {  
+    transform: translate(-100px, -100px);
+}
+
+EJEMPLO 3D: OJO! se debe definir el valor de la perspectiva del elemento PADRE para que funcione.
+
+/* transform: translate3d(X, Y, Z); */
+.container:hover .cuadrado {  
+  transform: translate3d(-100px, -100px, -100px);
+}
+
+ANIMACIONES 3D =>
+Para poder ejecutar este tipo de animaciones debo tener algo en cuenta que se llama PERSPECTIVA.
+
+QUE ES LA PERSPECTIVA:
+La perspectiva es brindarle un contexto 3D al elemento que queremos que se anime en 3D, es decir, cual es ese punto de referencia en donde estoy y donde estan los elementos que yo quiero animar, esa visión, donde esta esa perspectiva.
+
+perspective: 200px; => Aqui indicamos cuan abierta o cerrada va a estar nuestra perspectiva. Entre el valor sea mas grande, el efecto del elemento es menos grande, pero si el valor es menor, el efecto del elemento es mucho más grande.
+
+Mi perspectiva va a ser el header y no el body como lo muestra el profesor, por que al elemento que yo deseo animar esta mas cerca su elemento PADRE header que body.
+header {
+    perspective: 200px;
+}
+
+ORIGENES DE LAS PERSPECTIVA: la perspectiva se mueve en dos ejes X y Y, y sus movimientos son inversos, como el de las POSICIONES. A continuación vamos a ver algunos ejemplos:
+
+                              perspective-origin: X Y;
+perspective-origin: center; ESTA ES POR DEFECTO
+perspective-origin: top; 
+perspective-origin: bottom; 
+perspective-origin: left; 
+perspective-origin: right; 
+
+COMBINANDO LAS PERSPECTIVAS(Eje X y Eje Y):
+perspective-origin: top right;
+perspective-origin: top left;
+perspective-origin: bottom right;
+perspective-origin: bottom left;

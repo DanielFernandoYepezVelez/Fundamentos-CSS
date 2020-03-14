@@ -1,0 +1,41 @@
+ROTACIONES:
+Esta es una propiedad de las transformaciones y su unidad de medida son los grados, estos grados pueden ser negativos o positivos, cuando son positivos mi elemento gira al mismo lado de las manecillas del reloj(derecha), pero cuando son grados negativos, mis elementos giran al contrario de las manecillas del reloj.
+
+NOTA IMPORTANTE:
+Otro tema muy importante es que por lo general las transformaciones se le aplican a los elementos padres, por que si se le aplica al mismo elemento no va a funcionar correctamente, a diferencia de las transiciones que se le aplica al mismo elemento al momento de definir todas sus carcateristicas y no en el :hover como funciona con las transformaciones.
+
+.container:hover .cuadrado {
+    transform: rotate(-360deg);
+}
+
+EJES DE LAS ROTACIONES:
+Las rotaciones se mueven en los ejes X, Y y Z.
+
+Ejemplo EJE X => se mueve sobre el eje X 360 grados(Horizontalmente).
+.container:hover .cuadrado {
+    transform: rotateX(360deg);
+}
+
+Ejemplo EJE Y => se mueve sobre el eje Y 360 grados(Verticalmente).
+.container:hover .cuadrado {
+    transform: rotateY(360deg);
+}
+
+Ejemplo EJE Z => se mueve sobre el eje Z 360 grados(Lateralmente).
+.container:hover .cuadrado {
+    transform: rotateZ(360deg);
+}
+
+Si combinamos todos los ejes obtenemos una rotación en 3D como se muestra a continuación:
+
+.container:hover .cuadrado {
+    transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg);
+}
+
+SHORTHAND 3D Sería:
+.container:hover .cuadrado {
+    /*transform: rotate3d(X, Y, Z, VALOR_ROTACION);*/
+    /* transform: rotate3d(1, 0, 0, 360deg); */
+    /* transform: rotate3d(0, 1, 0, 360deg); */
+    transform: rotate3d(0, 0, 1, 360deg);
+}

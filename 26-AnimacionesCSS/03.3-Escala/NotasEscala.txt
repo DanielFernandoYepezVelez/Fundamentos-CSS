@@ -1,0 +1,26 @@
+ESCALAR ELEMENTOS:
+Nos sirve para modificar el tamaño de los elementos,
+recordemos que utilizan la unidad de medida porcentaje de 0 a 1, donde 1 es el 100%. Esto se escala de una forma vectorial, es decir, que no se pierde la resolución de un elemento al reducir su tamaño. A continuación se presentan ejemplos de su función:
+
+EJEMPLO EJE X:
+.container:hover .cuadrado {
+    transform: scaleX(.5);
+}
+
+EJEMPLO EJE Y:
+.container:hover .cuadrado {
+    transform: scaleY(1);
+}
+
+EJEMPLO EJE Z:
+.container:hover .cuadrado {
+    transform: scaleZ(); FALTA EXPLICACIÓN
+}
+
+EJEMPLO EJE(X, Y):
+.container:hover .cuadrado {
+    transform: scale(1.2);
+    transform: scale(2, .5);
+}
+
+De esto forma podemos modifcar el alto y el ancho de los elementos de forma independiente y de forma conjunta.
