@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* width: 100vw; */
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+header {
+    width: 50vw;
+    display: inherit;
+    justify-content: center;
+    border: solid 1px blue;
+    perspective: 200px;
+}
+
+.container {
+    border: solid 1px red;
+}
+
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background-color: #7dc900;
+    margin: 20px;
+    border: solid 1px black;
+    transition: 1s;
+}
+
+p {
+    text-align: center;
+    line-height: 155px;
+}
+
+.container:hover .cuadrado {
+    /* transform: skew(25deg); Eje X Positivo*/
+    /* transform: skew(-25deg); Eje X Negativo */
+    /* transform: skew(0, -25deg); Eje Y Negativo*/
+    /* transform: skew(0, 25deg); Eje Y Positivo*/
+    transform: skew(25deg, -25deg);
+}

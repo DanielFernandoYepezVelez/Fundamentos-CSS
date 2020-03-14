@@ -1,0 +1,19 @@
+PROPIEDAD DE LAS TRANSFORMACIONES SESGO(Skew):
+Esta propiedad nos sirve para inclinar los elementos hacia los lados, su unidad de medida son los grados y los valores pueden ser positivos o negativos, A continuación vamos a mostrar algunos ejemplos:
+
+EJEMPLO EJE X:
+.container:hover .cuadrado {
+  transform: skewX(25deg);
+}
+
+EJEMPLO EJE Y:
+.container:hover .cuadrado {
+  transform: skewY(25deg);
+}
+
+EJEMPLO EJE (X,Y):
+.container:hover .cuadrado {
+    transform: skew(25deg, 30deg);
+}
+
+La propiedad funciona solo para el eje que tenga asignado un valor, si no es asi, es decir, si no tiene ningun valor la animación no funciona.
