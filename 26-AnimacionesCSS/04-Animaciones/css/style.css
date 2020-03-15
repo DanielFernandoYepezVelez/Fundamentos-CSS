@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.container {
+    border: solid 1px red;
+}
+
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background-color: #7dc900;
+    margin: 20px;
+    border: solid 1px black;
+    /* transition: 1s; */
+    /* Nombre De La Animación */
+    animation-name: cuadrado;
+    /* Tiempo Animacion en segundos o en milisegundos */
+    animation-duration: 3s;
+    /* Cuanto tiempo quiero que se tarde en lanzarse la animacion o depues de que el usuario realice alguna accion */
+    animation-delay: 1s;
+    /* Cuantas Veces va a ocurrir la animación */
+    /* animation-iteration-count: 2; */
+    animation-iteration-count: infinite;
+    /* La Aceleracion o velocidad de mi animación*/
+    /* animation-timing-function: ease;(tiempo video 6:19) */
+}
+
+
+/* Que voy hacer en un segundo que se llame cuadrado y ese segundo lo puedo dividir en multiples secciones */
+
+@keyframes cuadrado {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+p {
+    text-align: center;
+    line-height: 155px;
+}
+
+.container:hover .cuadrado {}

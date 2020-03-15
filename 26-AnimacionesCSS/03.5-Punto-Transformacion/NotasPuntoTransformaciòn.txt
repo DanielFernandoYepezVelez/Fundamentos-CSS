@@ -1,0 +1,53 @@
+PUNTO DE ORIGEN DE LA TRANSFORMACIÒN:
+Este punto por defecto empieza en el centro, pero podemos manipularlo para moverlo a cualquier punto del elemento que se va a transformar, sin perder de vista el eje en que esta rotado el elemento, como se puede identificar en los siguientes ejemplos:
+
+EJEMPLO EJE (X,Y): Este Viene por defecto
+.container:hover .cuadrado {
+  transform-origin: center; <=> transform-origin: 50% 50%;     
+    transform: rotateY(45deg);
+}
+
+.container:hover .cuadrado {
+  transform-origin: top;
+  transform: rotateY(45deg);
+}
+
+.container:hover .cuadrado {
+  transform-origin: bottom;
+  transform: rotateY(45deg);
+}
+
+.container:hover .cuadrado {
+  transform-origin: left;
+  transform: rotateY(45deg);
+}
+
+.container:hover .cuadrado {
+  transform-origin: right;
+  transform: rotateY(45deg);
+} 
+
+EJEMPLO PARA EL EJE Z CON UN PUNTO DEFINIDO: Este punto de transformacion se puede manejar con letras o valores numericos.
+.container:hover .cuadrado {
+  transform-origin: left bottom;
+  transform-origin: 0% 59%;
+  transform: rotateY(45deg);
+} 
+
+.container:hover .cuadrado {
+  transform-origin: left bottom;
+  transform-origin: 0% 59%;
+  transform: rotateY(45deg);
+} 
+
+.container:hover .cuadrado {
+  transform-origin: right top;
+  transform-origin: 0% 59%;
+  transform: rotateY(45deg);
+} 
+
+.container:hover .cuadrado {
+  transform-origin: left top;
+  transform-origin: 0% 59%;
+  transform: rotateY(45deg);
+} 

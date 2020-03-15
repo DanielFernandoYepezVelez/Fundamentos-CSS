@@ -33,5 +33,6 @@ p {
     /* transform-origin: bottom; */
     /* transform-origin: left; */
     /* transform-origin: right; */
-    transform: rotateY(45deg);
+    transform-origin: left top;
+    transform: rotateZ(45deg);
 }

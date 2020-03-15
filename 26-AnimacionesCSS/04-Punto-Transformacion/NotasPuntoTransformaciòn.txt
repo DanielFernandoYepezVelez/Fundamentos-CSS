@@ -1,2 +1,0 @@
-PUNTO DE ORIGEN DE LA TRANSFORMACIÒN:
-Este punto por defecto empieza en el centro, pero podemos manipularlo para moverlo a cualquier punto del elemento que se va a transformar.

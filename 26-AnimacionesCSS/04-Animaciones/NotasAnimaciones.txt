@@ -1,0 +1,2 @@
+ANIMACIONES:
+En este vídeo vamos a aprender la sintaxis que podemos utilizar en CSS para poder animar elementos web.
