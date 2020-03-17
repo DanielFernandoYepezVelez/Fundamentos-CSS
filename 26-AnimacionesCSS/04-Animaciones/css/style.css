@@ -27,9 +27,23 @@ body {
     animation-delay: 1s;
     /* Cuantas Veces va a ocurrir la animación */
     /* animation-iteration-count: 2; */
-    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite; */
     /* La Aceleracion o velocidad de mi animación*/
-    /* animation-timing-function: ease;(tiempo video 6:19) */
+    animation-timing-function: ease;
+    /* Curva */
+    /* animation-timing-function: cubic-bezier(1, 1, 1, 1)
+    ; */
+    /* El orden como se va a mostrar en la pantalla mi animacion en este caso primero se hace invisible y luego visible por que le indicamos al contrario */
+    /* animation-direction: reverse; */
+    /* Animacion alternada */
+    /* animation-direction: alternate; */
+    /* Modo de fusion, es decir, cual es el valor final que va a tener mi animacion cuando esta se ejecute,
+    es decir, como quiero que se vea mi elemento cuando termina la animacion */
+    /* Mi animacion se quede con el valor final de mi keyframes */
+    animation-fill-mode: forwards;
+    /* Aqui mi animacion esta en play o esta en pausa 
+    por defecto viene con running yo puedo controlar su estado */
+    animation-play-state: paused;
 }
 
 
@@ -49,4 +63,5 @@ p {
     line-height: 155px;
 }
 
-.container:hover .cuadrado {}
+
+/* .container:hover .cuadrado {} */

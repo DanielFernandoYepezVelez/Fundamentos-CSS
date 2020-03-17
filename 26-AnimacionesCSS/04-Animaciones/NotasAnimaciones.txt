@@ -1,2 +1,62 @@
-ANIMACIONES:
+¿QUE SON LAS ANIMACIONES?
+La animaciones es la UNION de las transitions y las transforms, que se convierten en algo mucho mas poderoso.
+
+OBJETIVO DEL VIDEO:
 En este vídeo vamos a aprender la sintaxis que podemos utilizar en CSS para poder animar elementos web.
+
+Las ANIMACIONES se pueden implementar en el estado del elemento al iniciar la pagina o cuando se aplique una pseudo-clase, es decir, en el elemento en cuestión o a la pseudo-clase del elemento.
+
+SINTAXYS ANIMACIONES:
+animation-name: cuadrado; => Nombre De La Animación.
+
+animation-duration: 3s; => Tiempo Animación en segundos o en milisegundos.
+
+animation-delay: 1s; => Cuanto tiempo quiero que se tarde en lanzarse la animacion o depues de que el usuario realice alguna acción se ejecute dicha animacion.
+
+animation-iteration-count: 2; => Cuantas Veces va a ocurrir la animación.
+animation-iteration-count: infinite;
+
+animation-timing-function: ease; => La Aceleracion o velocidad de mi animación.
+
+animation-timing-function: cubic-bezier(1, 1, 1, 1); => Curva.
+
+animation-direction: reverse; => El orden como se va a mostrar en la pantalla mi animación en este caso primero se hace invisible y luego visible por que le indicamos al contrario.
+
+animation-direction: alternate; => Animacion alternada.
+
+animation-fill-mode: forwards; => Modo de fusion, es decir, cual es el valor final que va a tener mi animacion cuando esta se ejecute, es decir, como quiero que se vea mi elemento cuando termina la animacion, en este caso mi animacion se quede con el valor final de mi keyframes.
+
+animation-play-state: paused; => Aqui mi animacion esta en play o esta en pausa por defecto viene con running yo puedo controlar su estado.
+
+QUE SON LOS @KEYFRAMES:
+Que voy hacer en un segundo que se llame cuadrado y ese segundo lo puedo dividir en multiples secciones de tiempo, como se muestra en el siguiente ejemplo:
+
+@keyframes cuadrado {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+ACELERACIÓN:
+animation-timing-function: ease; => Es la Aceleracion con la que inicia la animación por defecto.
+
+animation-timing-function: ease-in; => Hace que la animacion vayan mas lento al iniciar y mas rapido al finalizar dicha animacion sobre el elemento web.
+
+animation-timing-function: ease-out; => Hace que la animacion vayan mas rapida al iniciar y mas lenta al finalizar dicha animacion sobre el elemento web.
+
+animation-timing-function: ease-in-out; => Hace que la animacion vayan mas lento al iniciar y mas lento al finalizar dicha animacion sobre el elemento web.
+
+animation-timing-function: linear; => Hace que la animacion vaya sin Aceleracion al iniciar y al finalizar dicha animacion sobre el elemento web, es decir, a una velocidad constante.
+
+animation-timing-function: steps(5); => El numero de pasos que va a tener mi animacion en el tiempo definido.
+
+CURVA DE BEZIER:
+Como ejecutar la Aceleracion dentro de las animaciones puedan ser fluidas o especificadas a nuestra propia conveniencia, como se muestra en el siguien ejemplo de explicación:
+
+animation-timing-function: cubic-bezier(1, 1, 1, 1); => debemos configurar 4 parametros, pueden ser valores positivos y negativos, en un rango de 0 a 1 y de 0 a -1.
+
+WEB CONFIGURAR CURVA DE BEZIER:
+https://cubic-bezier.com/#.17,.67,.83,.67
