@@ -124,10 +124,13 @@ medidas como piexeles. El primer argumento es el numero
 de veces que se debe repetir un valor, y el segundo
 argumento es el valor que se debe repetir.
 
-                🎊POSICIONAMIENTO
+        🎊POSICIONAMIENTO(ESTIRAR LOS ELEMENTOS):
+ESTO SE APLICA DIRECTAMENTE A LOS ELEMENTOS HIJOS,
+QUE HACEN PARTE DEL CONTENEDOR PADRE, DEFINIDO CON
+EL DISPLAY DE "GRID":
+
 🎊grid-column-start: 1; | 🎊grid-column-start: 2;
 🎊grid-column-end: -1;  | 🎊grid-column-end: 4;
-                🎊grid-column: 2 / 4;
 Los elementos empiezan a posicionarse desde una columna
 inicial y una columna final, por ende, también pueden
 cambiar su tamaño, al hacerse más grandes o más pequeños.
@@ -137,7 +140,6 @@ a izquierda, en este caso para las columnas.
 
 🎊grid-row-start: 1; | 🎊grid-row-start: 2;
 🎊grid-row-end: -1;  | 🎊grid-row-end: 4;
-                🎊grid-row: 1 / 3;
 Los elementos empiezan a posicionarse desde una fila
 inicial y una fila final, por ende, también pueden
 cambiar su tamaño, al hacerse más grandes o más pequeños.
@@ -145,15 +147,20 @@ Esta propiedad funciona con números negativos de
 izquierda a derecha y con números positivos de derecha
 a izquierda, en este caso para las filas.
 
+SHORTHAND DE GRID-COLUMN-START, GRID-COLUMN-END Y
+GRID-ROW-START, GRID-ROW-END =>
+
+🎊grid-column: 2 / 4;
+🎊grid-row: 1 / 3;
+
 🎊grid-area: 1 / 2 / 4 / 4; => Esta propiedad alberga
 las filas y las columnas en una sola linea y con el 
 siguiente orden:
 🎊grid-area: grid-row-start / grid-column-start /
                 grid-row-end / grid-column-end;
 
-                🎊ESTIRAR LOS ELEMENTOS =>
-🎊grid-column: 2 / span 2; 
-🎊grid-column: span 2; 
+🎊grid-column: 2 / span 2;
+🎊grid-column: span 2;
 🎊grid-row: 2 / span 2;
 🎊grid-row: span 3;
 Estas propiedades le dan un inicio y un fin a un elemento
@@ -163,22 +170,42 @@ filas va a tomar un elemento.
 Cuando no se tiene un numero inicial se entiende que 
 se empieza desde la grid explicita numero UNO.
 
-                🥽GRID AREA =>
-🥽Nos sirven para asignar una sección determinada
-a un o varios elementos que hacen parte del layout
-por medio, de la asignación de clases que ayuden
-a identificar la sección del layout.
+🎊POSICIONAMIENTO[(ESTIRAR LOS ELEMENTOS) GRID AREA] =>
+🎊Nos sirven para asignar una sección determinada
+a uno, dos o varios elementos que hacen parte del layout
+por medio, del "grid-area" que se le asigna DIRECTAMENTE
+a los elementos y así, se puede definir e identificar 
+cada sección del layout.
 Para dejar un espacio en blanco en la definición
-del area agrego un punto(.).
+del layout o "grid-template-area" agrego un punto(.).
 
-🥽NOTA #1 = Los elementos se pueden intercambiar de
+🎊NOTA #1 = Los elementos se pueden intercambiar de
 lugar en todas las areas que existen en todo el
 Layout.
 
-🥽NOTA #2 = Cuando trabajo con areas no necesariamente
-dejo de definir las filas y columnas de mi LAYOUT.
+🎊NOTA #2 = Cuando trabajo con areas no dejo de definir 
+las filas y columnas de mi LAYOUT.
+
+🎊SE LE APLICA AL ELEMENTO PADRE:
+grid-template-areas: "header       header       header"
+                     "main-content main-content sidebar"
+                     "widget-1     widget-2         sidebar"
+                     "footer       footer       footer";
+
+🎊Debemos especificar las areas que se la van a asignar del
+layout a los elementos, haciendo lo siguiente:
+
+🎊SE LE APLICA AL ELEMENTO DIRECTAMENTE, HIJO DE LA GRID:
+.outside-content .widget-1 {
+    grid-area: widget-1;
+}
+
+.outside-content .widget-2 {
+    grid-area: widget-2;
+}
 
             🏈ALINEACIÓN DE ELEMENTOS =>
+UN SOLO ELEMENTO DE LA GRID.
 🏈PROPIEDADES CONTENEDOR PADRE:
 🏈Alineando Los Elementos Horizontalmente:
 🏈justify-items: start; => Esta propiedad me ayuda
@@ -248,8 +275,9 @@ a ocupar todo el ancho disponible del contenedor
 PADRE, pero de forma VERTICAL.
 
                 🎲ALINEACION TRACKS =>
+UN GRUPO DE ELEMENTOS DENTRO DE CADA GRID.
 🎲Esta propiedad me sirve para alinear todo un bloque
-de elementos, tantos de forma de vertical Y
+de elementos, tanto de forma de vertical Y
 Horizontal de forma interna del contenedor PADRE.
 
 🎲Alinear Contenido Horizontalmente:

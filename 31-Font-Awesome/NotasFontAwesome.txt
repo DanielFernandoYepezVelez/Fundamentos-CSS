@@ -22,3 +22,11 @@ Aplico los pasos anteriores con los siguientes cambios:
 fontawesome.min.css
 3.linkiar el archivo anteriormente mencionado en el HTML.
 4.Copiar y pegar la carpeta WebFonts.
+
+UTILIZAR LA WEB CON SU CDN O KIT:
+1.Iniciar Sesion
+2.Start(Boton Verde)
+3.Llegamos al input y debejo vemos algo como:
+Recently used kits: 330b384e67
+4.Copiamos.
+5.Pegamos al final del body en el index.HTML.
