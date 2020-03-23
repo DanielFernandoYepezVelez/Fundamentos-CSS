@@ -3,18 +3,28 @@
     grid-gap: 10px;
     height: 500px;
     /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
-    grid-template-rows: repeat(auto-fit, minmax(2px, 50px));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* grid-template-rows: repeat(auto-fit, minmax(2px, 50px)); */
     /* auto-fill */
-    /* Esta Propiedad pone en el contenedor padre
-    todas las columnas que tenga especificadas  y si en 
+    /* Esta Propiedad se asigna en el contenedor padre para todas
+     las columnas que tenga especificadas, pero estas columnas no 
+     se especifican en "grid-template-columns", sino que dependen 
+     del numero de elementos que se agregen desde HTML y si en 
     su ancho disponible le caben mas, ps ese espacio quedara
     en blanco, pero cuando el ancho se acabe, se van
      a poner de forma vertical, que esto se ve en
-     dispositivos pequeños.*/
+     dispositivos pequeños para ayudarnos a hacerlos responsives.*/
     /* auto-fit */
-    /* Esta propiedad tiene el mismo resultado que
-    auto-fill cuando trabajamos con dispositivos
-    moviles, la diferencia la notamos con dispositvos
+    /* Esta Propiedad se asigna en el contenedor padre para todas
+     las columnas que tenga especificadas, pero estas columnas no 
+     se especifican en "grid-template-columns", sino que dependen 
+     del numero de elementos que se agregen desde HTML y si en 
+    su ancho disponible le caben mas se iran ajustando dependiendo
+    del ancho de su elemento padre o donde se definio la grid, 
+    es decir, la diferencia la notamos con dispositvos
     grandes, por que esta propiedad se va a distribuir 
-    en todo el ancho disponible de su contenedor PADRE    */
+    en todo el ancho disponible de su contenedor PADRE pero 
+    cuando el ancho se acabe, se van a poner de forma vertical, 
+    que esto se ve en
+     dispositivos pequeños para ayudarnos a hacerlos responsives.*/
 }
