@@ -22,7 +22,8 @@ floats.
 🎨display: flex | inline-flex;
 
 🎨display: flex => para trabajar con una caja o 
-contenedor flexible.
+contenedor flexible, ademas me ubica los elementos
+internos de forma horizontal o en forma de fila.
 
 🎨display: inline-flex => Es una caja en linea pero flexible,
 es decir, esta caja solo va abarcar el ancho ocupado por los
@@ -231,7 +232,8 @@ contenido interno.
 
 🎨QUE ES maxcontent =>
 MAXCONTENT: El contenedor PADRE va a tener un ancho
-o un alto maximo del tamaño de su contenido interno.
+o un alto maximo del tamaño dependiendo de su
+contenido interno.
 
 🎨LOGICA DE LA PROPIEDAD flex: 1; 
 Lo que hay detras es que se va a tener en cuenta el
@@ -256,7 +258,8 @@ un valor de -1.
 🎨Una forma valida de ver esta funcionalidad es
 en un eje x completo y entre el valor sea
 mucho mayor con un signo negativo, el elemento
-se ubicara en primera posición.
+se ubicara en primera posición para verse en
+pantalla.
 
 🎨align-self: flex-start | center | flex-end | 
                 stretch | baseline
