@@ -119,8 +119,8 @@ para las filas afectando su alto.
 🎄grid-template-columns: repeat(6, minmax(200px, 1fr)); =>
 se la puedo aplicar tanto a las columnas como a las 
 filas y me ayuda a no tener que repetir los valores
-cuando sean iguales, además de por derla combinar con otras
-medidas como piexeles. El primer argumento es el numero
+cuando sean iguales, además de combinar con otras
+medidas como pixeles. El primer argumento es el numero
 de veces que se debe repetir un valor, y el segundo
 argumento es el valor que se debe repetir.
 
@@ -401,7 +401,7 @@ IMPLICITA.
                 🥊AUTO-FIT AND AUTO-FILL=>
 🥊grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 🥊grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-🥊grid-template-rows: repeat(auto-fit, minmax(2px, 50px));    
+🥊grid-template-rows: repeat(auto-fit, minmax(2px, 50px));
 
 🥊AUTO-FILL:
 Esta Propiedad se asigna en el contenedor padre para todas
