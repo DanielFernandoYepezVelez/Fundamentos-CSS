@@ -65,6 +65,12 @@ https://fontawesome.com/icons?d=gallery
 
 DESCARGAR GRATIS FOTOS, ICONOS, VIDEOS:
 https://iconos8.es/
+
+DESCARGAR SPINNERS:
+https://tobiasahlin.com/spinkit/
+Para que funciones debe insertarse el HTML
+y el CSS que se encuentra en source en la
+misma url superior.
 -------------------------------------------------------------
 
 FUENTES:

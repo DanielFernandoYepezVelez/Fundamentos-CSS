@@ -429,5 +429,11 @@ hacerlos responsives.
 
 🥊NOTA => No Esta Funcionando Para Filas(SE SUPONE QUE SI).
 
+🥊 ALTURA DE LOS ELEMENTOS CON GRID =>
+Los elementos con este display se les puede asignar una altura en
+porcentajes, lo que con otros displays no es permitido, esto es muy
+valioso y ayuda mucho a la hora de definir una altura para un 
+elemento determinado.
+
 BUSCAR INFORMACIÓN SOBRE LA PROPIEDAD
 ORDER.
