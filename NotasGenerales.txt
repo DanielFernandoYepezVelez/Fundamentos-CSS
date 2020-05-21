@@ -55,6 +55,10 @@ EMOJIS:
 https://coolsymbol.com/emojis/emoji-for-copy-and-paste.html
 -------------------------------------------------------------
 
+HERMOSAS ALERTAS:
+https://sweetalert2.github.io/
+-------------------------------------------------------------
+
 GDLWEBCAMP:
 La mejor conferencia de Diseño Weben español(Guadalajara,MX).
 -------------------------------------------------------------
@@ -130,4 +134,8 @@ que posición se van a dibujar en la pantalla.
 3.SEPARACIÓN DE LOS ELEMENTOS(DISTRIBUCIÓN).
 FACIL => Es el tamaño, ubicación y distribución de los 
 elementos en la pantalla.
+------------------------------------------------------------
+
+COVERTIDOR DE HTML A JADE/PUG
+http://html2jade.org/
 ------------------------------------------------------------
