@@ -1,0 +1,85 @@
+OUTLINE =>
+Outline es la linea que rodea a la caja entre el border y el margin.
+El outline se escribe encima de cualquier elemento adyacente,
+como una especie de z-index superior.
+
+Tiene las mismas propiedades de los border, pero le agrega o le suma
+una mas, que la siguiente:
+
+* width
+* style
+* color
+* offset
+
+outline-top-width: 100px;
+outline-right-width: 100px;
+outline-bottom-width: 100px;
+outline-left-width: 100px;
+
+outline-top-style: solid;
+outline-right-style: solid;
+outline-bottom-style: solid;
+outline-left-style: solid;
+
+outline-top-color: blue;
+outline-right-color: blue;
+outline-bottom-color: blue;
+outline-left-color: blue;
+
+SHORTHAND(Un borde completo)=>
+outline-width: 100px;
+outline-style: solid;
+outline-color: black;
+
+SHORTHAND(Un borde por cada lado)=>
+outline-width: 100px 50px 40px 30px;
+outline-style: solid dashed dotted;
+outline-color: black yellow orange green;
+
+funciona como las margenes:
+outline-width: 100px 200px 300px 40px;
+outline-style: solid dotted dashed double;
+outline-color: black green orenage white;
+
+SHORTHAND DE SHORTHAND=>
+outline-top: 200px solid pink;
+outline-right: 200px solid pink;
+outline-bottom: 200px solid pink;
+outline-left: 200px solid pink;
+
+SHORTHAND SUPREMO=>
+outline: 50px solid black;
+
+outline-width =>
+px| em| rem| %;
+
+outline-style =>
+none| hidden| solid| dotted| dashed| double| groove| ridge| inset| outset| initial| inherit;
+
+outline-color =>
+css native| rgb| rgba| hsl| hsla| hexadecimal| transparent;
+
+outline-offset =>
+recibe valores(+-)| px| em| rem;
+
+outline-offset =>
+Lo que hace es separarse del border hacia afuera si es un valor positivo.
+Lo que hace es separarse del border hacia adentro si es un valor negativo.
+
+img {
+  outline-offset: 2em;
+}
+
+img {
+  outline-offset: -34px;
+}
+--------------------------------------------------
+
+NOTA => Esta propiedad me sirve para eliminar las lineas estilo 
+border que se genera cuando hago focus sobre un campo de texto input.
+
+EJEMPLO:
+&:focus {
+  background-color: $color_gris_claro;
+  outline: none;
+}

@@ -6,15 +6,17 @@ manipular su presentación visual con CSS. Este concepto solo
 se aplica a los elementos que tienen un display de BLOQUE,
 los elementos INLINE no tienen BOX-MODEL.
 
-En el BOX-MODEL tenemos 3 cajas y una especie de 4tha Caja:
+En el BOX-MODEL tenemos 4 cajas y una especie de 5tha Caja:
 CAJAS INTERNAS:
-1.CONTENT-BOX(Caja de contenido).
-2.PADDING-BOX(Caja de Padding, lo que hace es separar el
-contenido, de la caja del Border, de forma Interna).
-3.BORDER-BOX(Caja de Border).
+
+1. CONTENT-BOX(Caja de contenido).
+2. PADDING-BOX(Caja de Padding, lo que hace es separar el
+   contenido, de la caja del Border, de forma Interna).
+3. BORDER-BOX(Caja de Border).
+4. OUTLINE-BOX(Caja[linea] Entre border y margin).
 
 CAJA EXTERNA:
-4.MARGIN(Es una caja invisible que esta alrededor de un 
+5.MARGIN-BOX(Es una caja invisible que esta alrededor de un 
 elemento, lo que hace es separar los elementos adyacentes).
 
 NOTA: El objetivo con el BOX-MODEL es sumar el ancho y 

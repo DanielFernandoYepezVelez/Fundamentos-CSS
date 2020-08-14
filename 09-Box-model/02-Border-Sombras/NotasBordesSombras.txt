@@ -1,0 +1,87 @@
+NOTA => Con Los BORDER Se pueden hacer triangulos o estilos tipo sobre,
+se deben explorar estas propiedades mas a fondo.
+
+BORDERS:
+Los borders de un elemento se dibujan dentro de la caja,
+de las esquinas hacia adentro.
+
+PROPIEDADES DE LOS BORDES(Ancho o grosor, estilo, color):
+PROPIEDADES COMPLETAS=>
+border-top-width: 100px;
+border-right-width: 100px;
+border-bottom-width: 100px;
+border-left-width: 100px;
+
+border-top-style: solid;
+border-right-style: solid;
+border-bottom-style: solid;
+border-left-style: solid;
+
+border-top-color: blue;
+border-right-color: blue;
+border-bottom-color: blue;
+border-left-color: blue;
+
+SHORTHAND(Un borde completo)=>
+border-width: 100px;
+border-style: solid;
+border-color: black;
+
+SHORTHAND(Un borde por cada lado)=>
+border-width: 100px 50px 40px 30px;
+border-style: solid dashed dotted;
+border-color: black yellow orange green;
+
+funciona como las margenes:
+border-width: 100px 200px 300px 40px;
+border-style: solid dotted dashed double;
+border-color: black green orenage white;
+
+SHORTHAND DE SHORTHAND=>
+border-top: 200px solid pink;
+border-right: 200px solid pink;
+border-bottom: 200px solid pink;
+border-left: 200px solid pink;
+
+SHORTHAND SUPREMO=>
+border: 50px solid black;
+
+border-width =>
+px| em| rem| %;
+
+border-style =>
+none| hidden| solid| dotted| dashed| double| groove| ridge| inset| outset| initial| inherit;
+
+border-color =>
+css native| rgb| rgba| hsl| hsla| hexadecimal| transparent;
+-----------------------------------------------------
+
+BOX SHADOW(Sombras):
+Me permite crearle sombras a un elemento y se les
+puede asignar valores negativos para efectos(Trucos).
+Recordar que son copias, las sombras son copias.
+
+EXPLICACIÓN PROPIEDAD:
+box-shadow: h-offset v-offset blur spread color | inset
+
+h-offset v-offset => que tanto se separa la sombra del
+elemento, de forma horizontal y de forma vertical.
+
+blur => difuminado(Se pone Borroso).
+
+spread => cuanto se espande o crece(Tambien se puede 
+utilizar valores Negativos).
+
+color => color asignado.
+
+inset => si la sombra es interior al nivel
+del elemento.
+(Utilizar valores Negativos(opuesto)).
+
+Puedo hacer multiples sombras:
+box-shadow: 0 0 30px 10px blue,
+            0 0 12px 20px green;
+
+NOTA SHORTHAND => En CSS es muy mala practica aplicarlos,
+a no ser de que se sepa lo que se esta haciendo realmente.
+-----------------------------------------------------------

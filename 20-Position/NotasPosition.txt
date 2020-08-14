@@ -13,9 +13,12 @@ presentan en la pantalla especificado desde el codigo HTML.
 
 PROPIEDAD Offset:
 Son las propiedades que mueven a un elemento posicionado. 
+
 POSICIONADO es un elemento que tenga una propiedad de
-relative, absolute, fixed o stiky, es decir, de position distinta a
-static. Los puede mover por las siguientes propiedades según
+relative, absolute, fixed o sticky, es decir, de position 
+distinta a static. 
+
+Los puedo mover por las siguientes propiedades según
 el borde indicado:
 
 top: 20px;
@@ -41,7 +44,7 @@ elemento del web-site.
 
 CUANDO IMPLEMENTARLA:
 Es importante para cuando quiero mover un elemento del layot y no
-quiero que se modifique el layout de otro elemento, es decir solo
+quiero que se modifique el layout de otro elemento, es decir, solo
 quiero mover ese elemento en particular y que se conserve el
 espacio en el layout(GEOMETRIA).
 -----------------------
