@@ -1,0 +1,179 @@
+TEXTO:
+QUE SON LOS EM Y LOS REM:
+EM: 
+Es el tamaño de fuente del contexto, es decir, el tamaño de
+fuente definida por parte de su elemento ANCESTRO(Padre, 
+abuelo, bisabuelo, etc) más cercano es su referencia principal
+y esa referencia principal es variable.
+
+REM: 
+Es el tamaño de fuente de root(html <=> :root).
+
+Direction => 
+direccion textos de derecha a izquierda y de izquierda
+derecha.
+text-direction: ltr;
+text-direction: rtl;
+
+text-indent => 
+Sirve para la identación del primer parrafo.
+text-indent: 2em;
+
+text-align => 
+alinear texto.
+text-align: start; text-align: center; text-align: end;
+text-align: left;  text-align: center; text-align: right;
+text-align: justify; (ES MUY MALA PRACTICA UTILIZAR ESTA
+DECLARACIÓN).
+
+(SOLO APLICA PARA LA ULTIMA LINEA DE UN PARRAFO)
+text-align-last: start; text-align-last: center; 
+text-align-last: end;
+
+text-align-last: left;  text-align-last: center; 
+text-align-last: right;
+
+text-align-last: justify;(ES MUY MALA PRACTICA UTILIZAR
+ESTA DECLARACIÓN).
+
+line-height => 
+Definir la altura de cada linea de texto.
+line-height: 1.3em a 1.6em; Nos sirve para alinear una sola
+linea de texto, siempre y cuando yo este seguro que es una
+sola linea de código.
+line-height: 300px;(Debe tener la misma medida que la altura
+de su contenedor).
+
+vertical-align => 
+Nos sirver para alinear el texto verticalmente, 
+mas de una linea de texto.
+
+vertical-align: bottom; vertical-align: baseline; 
+vertical-align: middle; vertical-align: top;
+
+NOTA = Las imagenes que esten dentro de un elemento de bloque
+funcionan como texto, por ende, puedo aplicar las propiedades
+de vertical-align y de text-align en dichas
+imagenes(LAS IMAGENES ACTUAN COMO TEXTO, POR SER INLINE).
+
+TEMAS ESTÉTICOS:
+letter-spacing => 
+espaciado de letra a letra (valores positivos y negativos).
+letter-spacing: 0.01em;
+
+word-spacing => 
+espaciado de palabra a palabra (valores positivos y negativos).
+word-spacing: 1em;
+
+text-decoration => 
+Nos permite dibujar o retirar lineas horizontal en el texto.
+PROPIEDADES COMPLETAS =>
+text-decoration-line: underline | line-through | overline;
+text-decoration-color: red;
+text-decoration-style: dotted | dashed | solid | double;
+
+SHORTHAND =>
+text-decoration: underline | line-through |overline;
+text-decoration: line-through red dotted;
+
+text-shadow => 
+Permite agregar sombras al texto, es muy similar al 
+box-shadow, excepto la expansión, recordar que son copias,
+las sombras son copias.
+text-shadow: h-offset v-offset blur color | inset
+
+EXPLICACIÓN DE LAS PROPIEDADES text-shadow:
+h-offset v-offset => 
+que tanto se separa del elemento, de forma horizontal y de
+forma vertical.
+
+blur => difuminado(Se pone Borroso).
+
+color => color asignado.
+
+inset => si la sombra es interior o exterior(Utilizar
+valores Negativos(opuesto)).
+
+Puedo hacer multiples sombras:
+text-shadow: 0 0 30px blue,
+             0 0 12px green;
+
+white-space => 
+Permite dejar el texto que se muestra en pantalla,
+exactamente igual como se escribe en el código.
+white-space: normal;(Viene por defecto, no afecta en nada).
+white-space: pre;(Deja el texto como se establecio en el 
+                  código).
+white-space: nowrap;(El texto no salta de linea).
+white-space: pre-wrap;(El texto salta de linea y conserva 
+                    espacios en blanco).
+white-space: pre-line;(El texto salta de linea y no conserva
+                    espacios en blanco).
+
+Desbordamiento => 
+Es cuando el texto se sale de una caja de texto u ocupa un
+espacio que no le corresponde en la pantalla.
+word-break: normal | break-all | keep-all ;
+word-wrap: normal | break-word ;
+overflow: hidden;(OCULTA LO QUE SE SALGA DE LAS DIMENSIONES
+                   ESTABLECIDAS).
+text-overflow: ellipsis;(PONE TRES PUNTOS SEGUIDOS, DESPUÉS
+                         DE OCULTAR LO QUE SE SALE DE UNA 
+                         CAJA DE TEXTO).
+
+text-vertical => 
+Nos sirve para aplicar texto vertical, como los menús
+verticales.
+writing-mode: vertical-lr;
+text-orientation: upright; (PARA QUE SEA LEGIBLE).
+
+text-rendering => 
+Se utiliza para SVG y la escritura.(ESTUDIAR).
+
+text-transform => Para transformar el texto.
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: capitalize;
+----------------------------------------------------
+
+TEXTOS #2 => PROPIEDADES QUE COMIENZAN EN FONT:
+
+Familia de tipografias Genericas =>
+font-family: serif, sans-serif, monospace, cursive, display.
+font-family: 'Times New Roman', opcion2, fuenteGenerica;
+(SI HAY ESPACIOS UTILIZAR COMILLAS).
+
+Grosor de la fuente =>
+Es muy mala practica utilizar las palabras claves, es más
+adecuado utilizar los numeros, van desde el 100 al 900, y
+ellos van dandole el grosor a las tipografias de menos a mas.
+font-style:  normal | bold | lighter | bolder;
+font-weight: normal | bold | lighter | bolder;
+font-weight: 100 | 300 | ... | 900;
+
+Tips Fuentes =>
+Se recomienda la combinación de fuentes y se suele utilizar
+una tipografia para el titulo y otra para los texto de un 
+Website.
+
+SHORTHAND FONT =>
+font: font-size font-family / line-height;
+-------------------------------------------------------------
+
+COLORES:
+COLORES DEL SISTEMA:
+color: white;
+
+COLORES HEXADECIMALES:
+FORMATO HEXADECIMALES(0-F).
+color: #6753ca;
+
+COLORES RGB:
+FORMATO RGB(0-255).
+color: rgb(255, 255, 107);
+
+COLORES RGBA:
+FORMATO RBGA(0-255-alpha).
+Este formato lo que hace es agregar una transparencia
+que va de 0 a 1 y se puede utilizar números con parte decimal.
+color: rgba(90, 76, 233, .9);

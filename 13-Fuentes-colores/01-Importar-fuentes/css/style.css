@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Esto es lo necesario para utilizar una fuente
+descargada e instalada en un proyecto, diferente solo
+al linkeo de una fuenta desde google FONTS */
+
+
+/* Aqui lo que realmente hago es crear una fuente
+personalizada y la llamo desde su ubicación en el
+proyecto y no desde google FONTS */
+
+@font-face {
+    font-family: RobotoFuenteCustom;
+    src: url('../fonts/Roboto-BlackItalic.ttf');
+}
+
+
+/* Implementando en el selector del parrafo 
+la fuente que personalice y le puse un nombre
+ anteriormente */
+
+p {
+    font-family: RobotoFuenteCustom;
+    font-size: 25px;
+    margin-top: 20px;
+}

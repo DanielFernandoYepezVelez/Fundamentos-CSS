@@ -4,12 +4,13 @@ navegador hace una suma interna de los selectores más
 especificos y entre más grande sea la suma, va prevalecer
 sobre otros selectores dicha especificidad y el valor de cada
 selector se presenta Acontinuación:
+
 tag = 1. (Elements and pseudo-elements).
 clases = 10. (Classes, attributes and pseudo-classes).
 id = 100.
 inline = 1000.
 !important = es el mas poderoso de todos(mala practica
-utilizarlos).
+utilizarlos, Debe Ser Tu Ultima Opción).
 
 LINK PARA CALCULAR LA ESPICIFICIDAD: 
 https://specificity.keegan.st/

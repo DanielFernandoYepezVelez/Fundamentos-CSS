@@ -60,7 +60,7 @@ EJEMPLO:
   color: red;
 }
 
-DESCENDIENTES: 
+DESCENDIENTES(Selecciona Todos Los Hijos): 
 Quiere decir que un selector esta dentro
 de otro selector o es su hijo o nieto o bisnieto, la clave es
 que este dentro y que tenga el espacio para sea considerado
@@ -92,7 +92,7 @@ div#main .post
   color: red;
 }
 
-HIJOS DIRECTOS: 
+HIJOS DIRECTOS(Selecciona Todos Los Hijos Directos): 
 Se refiere al selector que esta en el interior de otro de
 forma directa.
 EJEMPLO: A todo ul que sea hijo directo de li aplicale color
@@ -120,7 +120,7 @@ ul:last-child
   color: red
 }
 
-HERMANO SIGUIENTE: 
+HERMANO SIGUIENTE(Simpre Por Debajo): 
 Selecciona al selector que esta justo despues de otro, es
 decir, de forma contigua. 
 EJEMPLO: Aplicale al titulo y al subtitulo rojo al texto.
@@ -129,7 +129,7 @@ EJEMPLO: Aplicale al titulo y al subtitulo rojo al texto.
   color: red;
 }
 
-HERMANOS SIGUIENTES: 
+HERMANOS CON EL MISMO PADRE(Simpre Por Debajo): 
 selecciona a todos, absolutamente a todos los hermanos
 siguientes y no necesariamente tiene que estar al lado
 para que funcione, sino que puede estar en todo el codigo,
@@ -152,19 +152,38 @@ y el "ID" a un selector."SE UTILIZA MUCHO EN LOS FORMULARIOS"
 SENCILLOS:
 1.ATRIBUTO Y VALOR:
 [attr="value"]
-2.SOLO ATRIBUTO:
-[attr]
 
 EJEMPLO:
+[href] {
+  color: green
+}
+
+[required] {
+  color: red;
+  background-color: blue;
+}
+
+[href="#"] {
+  color: green
+}
+
 input[type="email"]
 {
   background-color: black;
 }
+--------------------------------------
 
-[required]
-{
-  color: red;
-  background-color: blue;
+Seleccionar los elementos que tienen
+ese atributo al menos ese valor Una Vez.
+[class~="verde"] {
+  color: green;
+}
+
+Seleccionar los elementos que tienen ese atributo
+y exactamente ese valor o empieze con el valor
+seguido de un guión.
+[class|="verde"] {
+  color: blue;
 }
 
 COMODIN EMPEZANDO CON: Este selector de atributo
@@ -187,10 +206,11 @@ EJEMPLO: [attr$="value"]
 }
 
 COMODIN CONTIENE QUE: Significa que esta en cualquier
-lugar del codigo.
+lugar del codigo y selecciona los elementos que
+contengan ese valor.
 
 EJEMPLO:[attr*="value"]
-[class*="button-"]
+[class*="button-rojo"]
 -------------------------------------------------------------
 
 SELECTOR +label:

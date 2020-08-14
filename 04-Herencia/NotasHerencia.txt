@@ -2,7 +2,9 @@ HERENCIA:
 Los selectores descendientes heredan algunas propiedades de
 sus padres o de todos los elementos superiores a ellos en el
 HTML; aunque nosotros podemos forzarlos para que hereden con 
-el valor "inherit" o para que tengan sus propios estilos.
+el valor "inherit"; tambien se pueden definir sus propios 
+estilos.
+
 Los elementos no heredan si ellos ya tienen una propiedad
 especificada, pero si no la tienen van a heredar de su
 selector superior o tambien los puedo forzar con la palabra
@@ -15,4 +17,18 @@ su valor inicial.
 inherit: este valor funciona para obligar a un elemento a 
 heredar la propiedad de otro elemento superior o etiqueta
 superior(PADRE).
+
+
+NOTA = Esto es posible con las propiedades que afectan al 
+PADRE sin contener el enlace, es decir, algo que se le aplique
+al elemento PADRE y el hijo no lo afecte directamente, ahi
+se puede HEREDAR.
+
+p {
+  color: red;
+}
+
+a {
+  color: inherit;
+}
 ------------------------------------------------------------

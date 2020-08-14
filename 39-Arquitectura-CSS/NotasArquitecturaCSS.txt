@@ -58,6 +58,25 @@ La clase en común para los dos nodos es reutilizable y asi se evita la redundan
 DOCUMENTACION: http://getbem.com/introduction/
 2.BEM (BLOCK-ELEMENT-MODIFY) => Esta arquitectura separa los bloques, los elementos y los modificadores, lo podemos ver en el siguiente ejemplo:
 
+BLOCK => Es cualquier elemento autonomo y aislado de nuestro documento. Un menú, una galería , un formulario, etc.
+ELEMENT => Es cada uno de los elementos del bloque. Un link, una foto, un campo de texto, etc.
+MODIFIER => Cuando un bloque se repite en otro lugar de nuestra web pero con alguna modificación. El color del texto, el tamaño de la fuente.
+
+COMO SE ESCRIBE(BEM) =>
+Los bloques se suelen denominar con una sola palabra o con dos palabras separadas con un guión, si puede existir conflicto de estilos.
+
+.menu / .main-menu
+.gallery / .main-gallery
+
+Los elementos se escriben con el nombre del bloque al que pertenecen y su nombre propio con dos guiones bajos __.
+.menu__item / .main-menu__link
+.gallery__photo / .gallery__carousel
+
+Los modificadores se nombran con el nombre del bloque al que pertenecen y su modificador con dos guiones medios --.
+.menu__item--active / .main-menu__link--active
+.gallery__photo--color / .main-gallery__carousel--roundod
+--------------------------------------------------------
+
 <header class="header">
   <button class="header__button--red">RED</button> 
   <button class="header__button--yellow">YELLOW</button>
