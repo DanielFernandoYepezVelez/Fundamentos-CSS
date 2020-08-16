@@ -1,0 +1,13 @@
+ELEMENTOS DISPLAY BLOCK:
+CARACTERISTICAS NATURALES DE ELEMENTOS DE BLOQUE:
+1.Crean lineas completas horizontalmente para cada elemento.
+
+2.Ocupan todo el espacio horizontalmente disponible que
+puedan.
+
+3.Generalmente al ocupar una linea completa horizontalmente
+un elemento esta debajo de otro.
+
+4.tienen un ancho y alto de acuerdo a su contenido,
+además, se les puede definir ANCHO, ALTO, MARGIN, PADDING
+(CON PX TIENEN EFECTO).

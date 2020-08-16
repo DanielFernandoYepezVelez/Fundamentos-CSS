@@ -1,0 +1,8 @@
+ELEMENTOS DISPLAY INLINE-BLOCK:
+CARACTERISTICAS NATURALES DE LOS ELEMENTOS INLINE-BLOQUE:
+Estos elementos tienen las caracteristicas combinadas,
+es decir, pueden ser INLINE ocupando el espacio de su
+contenido interno y pueden ser BLOCK por que se les puede
+definir ANCHO, ALTO, MARGIN, PADDING(CON PX TIENEN EFECTO).
+Lo que anteriormente no era posible con solo el display
+INLINE.

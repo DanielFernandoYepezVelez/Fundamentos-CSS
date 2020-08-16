@@ -1,0 +1,54 @@
+DOCUMENTACIÓN:
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudoelementos
+-----------------------------------------------
+
+PSEUDO-SELECTORES:
+Existen dos tipos:
+PSEUDO-ELEMENTOS.
+PSEUDO-CLASES.
+
+PSEUDO-ELEMENTOS:
+Al igual que las pseudo-classes, los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte concreta o especifica del elemento. 
+
+Por ejemplo, el pseudoelemento ::first-line selecciona solo la primera línea del elemento especificado por el selector.
+
+LOS ELEMENTOS DEBEN ESTAR CON UN DISPLAY INLINE-BLOCK O BLOCK.
+Actualmente Existen 5 pseudoelementos:
+1. ::first-line(Afecta primera linea).
+2. ::first-letter(Afecta primera letra).
+3. ::before.
+4. ::after.
+5. ::selection(Afecta lo que se seleccione con el mouse(Retirado de la especificación)).
+
+NOTA ESPECIAL ::BEFORE Y ::AFTER =>
+Estos pseudoelmentos me van a crear nuevos elementos en el DOM que no estan o no 
+existen en el HTML. La propiedad "content" es obligatoria son elementos de linea 
+por defecto, son hijos del elemento al que pertenecen.
+
+Ejemplo =>
+.dollar::before {
+    content: '$';
+}
+
+.dollar::after {
+    content: '.00';
+}
+
+En el "content" se puede agregar cualquier cosa, vamos agregar dos cuadrados con pseudoelementos:
+.dolar::before,
+.dolar::after {
+    content:'';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: red;
+}
+
+Recordar como son elementos inline por defecto; entonces, debo agregarle display: block, para que me acepte
+medidas o dimensiones, ya que este tipo de elementos no tienen dimesiones, si no que es el contenido
+que venga por defecto en su interior.
+
+COMBINANDO PSEUDOCLASES CON PSEUDO-SELECTORES:
+.countdown span:last-child::after {
+    display: none;
+}

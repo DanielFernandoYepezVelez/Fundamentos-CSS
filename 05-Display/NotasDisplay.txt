@@ -1,0 +1,13 @@
+DISPLAY:
+Nos permite definir como se comporta una caja con respecto
+a las cajas adyacentes.
+
+De forma natural existen elementos inline y elementos de bloque.
+
+Los valores de esta propiedad son:
+inline: Establece que la caja se comoporte como si fuera un elemento en linea.
+block: Establece que la caja se comoporte como si fuera un elemento de bloque.
+inline-block: La caja se comporta como un elemento de linea pero acepta width-height.
+none: Se oculta la caja del elemento pero se sigue renderizando, en el html de inspect.
+table: La caja Imita el comportamiento de una tabla.(NO USO)
+list-item: La caja Imita el comportamiento de una lista.(NO USO)

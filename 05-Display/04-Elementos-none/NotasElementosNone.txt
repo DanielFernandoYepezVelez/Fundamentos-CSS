@@ -1,0 +1,6 @@
+ELEMENTOS DIPLAY NONE:
+CARACTERISTICAS NATURALES DE ELEMENTOS DE NONE:
+Estos elementos tienen la caracteristica de perder 
+visibilidad, es decir, no se van a ver en el layuot de
+la pantalla.
+----------------------------------------------------------

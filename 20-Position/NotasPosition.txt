@@ -18,14 +18,18 @@ POSICIONADO es un elemento que tenga una propiedad de
 relative, absolute, fixed o sticky, es decir, de position 
 distinta a static. 
 
-Los puedo mover por las siguientes propiedades según
-el borde indicado:
+Si el elemento tiene un valor de elemento POSICIONADO los
+puedo mover por las siguientes propiedades según el borde 
+indicado, ademas del z-index:
 
 top: 20px;
 left: 200px;
 right: 200px;
 bottom: 20px;
+z-index: 1;
 pero este borde es el que rodea al propio elemento POSICIONADO.
+
+NOTA => TOP y LEFT tienen mayor peso que BOTTOM y RIGHT.
 ------------------------------------------------------------------------------------------------
 
 POSITION:RELATIVE: Me dice desde donde empiezo a mover el
@@ -64,7 +68,8 @@ POSITION:ABSOLUTE: Es más complejo que el anterior, pero tambien
 me dice desde donde empiezo a mover el elemento POSICIONADO y 
 tengo como referencia los bordes de los diferentes lados del mismo 
 elemento con respecto a los borde de referencia de su ancestro o 
-elemento padre.
+elemento padre, si no tiene ninguno elemento PADRE POSICIONADO,
+toma como elemento POSICIONADO y PADRE de referencia el VIEWPORT.
 
 CARACTERISTICAS DE ESTA PROPIEDAD:
 1. Pierde su posición en el flujo y no mantinene su espacio, pasa atras.
@@ -120,10 +125,36 @@ STATIC: Todos los elementos son static de forma
 predeterminada.
 --------------------------------------------------------------
 
+POSITION STICKY:
+
+El valor sticky es una combinación entre relative y fixed.
+El elemento conserva su espacio en el flujo.
+Si no tiene dimensiones declaradas, sus dimensiones se ajustan al contenido.
+Su punto de referencia no se modificará aunque movamos el elemento.
+Cuando Hacemos scroll el elemento se moverá hasta alcanzar el tope establecido.
+
+EJEMPLO =>
+Para separar un elemento despues de darle scroll y alcance
+una medida determinada, esa medida se define con top, left,
+bottom, right, depende mucho de donde se este ejecutando
+el scroll.
+--------------------------------------------------------------
+
 Z-index:
 Me permite ubicar la capa de un elemento sobre la otra capa
 de otro elemento, el elemento con un mayor z-index va prevalecer
 por encima de otro z-index, en el codigo se representa de la
 siguiente forma:
 z-index: 1;
+
+Si el elemento PADRE tiene un z-index declarado no podremos poner
+a un hijo por encima.
+
+Para que funcione un z-index con un padre con z-index,
+debe comentarse el z-index del padre y el valor del z-index
+del hijo debe ser negativo.
+
+Es recomendable no utilizar valores consecutivos, pero si valores
+que den el espacio para agregar nuevos z-index imprevistos, como
+por EJEMPLO: 10, 20, 30... ó 100, 200, 300...
 --------------------------------------------------------------
