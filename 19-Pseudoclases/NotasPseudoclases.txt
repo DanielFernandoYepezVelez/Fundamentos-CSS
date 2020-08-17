@@ -8,7 +8,7 @@ con algunos elementos y se pueden activar estilos especiales dependiendo del con
 posición, estado o elemento.
 
 No estan atados a ningun elemento, solo se puede aplicar la pseudoclase y listo.
-:psuedoclase{
+:pseudoclase{
      estilos;
 }
 
@@ -79,13 +79,61 @@ DYNAMIC:
 :focus => Cuando el elemento tiene el foco.
 
 TARGET:
-:target => Elemento que es obketivo de un marcador o ancla.
+:target => Elemento que es objetivo de un marcador o ancla.
 
 LANGUAGE:
 :lang(en) => Elemento que contiene el atributo 
 lang que especifiquemos.
+---------------------------------------------
 
+UI States:
+Pseudoclases de Estado(States) todas estas 
+pseudoclases son de formularios, excepto
+"fullscreen".
 
+selector:enable (Aplica para campos habilitados)
+selector:disable (Aplica para campos deshabilitados)
+selector:checked (Aplica para cuando se de click en un check)
+selector:in-range (El Campo tiene un rango min y otro max, si esta en dicho rango se aplica)
+selector:out-of-range (El Campo tiene un rango min y otro max, si esta en dicho rango se aplica)
+selector:required (Aplica para campos requeridos)
+selector:optional (Aplica para campos opcionales, que son los que no tienen la propiedad required)
+selector:valid (Aplica para campos que tengan sus validaciones del frontend 100%)
+selector:invalid (Aplica para campos que NO tengan sus validaciones del frontend 100%)
+selector:read-only (Aplica para los campos de solo lectura)
+selector:read-write (Aplica para los campos de solo escritura)
+selector:fullscreen (Bucar Info)
+------------------------------------------------
 
+Estructuras:
+:root => (Representa la raiz del documento(html) usando esta pseudoclase tenemos mas especificidad que si usaramos el html normal)
 
+:empty => (Se aplica para las etiquetas que no tienen ningun contenido interno)
 
+-child:
+     :first-child => (Selecciona al primer hijo(independientemente del tipo de etiqueta))
+     :last-child => (Selecciona al ultimo hijo(independientemente del tipo de etiqueta))
+
+     :nth-child(n) => (Selecciona al hijo n(independientemente del tipo de etiqueta))
+     :nth-last-child(n) => (Selecciona al hijo n empezando a contar desde el Ultimo(independientemente del tipo de etiqueta))
+
+     :only-child => (Selecciona al hijo unico(independientemente del tipo de etiqueta))
+
+-type:
+     :first-of-type => (Selecciona al primer hijo que tenga el tipo de selector mencionado(independientemente del tipo de etiqueta))
+     :last-of-type => (Selecciona al ultimo hijo que tenga el tipo de selector mencionado(independientemente del tipo de etiqueta))
+
+     :nth-of-type(n) => (Selecciona al hijo n que tenga el tipo de selector mencionado(independientemente del tipo de etiqueta))
+     :nth-last-of-type(n) => (Selecciona al hijo n empezando a contar desde el Ultimo que tenga el tipo de selector mencionado(independientemente del tipo de etiqueta))
+
+     :only-of-type => (Selecciona al hijo unico que tenga el tipo de selector mencionado(independientemente del tipo de etiqueta))
+
+VALORES POSIBLES PARA CHILD Y TYPE:
+     odd - impares
+     even - pares
+     numeros enteros => 2,3,4,5,6.......
+     equaciones (1n, 3n, 4n+1, n+4......)
+     n => es un multiplicador que va desde 0 a n(funciona como un ciclo y en cada iteración aumenta en 1 y va a iterar la cantidad de veces que existan elementos html en el DOM)
+
+-negation:
+     :not(selector) Seleccionar al elemento que no cumpla la condición, se puede colocar cualquier otro selector salvo :not.
