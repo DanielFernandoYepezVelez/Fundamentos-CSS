@@ -12,10 +12,25 @@ Para que una imagen que tenga un espacio suficiente no se
 repita o se repita, dependiendo de lo que se necesita.
 
 background-clip: border-box|padding-box|content-box;
-Que parte de la caja del Box-Model es cubierta por el fondo.
+Establece que parte de la caja rellenara el fondo,
+mostrando la imagen desde donde le indiquemos, pero
+no desde la zona original, es decir, no inicia
+exactamente desde la parte que le indicamos, asi
+que se puede decir que parte de la imagen se oculta
+y no se redimensiona por completo.
 
 background-origin: border-box|padding-box|content-box; 
-Desde que caja del Box-Model se empieza a dibujar el fondo.
+Establece donde comienza el fondo, redimensionando la imagen
+para que inicie y ocupe desde la zona original que le indicamos.
+
+background-color: Nos permite establecer el color de fondo.
+background-image: Nos permite establecer una imagen de fondo.
+background-repeat: Nos permite establecer si un fondo se repite o no.
+background-position: Nos permite establecer la posicion del background.
+background-size: Nos permite establecer el tamaño del background.
+background-origin: Nos permite establecer desde donde se empezara a dibujar el fondo.
+background-clip: Nos permite establecer en qué parte de la caja se dibujará el fondo.
+background-attachment: Nos permite establecer si el background es relativo a la caja o al viewport.
 -----------------------------------
 
 (APLICA SOLO CON LAS IMAGENES, MÁS NO CON LOS COLORES)
@@ -60,7 +75,24 @@ X => left|center|right<unit> Palabras claves para X.
 
 Y => top|center|bottom<unit> Palabras claves para Y.
 
-Las palabras claves se mezclan con sus respectivos unit(20px).
+Las palabras claves se mezclan con sus respectivos unit(20px), 
+si no se especifica un segundo valor sera center:
+left top
+left center
+left bottom
+
+right top
+right center
+right bottom
+
+center top
+center center
+center bottom
+
+X% Y%
+xpos y pos
+initial
+inherit
 
 Se utiliza para posicionar el fondo de la imagen y el
 navegador entiende cual palabra clave le corresponde a que
@@ -72,21 +104,25 @@ ya no funciona.
 
 background-position: top right;
 background-position: top 20px right 20px;
+----------------------------------------------------
 
 background-attachment: Es como se dibuja el fondo con 
-respecto al viewport, es decir, Esta propiedad me sirve para
-que el contenido del fondo no se no se mueva al ritmo del
-scroll.
+respecto al viewport o a la caja.
 
 background-attachment: fixed; 
 Para fijar una imagen de background(Efecto PARALAX).
+El punto de referencia es el viewport.
+Esta propiedad me sirve para que el contenido del fondo no se no se mueva 
+al ritmo del scroll.
 
 background-attachment: scroll; 
 Es el valor que viene por defecto.
+El punto de referencia es la caja de la imagen.
 
 background-attachment: local; 
 Es el valor que viene cuando un elemento tenga un scroll de
 forma interna.
+----------------------------------------------------
 
 backgrounds Multiples: Puedo tener multiples backgrounds en
 el viewport y puedo aplicarle las diferentes propiedades de
@@ -112,6 +148,8 @@ REEMPLAZAR UN BACKGROUND POR OTRO TOTALMENTE:
 Aqui estamos hablando de que tenemos un fondo de algun color
 en particular y queremos cambiarlo por una imagen o viceversa
 tenemos que hacer lo siguiente:
+
+LA PROPRIEDAD UNSET RESETEA LAS PROPIEDADES.
 
 background-color: unset; //Me quita el color de fondo
 background-image: url("../img/bg.jpg") unset; //Me quita la imagen
