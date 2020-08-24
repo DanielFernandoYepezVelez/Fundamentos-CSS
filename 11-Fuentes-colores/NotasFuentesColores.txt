@@ -1,4 +1,18 @@
 TEXTO:
+A los tipos de letra que existen se les denomina fuentes o tipografias.
+
+Familias Tipógraficas =>
+Tienen un nombre propio.
+Arial, 'Times New Roman', 'open sans', ubuntu
+
+Familias genéricas o seguras =>
+Su nombre se basa en sus caracteristicas.
+serif: Tienen un adorno en los remates.
+sans-serif: Tienen un corte seco en los remates.
+cursive: emulan tipografia manuscrita.
+fantasy: Letras decorativas.
+monospace: Todos los carcateres tienen el mismo ancho (se aplica para los editores de código)
+
 QUE SON LOS EM Y LOS REM:
 EM: 
 Es el tamaño de fuente del contexto, es decir, el tamaño de
@@ -15,11 +29,11 @@ derecha.
 text-direction: ltr;
 text-direction: rtl;
 
-text-indent => 
+text-indent(PARA ELEMENTOS DE BLOQUES) => 
 Sirve para la identación del primer parrafo.
 text-indent: 2em;
 
-text-align => 
+text-align(PARA ELEMENTOS DE BLOQUES) => 
 alinear texto.
 text-align: start; text-align: center; text-align: end;
 text-align: left;  text-align: center; text-align: right;
@@ -36,7 +50,7 @@ text-align-last: right;
 text-align-last: justify;(ES MUY MALA PRACTICA UTILIZAR
 ESTA DECLARACIÓN).
 
-line-height => 
+line-height(UNA SOLA LINEA) => 
 Definir la altura de cada linea de texto.
 line-height: 1.3em a 1.6em; Nos sirve para alinear una sola
 linea de texto, siempre y cuando yo este seguro que es una
@@ -44,7 +58,7 @@ sola linea de código.
 line-height: 300px;(Debe tener la misma medida que la altura
 de su contenedor).
 
-vertical-align => 
+vertical-align(MAS DE UNA LINEA) => 
 Nos sirver para alinear el texto verticalmente, 
 mas de una linea de texto.
 

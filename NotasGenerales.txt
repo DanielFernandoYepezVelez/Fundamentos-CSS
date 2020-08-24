@@ -81,6 +81,13 @@ FUENTES:
 TypeKit: https://fonts.adobe.com/fonts
 google fonts: https://fonts.google.com/
 
+SITIOS GRATUITOS PARA DESCARGAR FUENTES:
+https://dafont.com
+https://1001fonts.com
+
+VER LAS FUENTES DE OTRAS WEBS CON UNA EXTENSION:
+whatFont(Google Chromme Y Firefox)
+
 WEB SIMBOLS(FUENTEEEEEEEEESSSSSS):
 Cada letra del teclado tiene un logotipo o simbolo diferente
 que la representa y son muy utiles por que son logotipos en .svg
