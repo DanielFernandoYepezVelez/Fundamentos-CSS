@@ -1,0 +1,33 @@
+Normalmente necesitamos resetear los estilos por defecto de una lista =>
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+list-style: none;
+
+Hay tres propiedades para las listas, se pueden aplicar al padre
+o a los elementos de la lista.
+
+list-style-type: Establece el estilo de viñeta.
+disc
+circle
+square
+decimal
+decimal-leading-zero
+lower-roman
+upper-roman
+lower-greek
+lower-latin
+upper-latin
+armenian
+georgian
+lower-alpha
+upper-alpha
+
+list-style-position: Hacen que las viñetas se coloquen por fuera o por dentro del
+elemento.
+outside | inside
+
+list-style-image: Pone una imagen en lugar de la viñeta, no se suele utilizar por que
+hay formas mucho más eficientes de hacerlo url(image_path).
+
+Normalmente se suele utilizar el shorthand list-style.
