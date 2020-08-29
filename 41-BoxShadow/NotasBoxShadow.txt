@@ -1,0 +1,38 @@
+BOX SHADOW(Sombras):
+Me permite crearle sombras a un elemento y se les
+puede asignar valores negativos para efectos(Trucos).
+Recordar que son copias, las sombras son copias.
+
+EXPLICACIÓN PROPIEDAD:
+box-shadow: h-offset v-offset blur spread color inset/outset
+
+h-offset v-offset => que tanto se separa la sombra del
+elemento, de forma horizontal y de forma vertical.
+
+blur => difuminado(Se pone Borroso).
+
+spread => cuanto se espande o crece(Tambien se puede 
+utilizar valores Negativos).
+
+color => color asignado.
+
+inset => si la sombra es interior al nivel
+del elemento.
+(Utilizar valores Negativos(opuesto)).
+
+outset => si la sombra es exterior al nivel
+del elemento.
+
+NOTA => Con valor outset(default) los valores positivos añaden 
+a derecha y abajo y los valores negativos añaden a izquierda
+y arriba.
+Con valor inset se invierten los valores, positivo seria
+izquierda y arriba y negativo seria derecha y abajo.
+
+Puedo hacer multiples sombras:
+box-shadow: 0 0 30px 10px blue,
+            0 0 12px 20px green;
+
+NOTA SHORTHAND => En CSS es muy mala practica aplicarlos,
+a no ser de que se sepa lo que se esta haciendo realmente.
+-----------------------------------------------------------

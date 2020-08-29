@@ -1,0 +1,52 @@
+COLORES:
+Hay varias formas de dar colores a los elementos.
+Colores de las palabras claves => https://developer.mozilla.org/es/docs/Web/CSS/color_value
+
+COLORES DEL SISTEMA:
+color: white;
+-------------------------------------------------------
+
+RGB => Es una función de color que recibe 3 valores separados por comas, siendo 0 el minimo y
+255 el máximo. rgb(0, 0, 0) seria negro y rgb(255, 255, 255) seria blanco.
+
+COLORES RGB:
+FORMATO RGB(0-255).
+color: rgb(255, 255, 107);
+
+RGBA => Es una variación de RGB con un cuarto valor que seria el canal alpha, con este valor 
+controlamos la opacidad. Sus valores van de 0 a 1, siendo 0 transparente y 1 opaco.
+
+COLORES RGBA:
+FORMATO RBGA(0-255-alpha).
+Este formato lo que hace es agregar una transparencia
+que va de 0 a 1 y se puede utilizar números con parte decimal.
+color: rgba(90, 76, 233, .9);
+---------------------------------------------------------------------
+
+HEXADECIMAL => la notación hexadecimal tiene 16 valores.
+0-1-2-3-4-5-6-7-8-9-A-B-C-D-E-F. Se escriben con un # al inicio y se pueden usar 3 0 6
+valores. Si se usan 6 valores deben ir en parejas #ffffff, pero cuando las parejas
+tienen el mismo valor se suele obviar y se ponen solo 3 valores #fff.
+
+El codigo hexadecimal se representa con los canales rgb de la siguiente forma:
+#rgb o #rrggbb. Utilizar el modo hexadecimal cuando se buscan colores especiales se 
+queda corto si no utilizamos un preprocesador, ya que no podemos controlar la 
+luminosidad, la saturación, etc.
+Cuando los 3/6 valores son iguales es un color neutro. #000 seria negro y #fff seria blanco
+y todos los valores intermedios serian grises con mayor o menor luminosidad #666, #aaa.
+
+COLORES HEXADECIMALES:
+FORMATO HEXADECIMALES(0-F).
+color: #6753ca;
+--------------------------------------------------------------------
+
+HSL(hue, saturation, lightness) => Es una funcion de color que nos permite controlar
+el tono, la saturación y la luminosidad. Es un modo de color recomendado para tener
+un control total sobre los colores.
+
+hue: es el ángulo en la rueda crómatica. Los valores van de 0 a 360 grados.
+saturation: es la intensidad del color. Los valores van de 0(gris) a 100%(color puro).
+lightness: es la intensidad de la luz. Los valores van de 0(negro) a 100%(blanco).
+-------------------------------------------------------
+
+HSLA: Exactamente igual que RGBA.

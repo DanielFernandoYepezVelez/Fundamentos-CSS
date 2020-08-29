@@ -172,22 +172,3 @@ Website.
 
 SHORTHAND FONT =>
 font: font-size font-family / line-height;
--------------------------------------------------------------
-
-COLORES:
-COLORES DEL SISTEMA:
-color: white;
-
-COLORES HEXADECIMALES:
-FORMATO HEXADECIMALES(0-F).
-color: #6753ca;
-
-COLORES RGB:
-FORMATO RGB(0-255).
-color: rgb(255, 255, 107);
-
-COLORES RGBA:
-FORMATO RBGA(0-255-alpha).
-Este formato lo que hace es agregar una transparencia
-que va de 0 a 1 y se puede utilizar números con parte decimal.
-color: rgba(90, 76, 233, .9);

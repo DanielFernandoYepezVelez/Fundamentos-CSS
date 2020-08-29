@@ -1,0 +1,6 @@
+text-shadow: h-offset v-offset blur spread color;
+
+Puedo hacer multiples sombras:
+text-shadow: 0 0 30px 10px blue,
+            0 0 12px 20px green;
+-----------------------------------------------------------
