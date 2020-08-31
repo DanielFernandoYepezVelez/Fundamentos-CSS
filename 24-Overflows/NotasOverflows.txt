@@ -1,6 +1,18 @@
 OVERFLOW:
+Es una propiedad que controla como se va a comportar la caja con el contenido
+que se desborde de ella.
+
+Es un shorthand que engloba =>
+overflow-x
+overflow-y
+
+Tiene tres valores posibles =>
+hidden: Oculta todo el contenido que se desborde.
+auto: Muestra la barra de scroll solo si hace falta.
+scroll: Muestra ambas barras de scroll independientemente de si necesitan.
+
 Los overflow tienen diferentes funciones
-y se explican acontinuación:
+y se explican a continuación:
 
 overflow: hidden; => Sirve para ocultar algo que se desborde
 de un elemento con un alto y ancho definido.

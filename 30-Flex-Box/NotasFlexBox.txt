@@ -5,6 +5,46 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_C
 JUEGO FLEX-BOX INTERESANTE: https://flexboxfroggy.com/#es
 -------------------------------------------------------------------------------------------
 
+TEORIA =>
+FLEXBOX - BASE
+Es un modelo de layout que permiten que las cajas sean flexibles, es un valor de la propiedad display.
+Existe display:flex y display:inline-flex para que el contenedor sea bloque o linea respectivamente.
+Se necesita un contenedor(flex-container) y al menos un hijo(flex-item).
+Las cajas flexibles son los items, el contenedor es el contexto al que pertenecen los items.
+
+FLEXBOX - EJES
+Existen dos ejes para colorcar y alinear elementos.
+Por defecto el eje principal es horizontal y de izquierda a derecha y el eje secundario es vertical de arriba abajo.
+Se pueden intercambiar los ejes y la dirección de ambos.
+
+flex-direction: row(default);
+                    |cross start
+                    |
+                    |
+                    |
+main start          |           main end
+--------------------|------------------- main axis
+                    |
+                    |
+                    |
+                    |
+                    |cross end
+                 cross axis
+
+flex-direction: column; (Intercambio el plano)
+                    |main start
+                    |
+                    |
+                    |
+cross start         |           cross end
+--------------------|------------------- cross axis
+                    |
+                    |
+                    |
+                    |
+                    |main end
+                 main axis
+
 🎈NOTA INICIAL => Los elementos que no utilizan
 alguna propiedad de flex-box, son los elementos
 que se mueven en el momento del responsive web
@@ -151,17 +191,22 @@ tener una altura automatica en el elemento PADRE.
 🎨align-items: baseline; => Tiene que ver con 
 la fuente en los elementos, buscar información.
 
+🧨SUPER NOTA => Para que las imagenes dentro de un
+flex-container no se deformen, debes agregar 
+un align-items.
+
 🎨align-content: flex-start | center | flex-end |
                   stretch | space-between | 
                        space-around
 🎨Esta propiedad funciona exactamente igual que
 align-items, pero cuando tengo mas de una linea
-de contenido y necesito agruparlo, es decir,
-cuando tenemos el contenedor con la propiedad
-wrap, entonces se Utiliza align-content y 
-align-items es cuando solo tengo una linea de
-contenido. Recordar que funciona de arriba hacia
-abajo, es decir, de forma vertical.
+de contenido y necesito agruparlo y alinearlo
+en el cross axis, es decir, cuando tenemos el 
+contenedor con la propiedad wrap, entonces se 
+Utiliza align-content y align-items es cuando 
+solo tengo una linea de contenido. Recordar 
+que funciona de arriba hacia abajo, es decir,
+de forma vertical.
 
 🧨SUPER NOTA => Todas las propiedades de 
 justify-content y align-items también funcionan

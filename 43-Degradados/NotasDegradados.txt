@@ -13,6 +13,10 @@ Degradados Lineales =>
   bottom left | bottom right"
   background-image: linear-gradient(to right, red, blue);
 
+  Aqui aplicamos degradados DIAGONALES =>
+  background-image: linear-gradient(to right top, red, blue);
+
+  Paradas de color(Desde Donde Inicia Un Color Y Donde Termina, Para Darle Inicio A Otro)
   Si no establecemos paradas de color, el navegador dividirá el espacio disponible entre los colores que
   tenga que pintar.
   2 colores 0% 100%
