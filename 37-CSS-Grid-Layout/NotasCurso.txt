@@ -8,6 +8,36 @@ JUEGO DE CSS GRID LAYOUT:
 https://cssgridgarden.com/#es
 ----------------------------------------------------------------------------------
 
+GRID - FUNDAMENTOS =>
+- Es un modelo de layout que permite construir grillas o cuadrículas dinamicas(por que se les puede cambiar el ancho y el alto). Es un valor de la propiedad display.
+- Al igual que con flexbox, tenemos display: grid; y display: inline-grid.
+- Se necesita un contenedor(grid-container) y al menos un hijo(grid-item).
+- Las celdas son los items, el contenedor es el contexto al que pertenecen los items.
+
+GRID - TERMINOLOGIA =>
+- Grid column: Es cada columna de nuestra cuadrícula.
+- Grid row: Es cada fila de nuestra cuadrícula.
+- Grid cell: Es cada celda de nuestra cuadrícula.
+- Grid gap: Es la separación entre celdas(items).
+- Grid line: Existen column lines y row lines, son las líneas que delimitan cada columna/fila respectivamente.
+
+GRID - VENTAJAS =>
+- En grid cada celda es dinámica y el resto de la cuadrícula se adapta.
+- Podemos decir donde empieza cada celda y donde acaba, tanto en columna como en fila.
+- Sus posibilidades son inmensas.
+
+           Column Line        Column Line         Column Line       Column Line
+        Row Line ----------------------------------------------------------
+                 |    Grid          |     Grid          |     Grid        |
+                 |    cell          |     cell          |     cell        |
+        Row Line |--------------------------------------------------------|
+                 |    Grid          |     Grid          |     Grid        |
+                 |    cell          |     cell          |     cell        |
+        Row Line |--------------------------------------------------------|
+                 |    Grid          |     Grid          |     Grid        |
+                 |    cell          |     cell          |     cell        |
+        Row Line ----------------------------------------------------------
+
         👍COMO SABER CUANTAS FILAS O CUANTAS COLUMNAS
                 VA A TENER UN LAYOUT A SIMPLE VISTA:
 Esta regla funciona tanto para las filas como
@@ -22,6 +52,18 @@ PROPIEDADES CONTENEDOR PADRE DIRECTAMENTE =>
 concepto de grillas en todo el layout.
 Cuando hablo de grillas, me refiero a filas y a
 columnas.
+
+Medidas de la cuadrícula =>
+Se pueden dar medidas con cualquiera de las propiedades
+que ya conocemos y dos mas que vienen con grid, fr y auto.
+
+fr => Equivale a n fracciones del espacio disponible despues
+de establecer las medidas fijas.
+
+auto => Equivale al espacio que quede después de repartir 
+todos los elementos, es el ultimo que se reparte. 
+El tamaño minimo del item será el espacio del contenido 
++ el padding si lo tuviera.
 
 🎉FRACCIÓN(1fr) => De todo el espacio que tenga
 disponible, lo va a distribuir entre todos los
@@ -107,9 +149,17 @@ este elemento va a tomar su ancho o alto en layout
 dependiendo solamente del tamaño que abarque su 
 contenido interno.
 
-🎨QUE ES maxcontent =>
+🎨QUE ES max-content =>
 MAXCONTENT: El contenedor PADRE va a tener un ancho
-o un alto maximo del tamaño de su contenido interno.
+o un alto maximo del tamaño de su contenido interno
+y no lo rompe o fracciona, lo deja completo en una
+sola linea.
+
+🎨QUE ES min-content =>
+MAXCONTENT: El contenedor PADRE va a tener un ancho
+o un alto minimo del tamaño de su contenido interno
+y LO rompe o fracciona, NO lo deja completo en una
+sola linea.
 
 🎨NOTA => Tener en cuenta que la función minmax();
 funciona para las columnas afectando su ancho y
@@ -354,6 +404,20 @@ VERTICAL.
 💎Son los elementos que se agregan o distribuyen 
 en el layout despues de definir la GRID EXPLICITA.
 
+grid-auto-columns =>
+Establece que hacer con las columnas no definidas.
+
+grid-auto-rows =>
+Establece que hacer con las filas no definidas.
+
+grid-auto-flow =>
+Establece la dirección en la cual se va a pintar el implici GRID.
+Admite 3 valores:
+row(default): Secrearán filas adicionales.
+column: Se crearan columnas adicionales.
+dense: Establecer que hacer con los huecos o los espacios en 
+blanco que queden libres en toda la GRID.
+
 💎PROPIEDADES CONTENEDOR PADRE:
 💎grid-auto-flow: row; => Esta Propiedad me cambia la 
 dirección de mi GRID, por defecto viene para row,
@@ -402,6 +466,12 @@ IMPLICITA.
 🥊grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 🥊grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 🥊grid-template-rows: repeat(auto-fit, minmax(2px, 50px));
+
+auto-fill => Crea tantos grid-items vacios como quepan en el
+viewport respetando las medidas.
+
+auto-fit =>  Elimina los grid-items vacios que no se esten
+ocupando.
 
 🥊AUTO-FILL:
 Esta Propiedad se asigna en el contenedor padre para todas
