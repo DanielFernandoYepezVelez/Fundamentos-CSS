@@ -220,6 +220,30 @@ izquierda por que estamos en la dirección de
 columna.
 
 🎨PROPIEDADES PARA LOS HIJOS DEL ELEMENTO PADRE =>
+Propiedad Flex: Es un shorthand que engloba las siguientes
+propiedades.
+Todas las medidas se establecen en funcion del espacio disponible en el contenedor.
+
+flex-grow: Establece que hacer cuando hay espacio sobrante. Cuantas divisiones toma el elemento. El valor es un entero desde 0 hasta n o auto.
+
+flex-shrink: Establecer que hacer cuando no hay espacio suficiente. Cuantas divisiones pierde el elemento o entrega de su ancho, el valor por defecto de shrink es 1, asi que cada elemento dentro de la caja padre, pierde el mismo valor de ancho, si se aumenta el shrink a un elemento en particular, entonces pierda mas espacio de ancho que los demás elementos. El valor es un entero desde 0 hasta n.
+
+flex-basis: Establece cuanto tiene que ocupar el items antes de encojerse o extenderse. flex-basis prevalece ante width si el main-axis es horizontal o ante height si el main-axis es vertical.
+Es decir, flex-basis va a dar la altura y no el height normal o lo mismo pasa con el width.
+El valor es un entero desde 0 hasta n.
+
+Los valores de flex Por defecto son =>
+flex: 0 1 auto;
+flex: 1; La otras dos son opcionales.
+
+flex: Necesita un valor como minimo para funcionar, si no se ponen los otros dos, siempre va a hacer 1 auto,
+encojete y el ancho por defecto depende del contenido del elemento.
+
+Order: Establece que ordén ocupará el elemento en el contenedor flex.
+El valor es el "peso" respecto a los valores que tengan los otros elementos. Por defecto es 0.
+
+Extra: Existe un shorthand para flex-direction y flex-wrap.flex-flow: flex-direction flex-wrap. flex-flow: column wrap.
+
 🎨flex-grow: 1; => Esta propiedad sirve de dos
 formas, LA PRIMERA para que todos los elementos
 tomen el espacio necesario y abarquen el 100% 
