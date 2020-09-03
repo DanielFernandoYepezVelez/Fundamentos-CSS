@@ -2,9 +2,17 @@ FOOTER FIJO:
 Al contenedor padre se le deben
 dar todas las caracteristicas
 del display flex y en este ejemplo
-display flex-direction de colum,
+display flex-direction de column,
 ademas, debe aplicarce un min-height
 de 100vh. posteriormente le dimos flex 
 de 1 a todo el contenido principal para
 que tomara todo el espacio disponible y
 dejara el footer en el fondo.
+
+PADRE(BODY) =>
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+
+footer =>
+margin-top: auto;

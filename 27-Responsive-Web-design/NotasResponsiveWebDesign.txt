@@ -1,4 +1,4 @@
-                          RESPONSE WEB DESIGN 
+                          RESPONSIVE WEB DESIGN 
 - No es un estandar, no es CSS, es un conjunto de patrones de diseño.
 - Su objetivo es que cualquier sistema informatico se vea bien, independientemente del dispositivo.
 - Los frameworks resuelven esos problemas, pero es un error utilizarlos para evitar aprender lo que hay detras.
@@ -33,3 +33,34 @@ Las condiciones mas utilizadas son  min-width, max-width y orientation.
 - Moblie-first: Consiste en hacer primero el diseño para móvil e ir subiendo de tamaño.
 - Desktop-first: Consiste en hacer primero el diseño para desktop e ir descendiendo de tamaño.
 - Content-first: Consiste en saber primero todo el contenido de la web y después se hace el diseño.
+
+                          RESPONSIVE - SIN MEDIA QUERYS
+SUPER NOTA PARA BANNER RESPONSE EN DESKTOP Y MOVIL =>
+Se aplica medidas minimas del viewport, como por ejemplo:
+padding: 10vmin;
+
+FLEXBOX GALLERIA RESPONSIVE =>
+.galeria_flebox_item {
+  margin: 2rem;
+  min-width: 320px;
+  flex: 1 1 320px;
+}
+
+GRID GALLERIA RESPONSIVE =>
+.galeria_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 2rem;
+}
+
+                        BREAKPOINTS - MEDIA QUERYS
+Existen dos tipos de breakpoints, los major breakpoints y los minor breakpoints.
+
+LOS MAJOR BREAKPOINTS => Son los que cambian la apariencia de la web de forma significativa.
+LOS MINOR BREAKPOINTS => Son los que cambian un aspecto en especifico para un elemento en concreto.
+
+Medidas mas comunes:
+0 - 320px - 360px: Moviles portrait(el alto tiene mayor medida que el ancho).
+480px - 640px: Moviles landscape(el ancho tiene mayor medida que el alto) - tablets.
+1024px - 1200px - 1400px - 1440px: tablets grandes, pórtatiles no HD.
+1920px - hacia arriba: HD, 2K, 4K .......

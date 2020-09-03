@@ -17,9 +17,9 @@ body {
 }
 
 .pagina {
+    /* PARA QUE FUNCIONE EL FOOTER FIJO */
     display: flex;
     flex-direction: column;
-    /* PARA QUE FUNCIONE EL FOOTER FIJO */
     min-height: 100vh;
 }
 

@@ -1,0 +1,95 @@
+/*SEGUNDA FORMA(RECOMENDADA)*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #e9ecf4;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+}
+
+.outside-content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header       header       header" "main-content main-content sidebar" "widget-1     widget-2     sidebar" "footer       footer       footer";
+}
+
+.outside-content>div,
+.outside-content .header,
+.outside-content .main-content,
+.outside-content .sidebar,
+.outside-content .footer {
+    background: #ffffff;
+    padding: 23px;
+    border-radius: 4px;
+}
+
+.outside-content .header {
+    background-color: #12203e;
+    color: #ffffff;
+    grid-area: header;
+}
+
+.outside-content .main-content {
+    grid-column: span 2;
+    grid-area: main-content;
+}
+
+.outside-content .sidebar {
+    grid-column: 3 / 4;
+    background: #faa43d;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    /* grid-row: span 2; */
+    grid-area: sidebar;
+}
+
+.outside-content .widget-1,
+.outside-content .widget-2 {
+    background: #55a8fd;
+    color: #ffffff;
+    height: 103px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outside-content .widget-1 {
+    grid-area: widget-1;
+}
+
+.outside-content .widget-2 {
+    grid-area: widget-2;
+}
+
+.outside-content .footer {
+    background: #12203e;
+    color: #ffffff;
+    /* grid-column: 1 / 4; */
+    grid-area: footer;
+}
+
+@media screen and (max-width: 768px) {
+    .outside-content {
+        grid-template-areas: "header       header       header" "main-content main-content main-content" "sidebar      sidebar      sidebar" "widget-1     widget-1     widget-2" "footer       footer       footer";
+    }
+}

@@ -1,0 +1,3 @@
+Faltan las notas en código por el momento,
+por que estaban todas en un mismo archivo y
+no quiero crear confusión.

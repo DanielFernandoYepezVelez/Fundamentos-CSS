@@ -26,12 +26,13 @@ GRID - VENTAJAS =>
 - Podemos decir donde empieza cada celda y donde acaba, tanto en columna como en fila.
 - Sus posibilidades son inmensas.
 
+                                     Column Axis
            Column Line        Column Line         Column Line       Column Line
         Row Line ----------------------------------------------------------
                  |    Grid          |     Grid          |     Grid        |
                  |    cell          |     cell          |     cell        |
         Row Line |--------------------------------------------------------|
-                 |    Grid          |     Grid          |     Grid        |
+                 |    Grid          |     Grid          |     Grid        | Row Axis
                  |    cell          |     cell          |     cell        |
         Row Line |--------------------------------------------------------|
                  |    Grid          |     Grid          |     Grid        |
@@ -39,15 +40,11 @@ GRID - VENTAJAS =>
         Row Line ----------------------------------------------------------
 
 SHORTHANDS =>
-grid: sin soporte toal.
-
-grid-template: Engloba grid-template-columns, grid-template-rows y grid-template-areas.
-
-grid-gap: Engloba grid-column-gap y grid-row-gap.
-
-grid-column: Engloba grid-column-start y grid-column-end.
-
-grid-row: Engloba grid-row-start y grid-row-end.
+- grid: sin soporte toal.
+- grid-template: Engloba grid-template-columns, grid-template-rows y grid-template-areas.
+- grid-gap: Engloba grid-column-gap y grid-row-gap.
+- grid-column: Engloba grid-column-start y grid-column-end.
+- grid-row: Engloba grid-row-start y grid-row-end.
 
         👍COMO SABER CUANTAS FILAS O CUANTAS COLUMNAS
                 VA A TENER UN LAYOUT A SIMPLE VISTA:

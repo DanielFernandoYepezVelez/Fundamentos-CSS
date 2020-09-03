@@ -1,0 +1,29 @@
+                  VIDEOS RESPONSIVE
+La forma más común es hacer un padding-bottom de 56.25%, éste numero 
+es el resultado de la operación (9 / 16) es decir, un formato 16:9,
+esto da como resultado 0.5625 si lo multiplicamos por 100 el resultado
+es 56.25.
+
+.container {
+  background-color: red;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  max-width: 1400px;
+}
+
+.video {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.video iframe {
+  position: absolute; Aqui pierde sus medidas, debo darle nuevas medidas
+  width: 100%;
+  height: 100%;
+} 
+
+TAMBIEN SE PUEDE HACER CON GRID, CON UNA CUADRICULA DE 16 X 9.(PERO NAVEGADORES
+ANTIGUOS PUEDE QUE NO LOS SOPORTE)
