@@ -1,0 +1,35 @@
+                          RESPONSE WEB DESIGN 
+- No es un estandar, no es CSS, es un conjunto de patrones de diseño.
+- Su objetivo es que cualquier sistema informatico se vea bien, independientemente del dispositivo.
+- Los frameworks resuelven esos problemas, pero es un error utilizarlos para evitar aprender lo que hay detras.
+
+Se basa en tres conceptos fundamentales =>
+- Columnas fluidas.
+- Imágines flexibles: max-width: 100%.
+- Media Querys.
+- A dia de hoy el número de retos a crecido notablemente y se hace "imprescindible" el uso de javascript.
+
+                          COLUMNA FLUIDAS
+- Para conseguir un sistema de columnas o de cajas fluidas es tan sencillo como aplicar los anchos en porcentajes.
+- NO hay que asignar todos los anchos en porcentaje, solo se aplica a los elementos que necesiten cambiar su tamaño.
+
+                          MEDIA QUERYS - CONCEPTO
+- Son condicionales para que el navegador funcione como lo indica la condición.
+
+- all: Apto para todos los dispositivos.
+- print: Destinado a material impreso y visualización del modo de vista previa de impresión.
+- screen: Destinado principalmente a las pantallas.
+- speech: Destinados a sintetizadores de voz.
+
+                          MEDIA QUERYS - SINTAXYS
+- Sintaxis: @media "tipo de medio" and|or (condición)
+
+Las condiciones mas utilizadas son  min-width, max-width y orientation.
+- @media screen and (min-width: 360px);
+- @media screen and (max-width: 1024px) and (orientation: landscape);
+- @media screen and (max-width: 480px) or (orientation: portrait);
+
+                          METODOLOGÍAS
+- Moblie-first: Consiste en hacer primero el diseño para móvil e ir subiendo de tamaño.
+- Desktop-first: Consiste en hacer primero el diseño para desktop e ir descendiendo de tamaño.
+- Content-first: Consiste en saber primero todo el contenido de la web y después se hace el diseño.
