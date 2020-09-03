@@ -38,6 +38,17 @@ GRID - VENTAJAS =>
                  |    cell          |     cell          |     cell        |
         Row Line ----------------------------------------------------------
 
+SHORTHANDS =>
+grid: sin soporte toal.
+
+grid-template: Engloba grid-template-columns, grid-template-rows y grid-template-areas.
+
+grid-gap: Engloba grid-column-gap y grid-row-gap.
+
+grid-column: Engloba grid-column-start y grid-column-end.
+
+grid-row: Engloba grid-row-start y grid-row-end.
+
         👍COMO SABER CUANTAS FILAS O CUANTAS COLUMNAS
                 VA A TENER UN LAYOUT A SIMPLE VISTA:
 Esta regla funciona tanto para las filas como
@@ -256,7 +267,50 @@ layout a los elementos, haciendo lo siguiente:
 
             🏈ALINEACIÓN DE ELEMENTOS =>
 UN SOLO ELEMENTO DE LA GRID.
-🏈PROPIEDADES CONTENEDOR PADRE:
+
+justify-items: Alinea los elementos Horizontalmente respecto
+a la celda.
+
+align-items: Alinea los elementos Verticalmente respecto
+a la celda.
+
+Admiten valores =>
+stretch (default)
+start
+end
+center
+
+place-items: Engloba las propiedades justify-items y align-items.
+place-items: align-items / justify-items
+
+justify-content: Alinea los elementos horizontalmente respecto al contenedor PADRE.
+
+align-content: Alinea los elementos verticalmente respecto al contenedor PADRE.
+
+Admiten los valores:
+stretch (default)
+start
+end
+center
+space-around
+space-between
+space-evenly
+
+place-items: Engloba las propiedades justify-content y align-content.
+place-content: align-content / justify-content
+
+Tenemos las mismas propiedades con self para alinear a los items por si mismos:
+justify-self
+align-self
+place-self
+
+Admite los valores:
+stretch
+start
+end
+center
+
+🏈PROPIEDADES CELDA PADRE:
 🏈Alineando Los Elementos Horizontalmente:
 🏈justify-items: start; => Esta propiedad me ayuda
 alinear el elemento al inicio del contenedor.
@@ -289,8 +343,8 @@ a que el elemento ocupe todo el ancho disponible
 del contenedor padre, pero de forma VERTICAL.
 
 ----------------------------------------
-🏈PROPIEDAD PARA LOS ELEMENTOS HIJOS: 
-🏈Alineando Los Elementos HIJOS Horizontalmente:
+🏈PROPIEDAD PARA LOS ELEMENTOS PROPIOS: 
+🏈Alineando Los Elementos PROPIOS Horizontalmente:
 🏈justify-self: start; => Esta propiedad me ayuda
 alineando el elemento al inicio del contenedor
 PADRE.
@@ -307,7 +361,7 @@ PADRE.
 a ocupar todo el ancho disponible del contenedor
 PADRE.
 
-🏈Alineando Los Elementos HIJOS Verticalmente:
+🏈Alineando Los Elementos PROPIOS Verticalmente:
 🏈align-self: start; => Esta propiedad me ayuda
 alineando el elemento al inicio del contenedor
 PADRE, pero de forma VERTICAL.
@@ -324,8 +378,7 @@ PADRE, pero de forma VERTICAL.
 a ocupar todo el ancho disponible del contenedor
 PADRE, pero de forma VERTICAL.
 
-                🎲ALINEACION TRACKS =>
-UN GRUPO DE ELEMENTOS DENTRO DE CADA GRID.
+                🎲ALINEACION CONTENIDO =>
 🎲Esta propiedad me sirve para alinear todo un bloque
 de elementos, tanto de forma de vertical Y
 Horizontal de forma interna del contenedor PADRE.
@@ -399,6 +452,10 @@ me ayuda a mantener el bloque de los elementos con
 una separición entre los mismos e incluyendo los
 bordes con una medidad igual, pero de forma 
 VERTICAL.
+
+🎲TRACKS =>
+Son dos o mas celdas contiguas o consecutivas seleccionadas
+tanto para fila como para columnas.
 
                 💎GRID IMPLICITA
 💎Son los elementos que se agregan o distribuyen 
@@ -505,5 +562,5 @@ porcentajes, lo que con otros displays no es permitido, esto es muy
 valioso y ayuda mucho a la hora de definir una altura para un 
 elemento determinado.
 
-BUSCAR INFORMACIÓN SOBRE LA PROPIEDAD
-ORDER.
+BUSCAR INFORMACIÓN SOBRE LA PROPIEDAD =>
+order: Funciona igual que en flexbox, por defecto todos los items order:0
