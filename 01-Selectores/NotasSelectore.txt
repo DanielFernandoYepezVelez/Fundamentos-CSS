@@ -167,6 +167,10 @@ EJEMPLO:
   color: green
 }
 
+[href="https://google.com"] {
+  background-color: green
+}
+
 input[type="email"]
 {
   background-color: black;
